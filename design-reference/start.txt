@@ -1,0 +1,218 @@
+const imgVector = "https://www.figma.com/api/mcp/asset/2418b104-b041-4a92-9363-a6d026775bd5.svg";
+const imgIconVolumeOn = "https://www.figma.com/api/mcp/asset/095ff02f-a4d4-4a3f-b9cc-389ab50b4873.svg";
+const imgBrandLogo = "https://www.figma.com/api/mcp/asset/6a2b3dc8-05e0-40ef-b934-404d620fd96d.png";
+const imgProviderIcon = "https://www.figma.com/api/mcp/asset/770f8274-e089-4bc0-9dda-9396eeac2946.svg";
+const imgProviderIcon1 = "https://www.figma.com/api/mcp/asset/5c1fe232-9af4-403d-a765-61d6fa1d38a1.svg";
+const imgVector1 = "https://www.figma.com/api/mcp/asset/344742d4-684f-41ee-85bb-36eda25f9271.svg";
+
+function SocialIconGoogle({ className }: { className?: string }) {
+  return (
+    <div className={className || "content-stretch flex items-center justify-center relative size-[36px]"} data-node-id="58:77" data-name="SocialIcon/Google">
+      <div className="flex-[1_0_0] h-full min-w-px relative" data-node-id="58:78" data-name="vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+      </div>
+    </div>
+  );
+}
+
+function IconVolumeOn({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="324:2145" data-name="Icon/VolumeOn">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconVolumeOn} />
+    </div>
+  );
+}
+
+type CalloutTagProps = {
+  className?: string;
+  label?: string;
+  tone?: "Green";
+};
+
+function CalloutTag({ className, label = "CALLOUT LABEL", tone = "Green" }: CalloutTagProps) {
+  return (
+    <div className={className || "bg-[var(--wordoken-color-status-success,#78bb90)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center px-[12px] py-[5px] relative"} data-node-id="79:114">
+      <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center whitespace-nowrap" data-node-id="79:115">
+        {label}
+      </p>
+    </div>
+  );
+}
+
+export default function Component01Start() {
+  return (
+    <div className="bg-[var(--wordoken-color-bg-yellow,#f7ce10)] content-stretch flex flex-col items-center relative size-full" data-node-id="37:2" data-name="01 Start">
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start max-w-[402px] min-h-[740px] overflow-clip relative w-full" data-node-id="565:7191" data-name="Responsive / centered game column">
+        <div className="absolute inset-0 overflow-clip" data-node-id="37:3" data-name="background/grid">
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[50px] top-0 w-px" data-node-id="I37:3;34:55" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[101px] top-0 w-px" data-node-id="I37:3;34:56" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[152px] top-0 w-px" data-node-id="I37:3;34:57" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[203px] top-0 w-px" data-node-id="I37:3;34:58" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[254px] top-0 w-px" data-node-id="I37:3;34:59" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[305px] top-0 w-px" data-node-id="I37:3;34:60" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[356px] top-0 w-px" data-node-id="I37:3;34:61" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[50px] w-[402px]" data-node-id="I37:3;34:62" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[101px] w-[402px]" data-node-id="I37:3;34:63" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[152px] w-[402px]" data-node-id="I37:3;34:64" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[203px] w-[402px]" data-node-id="I37:3;34:65" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[254px] w-[402px]" data-node-id="I37:3;34:66" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[305px] w-[402px]" data-node-id="I37:3;34:67" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[356px] w-[402px]" data-node-id="I37:3;34:68" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[407px] w-[402px]" data-node-id="I37:3;34:69" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[458px] w-[402px]" data-node-id="I37:3;34:70" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[509px] w-[402px]" data-node-id="I37:3;34:71" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[560px] w-[402px]" data-node-id="I37:3;34:72" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[611px] w-[402px]" data-node-id="I37:3;34:73" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[662px] w-[402px]" data-node-id="I37:3;34:74" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[713px] w-[402px]" data-node-id="I37:3;34:75" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[764px] w-[402px]" data-node-id="I37:3;34:76" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[815px] w-[402px]" data-node-id="I37:3;34:77" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[866px] w-[402px]" data-node-id="I37:3;34:78" data-name="grid/h" />
+        </div>
+        <div className="-translate-x-1/2 absolute h-[448px] left-1/2 top-0 w-[342px]" data-node-id="88:858" data-name="hero/start">
+          <div className="absolute left-[-44px] size-[430px] top-[24px]" data-node-id="37:30" data-name="BrandLogo">
+            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgBrandLogo} />
+          </div>
+          <div className="absolute content-stretch flex items-center justify-center left-0 top-[70px] w-[342px]" data-node-id="80:856" data-name="callout">
+            <CalloutTag className="bg-[var(--wordoken-color-status-success,#78bb90)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center px-[12px] py-[5px] relative shrink-0 w-[290px]" label="BECOME A WORD CHAMPION!" />
+          </div>
+        </div>
+        <button className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[4px_4px_0px_black] flex items-center justify-center right-[8px] size-[32px] top-[8px]" data-node-id="122:919" data-name="sound-control">
+          <div className="content-stretch flex gap-[var(--wordoken-space-0,0px)] items-center justify-center p-[var(--wordoken-space-0,0px)] relative shrink-0 size-[24px]" data-node-id="I122:919;121:141" data-name="icon">
+            <IconVolumeOn className="relative shrink-0 size-[24px]" />
+          </div>
+        </button>
+        <button className="-translate-x-1/2 absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[7px_7px_0px_black] flex gap-[12px] h-[60px] items-center justify-center left-1/2 top-[454px] w-[320px]" data-node-id="37:32" data-name="Button">
+          <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[32px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[296px]" data-node-id="I37:32;35:63">
+            START GAME
+          </p>
+        </button>
+        <a className="-translate-x-1/2 absolute bg-[var(--wordoken-color-action-secondary,#78bb90)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[7px_7px_0px_black] flex gap-[12px] h-[60px] items-center justify-center left-1/2 top-[530px] w-[320px]" data-node-id="37:39" data-name="Button">
+          <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[32px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[296px]" data-node-id="I37:39;35:23">
+            SIGN IN
+          </p>
+        </a>
+        <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[var(--wordoken-space-3,12px)] items-center left-1/2 p-[var(--wordoken-space-0,0px)] top-[622px] w-[320px]" data-node-id="464:4754" data-name="Start / social sign-in group">
+          <div className="content-stretch flex gap-[var(--wordoken-space-0,0px)] h-[20px] items-center justify-center p-[var(--wordoken-space-0,0px)] relative shrink-0 w-[320px]" data-node-id="474:6493" data-name="SocialAuthLabel / Start">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_SemiBold'] h-[20px] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center uppercase w-[320px]" data-node-id="I474:6493;474:2803">
+              <p className="leading-[20px]">OR SIGN IN WITH</p>
+            </div>
+          </div>
+          <div className="content-stretch cursor-pointer flex gap-[var(--wordoken-space-6,24px)] h-[60px] items-center justify-center p-[var(--wordoken-space-0,0px)] relative shrink-0 w-[320px]" data-node-id="421:4732" data-name="SocialProviderRow / TikTok Instagram Google Facebook">
+            <a className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[60px]" data-node-id="I421:4732;420:2316" data-name="TikTok">
+              <div className="relative shrink-0 size-[48px]" data-node-id="I421:4732;420:2316;58:95" data-name="provider-icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgProviderIcon} />
+              </div>
+            </a>
+            <button className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[60px]" data-node-id="I421:4732;420:2328" data-name="Instagram">
+              <div className="relative shrink-0 size-[48px]" data-node-id="I421:4732;420:2328;58:95" data-name="provider-icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgProviderIcon1} />
+              </div>
+            </button>
+            <a className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[60px]" data-node-id="I421:4732;420:2340" data-name="Google">
+              <SocialIconGoogle className="content-stretch flex items-center justify-center relative shrink-0 size-[48px]" />
+            </a>
+            <a className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[60px]" data-node-id="I421:4732;420:2352" data-name="Facebook">
+              <div className="content-stretch flex items-center justify-center relative shrink-0 size-[48px]" data-node-id="I421:4732;420:2352;58:95" data-name="provider-icon">
+                <div className="flex-[1_0_0] h-full min-w-px relative" data-node-id="I421:4732;420:2352;58:95;58:84" data-name="vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: UI/Callout: Font(family: "Fixture", style: Expanded Black, size: 13, weight: 900, lineHeight: 100, letterSpacing: 0), Shadow/Offset: Effect(type: DROP_SHADOW, color: #000000, offset: (7, 7), radius: 0, spread: 0), Shadow/Offset Small: Effect(type: DROP_SHADOW, color: #000000, offset: (4, 4), radius: 0, spread: 0), UI/Hero Action: Font(family: "Fixture", style: Expanded Black, size: 32, weight: 900, lineHeight: 100, letterSpacing: 0), Shadow/Social Button: Effect(type: DROP_SHADOW, color: #000000, offset: (7, 7), radius: 0, spread: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## GridOverlay
+**Node ID:** 34:54
+
+Reusable 402 × 873 comic-paper grid overlay for mobile screens.
+
+## BrandLogo
+**Node ID:** 34:50
+
+Primary Wordoken raster logo, isolated behind a replaceable component boundary.
+
+## CalloutTag
+**Node ID:** 79:118
+
+Compact outlined callout label with a hard offset shadow. Use Green for promotional/tagline messaging and Yellow for status or achievement messaging.
+
+## UtilityIconButton
+**Node ID:** 121:140
+
+Small edge-floating square utility control used for sound and navigation actions.
+
+## State=On
+**Node ID:** 324:2152
+
+GlobalSoundIcon prototype state; State is bound to the shared prototype/soundState string.
+
+## GlobalSoundIcon
+**Node ID:** 325:2153
+
+24px native sound states. Bind State to prototype/soundState so every speaker follows the same global mute choice. Prototype only; production audio is implemented in the browser/PWA.
+
+## Icon/VolumeOn
+**Node ID:** 324:2145
+
+Editable 24 px system icon.
+
+## Button
+**Node ID:** 35:82
+
+Primary Wordoken action control. Choose style, size, and disabled state; override label and optional icon.
+
+## SocialAuthLabel
+**Node ID:** 474:2802
+
+Unboxed centered social-login label. Fixture Expanded SemiBold 16px; sentence case, no colon. Use black text on yellow Start and white text on Sign In/Sign Up. Place 12px above SocialProviderRow. Screen-level color overrides remain bound to semantic text variables.
+
+## SocialProviderRow
+**Node ID:** 420:2315
+
+Four social choices, left to right: TikTok, Instagram, Google, Facebook. Reuse this row on Start, Sign In and Sign Up. Nested SocialButton instances share geometry/artwork/shadow. Prototype routes preview account modules; Instagram shows an explicit unconfigured-integration notice. No live authentication is implemented.
+
+## SocialButton
+**Node ID:** 58:94
+
+Shared 60px social provider button with centered 48px icon and existing crisp bottom-right social shadow. Use SocialProviderRow on Start, Sign In and Sign Up; do not enlarge the white tile independently of its logo. Provider artwork uses an instance-swap property.
+
+## SocialIcon/TikTok
+**Node ID:** 121:124
+
+Brand social-provider icon for the shared SocialButton instance-swap property.
+
+## SocialIcon/Instagram
+**Node ID:** 121:130
+
+Brand social-provider icon for the shared SocialButton instance-swap property.
+
+## SocialIcon/Google
+**Node ID:** 58:77
+
+Google provider mark for SocialButton.
+
+## SocialIcon/Facebook
+**Node ID:** 58:83
+
+Facebook provider mark for SocialButton.
+
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

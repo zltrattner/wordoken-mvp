@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dist-preview/
+*.tgz
+*.tsbuildinfo
+.env*
+!.env.example
+test-results/
+

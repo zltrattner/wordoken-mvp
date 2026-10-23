@@ -1,0 +1,82 @@
+type CountdownDisplayProps = {
+  className?: string;
+  caption?: string;
+  count?: string;
+};
+
+function CountdownDisplay({ className, caption = "GET READY", count = "3" }: CountdownDisplayProps) {
+  return (
+    <div className={className || '[word-break:break-word] content-stretch flex flex-col font-["Black_Han_Sans:Regular"] gap-[var(--wordoken-space-8,32px)] h-[200px] items-center justify-center leading-[0] not-italic p-[var(--wordoken-space-0,0px)] relative text-center w-[320px]'} data-node-id="504:6988" data-name="CountdownDisplay">
+      <div className="flex flex-col h-[140px] justify-center relative shrink-0 text-[112px] text-[color:var(--wordoken-color-text-inverse,white)] text-shadow-[7px_7px_0px_black] w-[288px]" data-node-id="504:6990">
+        <p className="leading-[140px]">{count}</p>
+      </div>
+      <div className="flex flex-col h-[24px] justify-center relative shrink-0 text-[16px] text-[color:var(--wordoken-color-surface-subtle,#ebe6ed)] tracking-[1.5px] w-[288px]" data-node-id="528:2803">
+        <p className="leading-[24px]">{caption}</p>
+      </div>
+    </div>
+  );
+}
+
+export default function Component10DCountdown3() {
+  return (
+    <div className="bg-[var(--wordoken-color-bg-blue,#4377bc)] content-stretch flex flex-col items-center relative size-full" data-node-id="505:7019" data-name="10D Countdown / 3">
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start max-w-[402px] min-h-[740px] overflow-clip relative w-full" data-node-id="565:7221" data-name="Responsive / centered game column">
+        <div className="absolute inset-0 overflow-clip" data-node-id="505:7020" data-name="GridOverlay">
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[50px] top-0 w-px" data-node-id="I505:7020;34:55" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[101px] top-0 w-px" data-node-id="I505:7020;34:56" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[152px] top-0 w-px" data-node-id="I505:7020;34:57" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[203px] top-0 w-px" data-node-id="I505:7020;34:58" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[254px] top-0 w-px" data-node-id="I505:7020;34:59" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[305px] top-0 w-px" data-node-id="I505:7020;34:60" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[356px] top-0 w-px" data-node-id="I505:7020;34:61" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[50px] w-[402px]" data-node-id="I505:7020;34:62" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[101px] w-[402px]" data-node-id="I505:7020;34:63" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[152px] w-[402px]" data-node-id="I505:7020;34:64" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[203px] w-[402px]" data-node-id="I505:7020;34:65" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[254px] w-[402px]" data-node-id="I505:7020;34:66" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[305px] w-[402px]" data-node-id="I505:7020;34:67" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[356px] w-[402px]" data-node-id="I505:7020;34:68" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[407px] w-[402px]" data-node-id="I505:7020;34:69" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[458px] w-[402px]" data-node-id="I505:7020;34:70" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[509px] w-[402px]" data-node-id="I505:7020;34:71" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[560px] w-[402px]" data-node-id="I505:7020;34:72" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[611px] w-[402px]" data-node-id="I505:7020;34:73" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[662px] w-[402px]" data-node-id="I505:7020;34:74" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[713px] w-[402px]" data-node-id="I505:7020;34:75" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[764px] w-[402px]" data-node-id="I505:7020;34:76" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[815px] w-[402px]" data-node-id="I505:7020;34:77" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[866px] w-[402px]" data-node-id="I505:7020;34:78" data-name="grid/h" />
+        </div>
+        <div className="-translate-x-1/2 -translate-y-1/2 absolute content-stretch flex flex-col h-[200px] items-center justify-center left-1/2 top-1/2 w-[320px]" data-node-id="505:7045" data-name="Countdown / centered content">
+          <CountdownDisplay className="[word-break:break-word] content-stretch flex flex-col font-['Black_Han_Sans:Regular'] gap-[var(--wordoken-space-8,32px)] h-[200px] items-center justify-center leading-[0] not-italic p-[var(--wordoken-space-0,0px)] relative shrink-0 text-center w-[320px]" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Gameplay/Countdown: Font(family: "Black Han Sans", style: Regular, size: 112, weight: 400, lineHeight: 140, letterSpacing: 0), Shadow/Offset: Effect(type: DROP_SHADOW, color: #000000, offset: (7, 7), radius: 0, spread: 0), Gameplay/Countdown Caption: Font(family: "Black Han Sans", style: Regular, size: 16, weight: 400, lineHeight: 24, letterSpacing: 1.5).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## GridOverlay
+**Node ID:** 34:54
+
+Reusable 402 × 873 comic-paper grid overlay for mobile screens.
+
+## CountdownDisplay
+**Node ID:** 504:6988
+
+Unboxed pre-game countdown. Black Han Sans white count with standard black bottom-right offset shadow. GET READY caption stays in a fixed slot; use empty caption on GO to preserve number placement. Timings and gameplay mode routing live on screen frames.
+
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

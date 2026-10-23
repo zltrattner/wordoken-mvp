@@ -1,0 +1,377 @@
+const imgArtworkSettingsGearMuted = "https://www.figma.com/api/mcp/asset/66daf1d4-34c2-4dde-903e-c037f539309b.svg";
+const imgArtworkCartMuted = "https://www.figma.com/api/mcp/asset/22976a6f-f1cd-4598-97b2-50d6cff92309.svg";
+const imgGroup = "https://www.figma.com/api/mcp/asset/c8f953d2-10f0-4319-8738-012c91c23261.svg";
+const imgGroup1 = "https://www.figma.com/api/mcp/asset/bc0313d5-092c-4a28-9a1d-9109fc461e2a.svg";
+const imgArtworkHouse = "https://www.figma.com/api/mcp/asset/f8d9f537-2805-4443-996f-0924a3c80e9a.svg";
+const imgArtworkCoinsStack = "https://www.figma.com/api/mcp/asset/f2a4e91e-7f5c-47bb-b6ee-a7704aa6fc9b.svg";
+const imgIconCoin = "https://www.figma.com/api/mcp/asset/5f2fa80c-5e63-4d01-9ced-dfacb9d30a96.svg";
+const imgRadio = "https://www.figma.com/api/mcp/asset/5e836d15-e8f4-40d1-b445-33f30fe27364.svg";
+const imgRadio1 = "https://www.figma.com/api/mcp/asset/0fe65e97-2a42-4e36-b87a-be17ad160dd6.svg";
+const imgIcon = "https://www.figma.com/api/mcp/asset/be76336f-4367-4ff9-8b20-95fbdcc6f805.svg";
+const imgVector = "https://www.figma.com/api/mcp/asset/25d1c27d-f181-4797-a4c3-7e9f6763e53f.svg";
+const imgIcon1 = "https://www.figma.com/api/mcp/asset/634a6938-f5b1-4591-94ca-54d1557b8773.svg";
+
+function ArtworkSettingsGearMuted({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="221:770" data-name="Artwork/settings_gear_muted">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArtworkSettingsGearMuted} />
+    </div>
+  );
+}
+
+function ArtworkCartMuted({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="221:768" data-name="Artwork/cart_muted">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArtworkCartMuted} />
+    </div>
+  );
+}
+
+function ArtworkBookMuted({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="221:743" data-name="Artwork/book_muted">
+      <div className="absolute inset-[12.63%_0] overflow-clip" data-node-id="221:744" data-name="source artwork">
+        <div className="absolute inset-[1.7%_1.27%_1.71%_1.27%]" data-node-id="221:745" data-name="Group">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup} />
+        </div>
+        <div className="absolute inset-[1.72%_1.17%_1.71%_1.32%]" data-node-id="221:754" data-name="Group">
+          <div className="absolute inset-[-0.43%_-0.32%]">
+            <img alt="" className="block max-w-none size-full" src={imgGroup1} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ArtworkHouse({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="207:1288" data-name="Artwork/house">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArtworkHouse} />
+    </div>
+  );
+}
+
+function ArtworkCoinsStack({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="207:1275" data-name="Artwork/coins_stack">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArtworkCoinsStack} />
+    </div>
+  );
+}
+
+function IconCoin({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[18px]"} data-node-id="117:106" data-name="Icon/Coin">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCoin} />
+    </div>
+  );
+}
+
+export default function Component05Home() {
+  return (
+    <div className="bg-[var(--wordoken-color-bg-red,#e54c34)] content-stretch flex flex-col items-center relative size-full" data-node-id="38:281" data-name="05 Home">
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start max-w-[402px] min-h-[740px] overflow-clip relative w-full" data-node-id="565:7195" data-name="Responsive / centered game column">
+        <div className="absolute inset-0 overflow-clip" data-node-id="38:282" data-name="GridOverlay">
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[50px] top-0 w-px" data-node-id="I38:282;34:55" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[101px] top-0 w-px" data-node-id="I38:282;34:56" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[152px] top-0 w-px" data-node-id="I38:282;34:57" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[203px] top-0 w-px" data-node-id="I38:282;34:58" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[254px] top-0 w-px" data-node-id="I38:282;34:59" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[305px] top-0 w-px" data-node-id="I38:282;34:60" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[356px] top-0 w-px" data-node-id="I38:282;34:61" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[50px] w-[402px]" data-node-id="I38:282;34:62" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[101px] w-[402px]" data-node-id="I38:282;34:63" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[152px] w-[402px]" data-node-id="I38:282;34:64" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[203px] w-[402px]" data-node-id="I38:282;34:65" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[254px] w-[402px]" data-node-id="I38:282;34:66" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[305px] w-[402px]" data-node-id="I38:282;34:67" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[356px] w-[402px]" data-node-id="I38:282;34:68" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[407px] w-[402px]" data-node-id="I38:282;34:69" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[458px] w-[402px]" data-node-id="I38:282;34:70" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[509px] w-[402px]" data-node-id="I38:282;34:71" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[560px] w-[402px]" data-node-id="I38:282;34:72" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[611px] w-[402px]" data-node-id="I38:282;34:73" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[662px] w-[402px]" data-node-id="I38:282;34:74" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[713px] w-[402px]" data-node-id="I38:282;34:75" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[764px] w-[402px]" data-node-id="I38:282;34:76" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[815px] w-[402px]" data-node-id="I38:282;34:77" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[866px] w-[402px]" data-node-id="I38:282;34:78" data-name="grid/h" />
+        </div>
+        <a className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[7px_7px_0px_black] flex h-[34px] items-center right-[8px] top-[8px] w-[108px]" data-node-id="38:308" data-name="CurrencyBadge">
+          <div className="bg-[var(--wordoken-color-status-success,#78bb90)] border-[var(--wordoken-color-border-default,#010101)] border-r-2 border-solid content-stretch flex h-[30px] items-center justify-center overflow-clip relative shrink-0 w-[38px]" data-node-id="I38:308;36:122" data-name="level">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center whitespace-nowrap" data-node-id="I38:308;36:123">
+              <p className="leading-[20px]">12</p>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[4px] h-[30px] items-center justify-center px-[4px] relative shrink-0 w-[66px]" data-node-id="I38:308;117:111" data-name="coin-section">
+            <IconCoin className="relative shrink-0 size-[18px]" />
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center whitespace-nowrap" data-node-id="I38:308;36:124">
+              <p className="leading-[20px]">725</p>
+            </div>
+          </div>
+        </a>
+        <div className="-translate-x-1/2 absolute h-[318px] left-1/2 top-[186px] w-[320px]" data-node-id="112:890" data-name="DifficultySelector">
+          <div className="absolute bg-[var(--wordoken-color-action-primary,#f7ce10)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[30px] items-center justify-center left-0 top-0 w-[246px]" data-node-id="I112:890;110:104" data-name="section-tab">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[26px] justify-center leading-[0] not-italic relative shrink-0 text-[18px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[238px]" data-node-id="I112:890;110:105">
+              <p className="leading-[normal]">SELECT DIFFICULTY</p>
+            </div>
+          </div>
+          <div className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex flex-col h-[290px] items-center left-0 top-[28px] w-[320px]" data-node-id="I112:890;110:86" data-name="panel">
+            <div className="bg-[var(--wordoken-color-surface-default,white)] content-stretch flex gap-[16px] h-[94px] items-start px-[16px] py-[var(--wordoken-space-1,4px)] relative shrink-0 w-full" data-node-id="I112:890;110:87" data-name="DifficultyOption">
+              <div className="relative shrink-0 size-[34px]" data-node-id="I112:890;110:87;36:100" data-name="radio">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRadio} />
+              </div>
+              <div className="bg-white content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start min-w-px overflow-clip relative" data-node-id="I112:890;110:87;36:101" data-name="content">
+                <div className="bg-[var(--wordoken-color-action-secondary,#78bb90)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch flex items-center justify-center overflow-clip px-[8px] relative shrink-0" data-node-id="I112:890;110:87;114:124" data-name="title-badge">
+                  <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[20px] text-[color:var(--wordoken-color-text-primary,#010101)] whitespace-nowrap" data-node-id="I112:890;110:87;36:102">
+                    EASY
+                  </p>
+                </div>
+                <div className="[word-break:break-word] font-['Fixture:Expanded_Medium'] leading-[0] not-italic relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] w-[234px] whitespace-pre-wrap" data-node-id="I112:890;110:87;36:103">
+                  <p className="leading-[18px] mb-0">{`•  6 LETTERS`}</p>
+                  <p className="leading-[18px] mb-0">{`•  1 RED LETTER`}</p>
+                  <p className="leading-[18px]">{`•  NO KNOCKOUTS`}</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-[var(--wordoken-color-border-default,#010101)] h-[2px] relative shrink-0 w-[292px]" data-node-id="I112:890;110:102" data-name="divider" />
+            <a className="bg-[var(--wordoken-color-surface-default,white)] content-stretch cursor-pointer flex gap-[16px] h-[94px] items-start px-[16px] py-[var(--wordoken-space-1,4px)] relative shrink-0 w-full" data-node-id="I112:890;110:92" data-name="DifficultyOption">
+              <div className="relative shrink-0 size-[34px]" data-node-id="I112:890;110:92;114:104" data-name="radio">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRadio1} />
+              </div>
+              <div className="bg-white content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start min-w-px overflow-clip relative" data-node-id="I112:890;110:92;114:105" data-name="content">
+                <div className="bg-[var(--wordoken-color-bg-blue,#4377bc)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch flex items-center justify-center overflow-clip px-[8px] relative shrink-0" data-node-id="I112:890;110:92;114:125" data-name="title-badge">
+                  <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[20px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I112:890;110:92;114:106">
+                    MEDIUM
+                  </p>
+                </div>
+                <div className="[word-break:break-word] font-['Fixture:Expanded_Medium'] leading-[0] not-italic relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left w-[234px] whitespace-pre-wrap" data-node-id="I112:890;110:92;114:107">
+                  <p className="leading-[18px] mb-0">{`•  7 LETTERS`}</p>
+                  <p className="leading-[18px] mb-0">{`•  1 RED LETTER`}</p>
+                  <p className="leading-[18px]">{`•  KNOCKOUTS ALLOWED`}</p>
+                </div>
+              </div>
+            </a>
+            <div className="bg-[var(--wordoken-color-border-default,#010101)] h-[2px] relative shrink-0 w-[292px]" data-node-id="I112:890;110:103" data-name="divider" />
+            <a className="bg-[var(--wordoken-color-surface-default,white)] content-stretch cursor-pointer flex gap-[16px] h-[94px] items-start px-[16px] py-[var(--wordoken-space-1,4px)] relative shrink-0 w-full" data-node-id="I112:890;110:97" data-name="DifficultyOption">
+              <div className="relative shrink-0 size-[34px]" data-node-id="I112:890;110:97;114:114" data-name="radio">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRadio1} />
+              </div>
+              <div className="bg-white content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start min-w-px overflow-clip relative" data-node-id="I112:890;110:97;114:115" data-name="content">
+                <div className="bg-[var(--wordoken-color-action-destructive,#e54c34)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch flex items-center justify-center overflow-clip px-[8px] relative shrink-0" data-node-id="I112:890;110:97;114:127" data-name="title-badge">
+                  <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[20px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I112:890;110:97;114:116">
+                    HARD
+                  </p>
+                </div>
+                <div className="[word-break:break-word] font-['Fixture:Expanded_Medium'] leading-[0] not-italic relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left w-[234px] whitespace-pre-wrap" data-node-id="I112:890;110:97;114:117">
+                  <p className="leading-[18px] mb-0">{`•  8 LETTERS`}</p>
+                  <p className="leading-[18px] mb-0">{`•  2 RED LETTERS`}</p>
+                  <p className="leading-[18px]">{`•  FASTER KNOCKOUTS`}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a className="-translate-x-1/2 absolute bg-[var(--wordoken-color-surface-default,white)] content-stretch cursor-pointer drop-shadow-[7px_7px_0px_black] flex h-[36px] items-center left-1/2 top-[520px] w-[320px]" data-node-id="38:331" data-name="SplitActionButton">
+          <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-[var(--wordoken-color-border-default,#010101)] border-b-2 border-l-2 border-solid border-t-2 content-stretch flex h-[36px] items-center justify-center relative shrink-0 w-[276px]" data-node-id="I38:331;121:111" data-name="label-surface">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[32px] justify-center leading-[0] not-italic relative shrink-0 text-[17px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[260px]" data-node-id="I38:331;121:112">
+              <p className="leading-[normal]">HOW TO PLAY</p>
+            </div>
+          </div>
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch flex h-[36px] items-center justify-center relative shrink-0 w-[44px]" data-node-id="I38:331;121:113" data-name="icon-surface">
+            <div className="relative shrink-0 size-[20px]" data-node-id="I38:331;121:114" data-name="icon">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+            </div>
+          </div>
+        </a>
+        <a className="-translate-x-1/2 absolute bg-[var(--wordoken-color-surface-default,white)] content-stretch cursor-pointer drop-shadow-[7px_7px_0px_black] flex h-[60px] items-center left-1/2 top-[572px] w-[320px]" data-node-id="38:339" data-name="SplitActionButton">
+          <div className="bg-[var(--wordoken-color-action-secondary,#78bb90)] border-[var(--wordoken-color-border-default,#010101)] border-b-2 border-l-2 border-solid border-t-2 content-stretch flex h-[60px] items-center justify-center relative shrink-0 w-[276px]" data-node-id="I38:339;110:114" data-name="label-surface">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[56px] justify-center leading-[0] not-italic relative shrink-0 text-[30px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[260px]" data-node-id="I38:339;110:115">
+              <p className="leading-[normal]">START GAME</p>
+            </div>
+          </div>
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch flex h-[60px] items-center justify-center relative shrink-0 w-[44px]" data-node-id="I38:339;110:116" data-name="icon-surface">
+            <div className="relative shrink-0 size-[24px]" data-node-id="I38:339;110:117" data-name="icon">
+              <div className="absolute left-0 size-[24px] top-0" data-node-id="I38:339;110:117;34:5" data-name="vector">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+              </div>
+            </div>
+          </div>
+        </a>
+        <div className="-translate-x-1/2 absolute bottom-[6px] content-stretch flex h-[86px] items-start justify-between left-1/2 w-[320px]" data-node-id="38:346" data-name="BottomNav">
+          <div className="content-stretch flex flex-col gap-[8px] h-[86px] items-center relative shrink-0 w-[64px]" data-node-id="I38:346;35:151" data-name="item/Home">
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[60px] items-center justify-center relative shrink-0 w-[64px]" data-node-id="I38:346;210:312" data-name="icon-box">
+              <ArtworkHouse className="relative shrink-0 size-[46px]" />
+            </div>
+            <p className="[text-underline-position:from-font] [word-break:break-word] decoration-from-font decoration-solid font-['Montserrat:Medium'] font-medium leading-[normal] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] underline whitespace-nowrap" data-node-id="I38:346;35:155">
+              Home
+            </p>
+          </div>
+          <a className="content-stretch cursor-pointer flex flex-col gap-[8px] h-[86px] items-center relative shrink-0 w-[64px]" data-node-id="I38:346;35:156" data-name="item/Archive">
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[60px] items-center justify-center relative shrink-0 w-[64px]" data-node-id="I38:346;210:313" data-name="icon-box">
+              <ArtworkBookMuted className="opacity-60 relative shrink-0 size-[46px]" />
+            </div>
+            <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[normal] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I38:346;35:160">
+              Archive
+            </p>
+          </a>
+          <a className="content-stretch cursor-pointer flex flex-col gap-[8px] h-[86px] items-center relative shrink-0 w-[64px]" data-node-id="I38:346;35:161" data-name="item/Store">
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[60px] items-center justify-center relative shrink-0 w-[64px]" data-node-id="I38:346;210:314" data-name="icon-box">
+              <ArtworkCartMuted className="opacity-60 relative shrink-0 size-[46px]" />
+            </div>
+            <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[normal] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I38:346;35:165">
+              Store
+            </p>
+          </a>
+          <a className="content-stretch cursor-pointer flex flex-col gap-[8px] h-[86px] items-center relative shrink-0 w-[64px]" data-node-id="I38:346;35:166" data-name="item/Settings">
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[60px] items-center justify-center relative shrink-0 w-[64px]" data-node-id="I38:346;210:315" data-name="icon-box">
+              <ArtworkSettingsGearMuted className="opacity-60 relative shrink-0 size-[46px]" />
+            </div>
+            <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[normal] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I38:346;35:170">
+              Settings
+            </p>
+          </a>
+        </div>
+        <div className="-translate-x-1/2 absolute bg-[var(--wordoken-color-surface-default,white)] border-[length:var(--wordoken-stroke-default,2px)] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex gap-[var(--wordoken-space-0,0px)] h-[44px] items-center justify-center left-1/2 pl-[var(--wordoken-space-3,12px)] pr-[var(--wordoken-space-0,0px)] py-[var(--wordoken-space-0,0px)] top-[50px] w-[320px]" data-node-id="345:4225" data-name="Home / username header">
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Fixture:Expanded_Black'] leading-[normal] min-w-px not-italic relative text-[20px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center" data-node-id="I345:4225;343:2330">
+            Guest445
+          </p>
+          <a className="bg-[var(--wordoken-color-surface-default,white)] border-[length:var(--wordoken-stroke-default,2px)] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer flex items-center justify-center relative shrink-0 size-[44px]" data-node-id="I345:4225;343:2331" data-name="edit-username">
+            <div className="relative shrink-0 size-[24px]" data-node-id="I345:4225;343:2331;121:141" data-name="icon">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
+            </div>
+          </a>
+        </div>
+        <a className="absolute bg-[var(--wordoken-color-surface-default,white)] border-[length:var(--wordoken-stroke-default,2px)] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[4px_4px_0px_black] flex gap-[var(--wordoken-space-0,0px)] h-[32px] items-center justify-center left-[8px] p-[var(--wordoken-space-0,0px)] top-[8px] w-[64px]" data-node-id="345:4240" data-name="Home / EXIT to Start">
+          <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I345:4240;288:1997">
+            EXIT
+          </p>
+        </a>
+        <div className="-translate-x-1/2 absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[60px] items-center justify-center left-1/2 px-[var(--wordoken-space-2,8px)] py-[var(--wordoken-space-3,12px)] top-[110px] w-[320px]" data-node-id="459:6447" data-name="Home / instruction">
+          <div className="[word-break:break-word] flex flex-col font-['Montserrat:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[304px]" data-node-id="I459:6447;459:2743">
+            <p className="leading-[normal] mb-0">Make words that contain the red letter.</p>
+            <p className="leading-[normal]">Score more points to win.</p>
+          </div>
+        </div>
+        <a className="-translate-x-1/2 absolute block cursor-pointer left-[calc(50%+136px)] size-[44px] top-[50px]" data-node-id="507:4790" data-name="Home / Edit Avatar target" />
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: UI/Currency Level: Font(family: "Fixture", style: Expanded Black, size: 16, weight: 900, lineHeight: 20, letterSpacing: 0), UI/Currency Amount: Font(family: "Fixture", style: Expanded Black, size: 14, weight: 900, lineHeight: 20, letterSpacing: 0), Shadow/Offset: Effect(type: DROP_SHADOW, color: #000000, offset: (7, 7), radius: 0, spread: 0), UI/Section Tab: Font(family: "Fixture", style: Expanded Black, size: 18, weight: 900, lineHeight: 100, letterSpacing: 0), UI/Standard Action: Font(family: "Fixture", style: Expanded Black, size: 20, weight: 900, lineHeight: 100, letterSpacing: 0), UI/Compact Action: Font(family: "Fixture", style: Expanded Black, size: 17, weight: 900, lineHeight: 100, letterSpacing: 0), UI/Split Hero Action: Font(family: "Fixture", style: Expanded Black, size: 30, weight: 900, lineHeight: 100, letterSpacing: 0), UI/Nav Label: Font(family: "Montserrat", style: Medium, size: 14, weight: 500, lineHeight: 100, letterSpacing: 0), UI/Field Tab: Font(family: "Fixture", style: Expanded Black, size: 13, weight: 900, lineHeight: 100, letterSpacing: 0), Shadow/Offset Small: Effect(type: DROP_SHADOW, color: #000000, offset: (4, 4), radius: 0, spread: 0), UI/Body Strong: Font(family: "Montserrat", style: SemiBold, size: 14, weight: 600, lineHeight: 100, letterSpacing: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## GridOverlay
+**Node ID:** 34:54
+
+Reusable 402 × 873 comic-paper grid overlay for mobile screens.
+
+## Tone=Green
+**Node ID:** 36:121
+
+Compact player level and coin balance indicator.
+
+## CurrencyBadge
+**Node ID:** 210:375
+
+Level and coin balance. Use Tone per screen and text properties for server-supplied values. Edge-align with the top-right utility, not the 320px content rail.
+
+## Icon/Coin
+**Node ID:** 117:106
+
+Outlined gold coin symbol used in currency balances.
+
+## Artwork/coins_stack
+**Node ID:** 207:1275
+
+Converted from supplied coins\_stack.svg embedded PNG into editable vector paths, preserving source illustration colors, FIT placement and 64px asset geometry. No built-in UI shadow. Existing component identity retained.
+
+## DifficultySelector
+**Node ID:** 110:85
+
+Grouped difficulty picker with a yellow section tab, one shared outer surface, row dividers, and reusable DifficultyOption instances.
+
+## DifficultyOption
+**Node ID:** 36:104
+
+Selectable game difficulty with editable rule summary.
+
+## SplitActionButton
+**Node ID:** 110:120
+
+Two-cell action control: colored label surface and distinct white icon cell. Use for forward actions such as Continue and Copy Link.
+
+## Icon/QuestionPlain
+**Node ID:** 209:455
+
+Plain question-mark utility for compact How to Play split actions.
+
+## Icon/ArrowRight
+**Node ID:** 34:7
+
+Editable 24 px system icon.
+
+## BottomNav
+**Node ID:** 35:234
+
+Four-destination mobile navigation with an active-tab variant.
+
+## Artwork/house
+**Node ID:** 207:1288
+
+Converted from supplied house.svg embedded PNG into editable vector paths, preserving source illustration colors, FIT placement and 64px asset geometry. No built-in UI shadow. Existing component identity retained.
+
+## Artwork/book_muted
+**Node ID:** 221:743
+
+Inactive grayscale treatment derived from the supplied artwork, without changing source files.
+
+## Artwork/cart_muted
+**Node ID:** 221:768
+
+Muted grayscale vector derivative of cart; no raster image or baked-in shadow. Existing inactive navigation identity and opacity retained.
+
+## Artwork/settings_gear_muted
+**Node ID:** 221:770
+
+Muted grayscale vector derivative of settings\_gear; no raster image or baked-in shadow. Existing inactive navigation identity and opacity retained.
+
+## HomeUsernameHeader
+**Node ID:** 344:2202
+
+44px Home username bar with flush 44×44 edit/cancel/save boxes. Each control has a complete 2px black outline, not an inset small button or separator-only cell. Existing copy, typography, outer shadow and actions retained.
+
+## UtilityIconButton
+**Node ID:** 121:140
+
+Small edge-floating square utility control used for sound and navigation actions.
+
+## Icon/Pencil
+**Node ID:** 34:40
+
+Editable 24 px system icon.
+
+## TutorialExit
+**Node ID:** 288:1996
+
+Always-visible tutorial exit. Screen instances navigate to Home.
+
+## InstructionBlock
+**Node ID:** 459:2742
+
+Two-line sentence-case Home instructions. 60px panel provides breathing room, with 12px vertical padding and the standard offset shadow.
+
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

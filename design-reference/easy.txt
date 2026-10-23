@@ -1,0 +1,361 @@
+const imgSourceArtwork = "https://www.figma.com/api/mcp/asset/3c1381fb-991b-492a-bb8d-4011ce23c8da.svg";
+const imgFrame = "https://www.figma.com/api/mcp/asset/02968f84-c94f-4311-914d-be0cee23abe8.svg";
+const imgLegsBlack = "https://www.figma.com/api/mcp/asset/1fce4fac-5a80-4ba2-9bd6-497837f79830.png";
+const imgTorsoBlack = "https://www.figma.com/api/mcp/asset/d836e6d6-7cad-407b-9584-dcb25f9d8e32.png";
+const imgHeadBackRed = "https://www.figma.com/api/mcp/asset/bf26b715-3448-4684-ae09-93e8fc99da93.png";
+const imgSkinLight = "https://www.figma.com/api/mcp/asset/923f6ebf-986c-4ed5-b3e2-1f30a2038cf3.png";
+const imgEyesAngry = "https://www.figma.com/api/mcp/asset/fdf6b222-d401-41fa-8597-6e79f5ffc550.png";
+const imgVector = "https://www.figma.com/api/mcp/asset/ee7430d0-4c74-4232-beb1-dc73a92e077b.svg";
+
+function ArtworkBurstGreenSmall({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="207:1262" data-name="Artwork/burst_green_small">
+      <div className="absolute inset-[0_2.42%]" data-node-id="207:1263" data-name="source artwork">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSourceArtwork} />
+      </div>
+    </div>
+  );
+}
+
+type ScoreGainProps = {
+  className?: string;
+  amount?: string;
+};
+
+function ScoreGain({ className, amount = "+5" }: ScoreGainProps) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="212:371" data-name="ScoreGain">
+      <ArtworkBurstGreenSmall className="absolute left-0 size-[64px] top-0" />
+      <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[54px] justify-center leading-[0] left-[32px] not-italic text-[19px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[32px] w-[64px]" data-node-id="212:376">
+        <p className="leading-[normal]">{amount}</p>
+      </div>
+    </div>
+  );
+}
+
+type LetterTileProps = {
+  className?: string;
+  letter?: string;
+  state?: "Default" | "Fixed";
+};
+
+function LetterTile({ className, letter = "A", state = "Default" }: LetterTileProps) {
+  const isFixed = state === "Fixed";
+  return (
+    <div className={className || `border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative size-[68px] ${isFixed ? "bg-[var(--wordoken-color-action-destructive,#e54c34)]" : "bg-[var(--wordoken-color-surface-default,white)]"}`} id={isFixed ? "node-36_112" : "node-36_108"}>
+      <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[68px] justify-center leading-[0] left-[calc(50%+0.02px)] not-italic text-[38px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[calc(50%-3.51px)] w-[64px]" data-node-id="36:109">
+        <p className="leading-[normal]">{letter}</p>
+      </div>
+    </div>
+  );
+}
+
+function IconBackspace({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[28px]"} data-node-id="168:147" data-name="Icon/Backspace">
+      <div className="absolute left-0 size-[28px] top-0" data-node-id="168:148" data-name="Frame">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+      </div>
+    </div>
+  );
+}
+
+type GameplayScoreCardProps = {
+  className?: string;
+  score?: string;
+  username?: string;
+};
+
+function GameplayScoreCard({ className, score = "15", username = "Guest445" }: GameplayScoreCardProps) {
+  return (
+    <div className={className || "drop-shadow-[7px_7px_0px_black] h-[110px] relative w-[146px]"} data-node-id="156:147" data-name="GameplayScoreCard">
+      <div className="absolute bg-[#f7ce10] border-2 border-[#010101] border-solid h-[34px] left-0 top-0 w-[146px]" data-node-id="156:149" data-name="username header" />
+      <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[26px] justify-center leading-[0] left-[73px] not-italic text-[#010101] text-[12px] text-center top-[17px] w-[136px]" data-node-id="156:150">
+        <p className="leading-[normal]">{username}</p>
+      </div>
+      <div className="absolute bg-white border-2 border-[#010101] border-solid h-[76px] left-0 top-[34px] w-[146px]" data-node-id="156:151" data-name="score window" />
+      <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[76px] justify-center leading-[0] left-[73px] not-italic text-[#010101] text-[64px] text-center top-[72px] tracking-[-1px] w-[136px]" data-node-id="156:152">
+        <p className="leading-[normal]">{score}</p>
+      </div>
+    </div>
+  );
+}
+
+export default function Component10AGameplayEasy() {
+  return (
+    <div className="bg-[var(--wordoken-color-bg-blue,#4377bc)] content-stretch flex flex-col items-center relative size-full" data-node-id="266:2327" data-name="10A Gameplay / Easy">
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start max-w-[402px] min-h-[740px] overflow-clip relative w-full" data-node-id="565:7203" data-name="Responsive / centered game column">
+        <div className="absolute inset-0 overflow-clip" data-node-id="266:2328" data-name="GridOverlay">
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[50px] top-0 w-px" data-node-id="I266:2328;34:55" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[101px] top-0 w-px" data-node-id="I266:2328;34:56" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[152px] top-0 w-px" data-node-id="I266:2328;34:57" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[203px] top-0 w-px" data-node-id="I266:2328;34:58" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[254px] top-0 w-px" data-node-id="I266:2328;34:59" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[305px] top-0 w-px" data-node-id="I266:2328;34:60" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[356px] top-0 w-px" data-node-id="I266:2328;34:61" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[50px] w-[402px]" data-node-id="I266:2328;34:62" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[101px] w-[402px]" data-node-id="I266:2328;34:63" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[152px] w-[402px]" data-node-id="I266:2328;34:64" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[203px] w-[402px]" data-node-id="I266:2328;34:65" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[254px] w-[402px]" data-node-id="I266:2328;34:66" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[305px] w-[402px]" data-node-id="I266:2328;34:67" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[356px] w-[402px]" data-node-id="I266:2328;34:68" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[407px] w-[402px]" data-node-id="I266:2328;34:69" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[458px] w-[402px]" data-node-id="I266:2328;34:70" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[509px] w-[402px]" data-node-id="I266:2328;34:71" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[560px] w-[402px]" data-node-id="I266:2328;34:72" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[611px] w-[402px]" data-node-id="I266:2328;34:73" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[662px] w-[402px]" data-node-id="I266:2328;34:74" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[713px] w-[402px]" data-node-id="I266:2328;34:75" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[764px] w-[402px]" data-node-id="I266:2328;34:76" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[815px] w-[402px]" data-node-id="I266:2328;34:77" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[866px] w-[402px]" data-node-id="I266:2328;34:78" data-name="grid/h" />
+        </div>
+        <div className="-translate-x-1/2 absolute bottom-[16px] left-1/2 top-[16px] w-[320px]" data-node-id="266:2360" data-name="Gameplay / easy mode">
+          <div className="absolute bottom-0 content-stretch flex gap-[16px] h-[40px] items-start left-0 right-0" data-node-id="266:2365" data-name="bottom anchored actions">
+            <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex gap-[12px] h-[40px] items-center justify-center px-[4px] relative shrink-0 w-[96px]" data-node-id="266:2366" data-name="Clear">
+              <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[15px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[196px]" data-node-id="I266:2366;35:13">
+                <p className="leading-[normal]">CLEAR</p>
+              </div>
+            </div>
+            <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex gap-[12px] h-[40px] items-center justify-center px-[4px] relative shrink-0 w-[96px]" data-node-id="266:2367" data-name="Shuffle">
+              <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[15px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[196px]" data-node-id="I266:2367;35:13">
+                <p className="leading-[normal]">SHUFFLE</p>
+              </div>
+            </div>
+            <a className="bg-[var(--wordoken-color-action-secondary,#78bb90)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[7px_7px_0px_black] flex gap-[12px] h-[40px] items-center justify-center px-[4px] relative shrink-0 w-[96px]" data-node-id="266:2368" data-name="Submit">
+              <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[15px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[196px]" data-node-id="I266:2368;35:33">
+                <p className="leading-[normal]">SUBMIT</p>
+              </div>
+            </a>
+          </div>
+          <div className="absolute inset-[0_0_78px_0]" data-node-id="266:2369" data-name="Gameplay content / distribute vertically">
+            <div className="absolute content-stretch flex h-[36px] items-center justify-center left-0 top-0 w-[320px]" data-node-id="266:2370" data-name="Countdown / centered">
+              <div className="bg-[var(--wordoken-color-bg-green,#78bb90)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[36px] items-center justify-center px-[8px] relative shrink-0 w-[155px]" data-node-id="266:2371" data-name="timer">
+                <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[32px] justify-center leading-[0] not-italic relative shrink-0 text-[28px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center tracking-[0.4px] w-[147px]" data-node-id="266:2372">
+                  <p className="leading-[normal]">00:20</p>
+                </div>
+              </div>
+            </div>
+            <div className="absolute content-stretch flex gap-[28px] h-[110px] items-start left-0 top-[53px] w-[320px]" data-node-id="266:2373" data-name="Scores / shared column">
+              <GameplayScoreCard className="drop-shadow-[7px_7px_0px_black] h-[110px] relative shrink-0 w-[146px]" />
+              <div className="drop-shadow-[7px_7px_0px_black] h-[110px] relative shrink-0 w-[146px]" data-node-id="266:2375" data-name="Opponent score">
+                <div className="absolute bg-[#f7ce10] border-2 border-[#010101] border-solid h-[34px] left-0 top-0 w-[146px]" data-node-id="I266:2375;156:149" data-name="username header" />
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[26px] justify-center leading-[0] left-[73px] not-italic text-[#010101] text-[12px] text-center top-[17px] w-[136px]" data-node-id="I266:2375;156:150">
+                  <p className="leading-[normal]">RobbieRobertson</p>
+                </div>
+                <div className="absolute bg-white border-2 border-[#010101] border-solid h-[76px] left-0 top-[34px] w-[146px]" data-node-id="I266:2375;156:151" data-name="score window" />
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[76px] justify-center leading-[0] left-[73px] not-italic text-[#010101] text-[64px] text-center top-[72px] tracking-[-1px] w-[136px]" data-node-id="I266:2375;156:152">
+                  <p className="leading-[normal]">58</p>
+                </div>
+              </div>
+            </div>
+            <div className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid drop-shadow-[7px_7px_0px_black] h-[160px] left-0 top-[179px] w-[320px]" data-node-id="266:2376" data-name="Combat arena">
+              <div className="absolute content-stretch flex gap-[40px] h-[148px] items-center justify-center left-[18px] overflow-clip top-[4px] w-[280px]" data-node-id="I266:2376;168:195" data-name="Fighters">
+                <div className="h-[142px] relative shrink-0 w-[85.634px]" data-node-id="I266:2376;235:731" data-name="Player fighter">
+                  <div className="absolute h-[52.031px] left-[24.93px] top-[89.97px] w-[37.939px]" data-node-id="I266:2376;235:731;234:9" data-name="Legs_Black">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[3260.42%] left-[-5620%] max-w-none top-[-2262.5%] w-[5794.29%]" src={imgLegsBlack} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[54.198px] left-[16.26px] top-[57.45px] w-[69.374px]" data-node-id="I266:2376;235:731;234:10" data-name="Torso_Black">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[4058%] left-[-2190.63%] max-w-none top-[-3956%] w-[3198.44%]" src={imgTorsoBlack} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[68.29px] left-0 top-0 w-[84.55px]" data-node-id="I266:2376;235:731;234:11" data-name="HeadBack_Red">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[3220.63%] left-[-511.54%] max-w-none top-[-760.32%] w-[2625.64%]" src={imgHeadBackRed} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[31.435px] left-[36.85px] top-[23.85px] w-[47.695px]" data-node-id="I266:2376;235:731;234:12" data-name="Skin_Light">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[7062.07%] left-[-2634.09%] max-w-none top-[-6375.86%] w-[4579.55%]" src={imgSkinLight} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[20.595px] left-[54.2px] top-[31.44px] w-[29.267px]" data-node-id="I266:2376;235:731;234:13" data-name="Eyes_Angry">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[10773.68%] left-[-6433.33%] max-w-none top-[-7752.63%] w-[7585.19%]" src={imgEyesAngry} />
+                    </div>
+                  </div>
+                </div>
+                <div className="h-[142px] relative shrink-0 w-[65.32px]" data-node-id="I266:2376;235:797" data-name="Opponent fighter">
+                  <div className="absolute h-[49.227px] left-[19.88px] top-[92.77px] w-[29.347px]" data-node-id="I266:2376;235:797;234:15" data-name="Legs_Black">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[3938.46%] left-[-6396.77%] max-w-none top-[-1.92%] w-[6500%]" src={imgSkinLight} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[51.12px] left-[22.72px] top-[63.43px] w-[34.08px]" data-node-id="I266:2376;235:797;234:16" data-name="Torso_Black">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[3757.41%] left-[-5533.33%] max-w-none top-[-2587.04%] w-[5686.11%]" src={imgTorsoBlack} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[71.947px] left-0 top-0 w-[65.32px]" data-node-id="I266:2376;235:797;234:17" data-name="HeadBack_Red">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[2694.74%] left-[-1944.93%] max-w-none top-[-1988.16%] w-[2920.29%]" src={imgSkinLight} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[28.4px] left-0 top-[31.24px] w-[38.813px]" data-node-id="I266:2376;235:797;234:18" data-name="Skin_Light">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[5216.67%] left-[-4129.27%] max-w-none top-[-4590%] w-[4946.34%]" src={imgLegsBlack} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[17.04px] left-[2.84px] top-[39.76px] w-[21.773px]" data-node-id="I266:2376;235:797;234:19" data-name="Eyes_Normal">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[11377.78%] left-[-5791.3%] max-w-none top-[-9650%] w-[8760.87%]" src={imgSkinLight} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="absolute h-[36px] left-0 top-[355px] w-[320px]" data-node-id="266:2377" data-name="Word tray / shared feedback surface">
+              <div className="absolute content-stretch flex gap-[var(--wordoken-space-0,0px)] h-[36px] items-center left-0 p-[var(--wordoken-stroke-default,2px)] top-0 w-[320px]" data-node-id="385:4748" data-name="Prototype / native found-word scroll / 266:2378">
+                <div className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex gap-[var(--wordoken-space-0,0px)] h-[36px] items-center left-0 p-[var(--wordoken-stroke-default,2px)] top-0 w-[320px]" data-node-id="385:4749" data-name="FoundWordsTray / shared chrome" />
+                <div className="flex-[1_0_0] h-[32px] min-w-px overflow-x-auto overflow-y-clip relative" data-node-id="385:4783" data-name="Found words / native horizontal viewport">
+                  <div className="[word-break:break-word] absolute content-stretch flex font-['Fixture:Expanded_Medium'] gap-[28px] h-[32px] items-center leading-[normal] left-0 not-italic px-[var(--wordoken-space-3,12px)] text-[15px] text-[color:var(--wordoken-color-text-primary,#010101)] top-0 whitespace-nowrap" data-node-id="385:4784" data-name="Found words / native text row">
+                    <p className="relative shrink-0" data-node-id="385:4785">
+                      PLANET
+                    </p>
+                    <p className="relative shrink-0" data-node-id="385:4786">
+                      PLANT
+                    </p>
+                    <p className="relative shrink-0" data-node-id="385:4787">
+                      PLATE
+                    </p>
+                    <p className="relative shrink-0" data-node-id="385:4788">
+                      PETAL
+                    </p>
+                    <p className="relative shrink-0" data-node-id="385:4789">
+                      LEAPT
+                    </p>
+                  </div>
+                </div>
+                <div className="content-stretch flex h-[32px] items-center justify-center overflow-clip relative shrink-0 w-[40px]" data-node-id="385:4790" data-name="Found words / next native slot">
+                  <button className="bg-[var(--wordoken-color-surface-default,white)] content-stretch cursor-pointer flex h-[32px] items-center justify-center relative shrink-0 w-[40px]" data-node-id="385:4791" data-name="Found words / next native button">
+                    <div className="relative shrink-0 size-[24px]" data-node-id="I385:4791;121:141" data-name="icon">
+                      <div className="absolute left-0 size-[24px] top-0" data-node-id="I385:4791;121:141;34:5" data-name="vector">
+                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="absolute drop-shadow-[7px_7px_0px_black] h-[44px] left-0 top-[407px] w-[320px]" data-node-id="266:2379" data-name="word entry with backspace">
+              <div className="absolute bg-[#f7ce10] border-2 border-[#010101] border-solid left-0 size-[44px] top-0" data-node-id="I266:2379;156:155" data-name="backspace" />
+              <div className="absolute bg-white border-2 border-[#010101] border-solid h-[44px] left-[44px] top-0 w-[276px]" data-node-id="I266:2379;156:157" data-name="entry" />
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[40px] justify-center leading-[0] left-[182px] not-italic text-[#010101] text-[32px] text-center top-[22px] w-[260px]" data-node-id="I266:2379;156:158">
+                <p className="leading-[normal]">PLANET</p>
+              </div>
+              <IconBackspace className="absolute left-[8px] size-[28px] top-[8px]" />
+            </div>
+            <div className="absolute bottom-[6px] content-stretch flex flex-col gap-[var(--wordoken-space-4,16px)] h-[152px] items-start left-0 right-0" data-node-id="266:2380" data-name="Easy letters / 3 x 2">
+              <div className="content-stretch flex gap-[16px] h-[68px] items-center justify-center relative shrink-0 w-[320px]" data-node-id="266:2381" data-name="Easy letters / row 1">
+                <LetterTile className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[68px]" letter="P" />
+                <LetterTile className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[68px]" />
+                <LetterTile className="bg-[var(--wordoken-color-action-destructive,#e54c34)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[68px]" letter="T" state="Fixed" />
+              </div>
+              <div className="content-stretch flex gap-[16px] h-[68px] items-center justify-center relative shrink-0 w-[320px]" data-node-id="266:2386" data-name="Easy letters / row 2">
+                <LetterTile className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[68px]" letter="L" />
+                <LetterTile className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[68px]" letter="E" />
+                <LetterTile className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[68px]" letter="N" />
+              </div>
+            </div>
+            <ScoreGain className="absolute left-[103px] size-[64px] top-[135px]" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: UI/Small Action: Font(family: "Fixture", style: Expanded Black, size: 15, weight: 900, lineHeight: 100, letterSpacing: 0), Shadow/Offset: Effect(type: DROP_SHADOW, color: #000000, offset: (7, 7), radius: 0, spread: 0), UI/Found Word: Font(family: "Fixture", style: Expanded Medium, size: 15, weight: 500, lineHeight: 100, letterSpacing: 0), UI/Hero Action: Font(family: "Fixture", style: Expanded Black, size: 32, weight: 900, lineHeight: 100, letterSpacing: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## GridOverlay
+**Node ID:** 34:54
+
+Reusable 402 × 873 comic-paper grid overlay for mobile screens.
+
+## Button
+**Node ID:** 35:82
+
+Primary Wordoken action control. Choose style, size, and disabled state; override label and optional icon.
+
+## GameplayScoreCard
+**Node ID:** 156:147
+
+Shared player/opponent score card. Username and Score are editable text properties. Use the same master for gameplay and restrained results; supply values from match state.
+
+## GameplayCombatArena
+**Node ID:** 168:194
+
+Two fitted ninja artwork instances in a white combat window.
+
+## Artwork/Ninja/Punch
+**Node ID:** 234:8
+
+Trimmed supplied sprite pose: Ninja\_Punch\_00063. Separate source-art layers, red bandana, black outfit, light complexion. No UI shadow.
+
+## Artwork/Ninja/React1
+**Node ID:** 234:14
+
+Trimmed supplied sprite pose: Ninja\_React1\_00033. Separate source-art layers, red bandana, black outfit, light complexion. No UI shadow.
+
+## State=Words
+**Node ID:** 156:159
+
+White scrolling found-word list with temporary animated green success overlay.
+
+## FoundWordsTray
+**Node ID:** 168:193
+
+Shared found-word tray with Words/Success states and exposed previous/next visibility. Scene prototype adapters retain linked chrome and arrow icons, using native scene-ID scroll targets because component-local SCROLL\_TO does not scroll in the prototype player. Production TypeScript should derive arrow visibility from actual scroll position and overflow; Figma arrow clicks demonstrate start/end states only.
+
+## UtilityIconButton
+**Node ID:** 121:140
+
+Small edge-floating square utility control used for sound and navigation actions.
+
+## Icon/ArrowRight
+**Node ID:** 34:7
+
+Editable 24 px system icon.
+
+## WordEntryField
+**Node ID:** 156:153
+
+Editable word-entry tray with shared backspace artwork. Word is a text property; input, fixed-letter rules and deletion behavior require application logic.
+
+## Icon/Backspace
+**Node ID:** 168:147
+
+Outlined backspace key with inset cross based on Gameplay reference.
+
+## LetterTile
+**Node ID:** 36:114
+
+68px letter tiles with hard bottom-right shadow. Editable Fixture Expanded Black glyph in a fixed 64x68 label area, optically centered by visible ink rather than advance/line-box bounds. Screen-specific glyph offsets may be refined without detaching.
+
+## ScoreGain
+**Node ID:** 212:371
+
+Transient score gain using supplied burst\_green\_small.svg; place as an overlay on score row. Animation/visibility belongs to gameplay state.
+
+## Artwork/burst_green_small
+**Node ID:** 207:1262
+
+Source: burst\_green\_small.svg. Editable imported vector artwork. No baked-in shadow.
+
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

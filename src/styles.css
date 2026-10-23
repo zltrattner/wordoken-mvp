@@ -1,0 +1,936 @@
+@font-face {
+  font-family: WordokenFixture;
+  src: url('./assets/fonts/Fixture-Expanded-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: WordokenFixture;
+  src: url('./assets/fonts/Fixture-Expanded-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: WordokenFixture;
+  src: url('./assets/fonts/Fixture-Expanded-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Public theme boundary. No document-level resets, runtime state or app policy. */
+.wordoken {
+  --wk-yellow: #f7ce10;
+  --wk-blue: #4377bc;
+  --wk-green: #78bb90;
+  --wk-red: #e54c34;
+  --wk-ink: #010101;
+  --wk-white: #fff;
+  --wk-subtle: #ebe6ed;
+  --wk-border: 2px solid var(--wk-ink);
+  --wk-shadow: 7px 7px 0 #000;
+  --wk-shadow-small: 4px 4px 0 #000;
+  --wk-font: WordokenFixture, sans-serif;
+  --wk-body: Montserrat, sans-serif;
+  color: var(--wk-ink);
+  font-family: var(--wk-font);
+  font-weight: 900;
+  font-synthesis: none;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.wordoken *,
+.wordoken *::before,
+.wordoken *::after {
+  box-sizing: border-box;
+}
+.wordoken p,
+.wordoken h2,
+.wordoken h3 {
+  margin: 0;
+}
+.wordoken button {
+  appearance: none;
+  border-radius: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+.wordoken button:disabled {
+  cursor: default;
+}
+.wordoken :focus-visible {
+  outline: 3px solid var(--wk-ink);
+  outline-offset: 4px;
+}
+.wordoken .icon {
+  display: block;
+  flex: none;
+  object-fit: contain;
+  max-width: none;
+  pointer-events: none;
+}
+.wordoken .surface {
+  background: var(--wk-white);
+  border: var(--wk-border);
+  box-shadow: var(--wk-shadow);
+}
+.wordoken .rail {
+  width: min(320px, calc(100% - 40px));
+  margin-inline: auto;
+}
+.wordoken.screen {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  max-width: 402px;
+  min-height: 620px;
+  height: var(--wk-screen-height, 100svh);
+  margin-inline: auto;
+  overflow-x: clip;
+  background-color: var(--wk-blue);
+  background-image:
+    linear-gradient(to right, transparent 50px, rgba(0, 0, 0, 0.28) 50px, rgba(0, 0, 0, 0.28) 51px),
+    linear-gradient(to bottom, transparent 50px, rgba(0, 0, 0, 0.28) 50px, rgba(0, 0, 0, 0.28) 51px);
+  background-size: 51px 51px;
+}
+.wordoken .action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  height: 44px;
+  font-size: 17px;
+  line-height: 1.15;
+  text-align: center;
+  transition:
+    transform 0.1s,
+    box-shadow 0.1s;
+}
+.wordoken .action:not(:disabled):active {
+  transform: translate(2px, 2px);
+  box-shadow: 5px 5px 0 #000;
+}
+.wordoken .action-label {
+  flex: 1;
+  min-width: 0;
+  padding: 4px;
+}
+.wordoken .tone-yellow {
+  background: var(--wk-yellow);
+}
+.wordoken .tone-green {
+  background: var(--wk-green);
+}
+.wordoken .tone-white {
+  background: var(--wk-white);
+}
+.wordoken .split-action {
+  justify-content: space-between;
+}
+.wordoken .action-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 0 0 42px;
+  background: var(--wk-white);
+  border-left: var(--wk-border);
+}
+.wordoken .utility-row {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8px;
+}
+.wordoken .exit-button {
+  width: 64px;
+  height: 32px;
+  font-size: 13px;
+  box-shadow: var(--wk-shadow-small);
+}
+.wordoken .currency {
+  display: flex;
+  align-items: center;
+  width: 108px;
+  height: 34px;
+  font-size: 14px;
+  line-height: 20px;
+  flex: none;
+}
+.wordoken .level {
+  background: var(--wk-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 38px;
+  border-right: var(--wk-border);
+  font-size: 16px;
+}
+.wordoken .balance {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-size: 14px;
+}
+
+/* Start: natural-flow hero and actions, not a fixed-size screenshot canvas. */
+.wordoken.start-screen {
+  background-color: var(--wk-yellow);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 26px;
+}
+.wordoken .sound-button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--wk-shadow-small);
+  z-index: 2;
+}
+.wordoken .sound-button.is-muted::after {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background: var(--wk-ink);
+  transform: rotate(45deg);
+}
+.wordoken .start-hero {
+  position: relative;
+  flex: 1;
+  min-height: 334px;
+}
+.wordoken .brand-logo {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: min(430px, 100%);
+  width: 430px;
+  max-width: none;
+  object-fit: contain;
+  pointer-events: none;
+}
+.wordoken .hero-callout {
+  position: absolute;
+  left: 50%;
+  top: calc(100% - 384px);
+  transform: translateX(-50%);
+  min-height: 36px;
+  width: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--wk-green);
+  font-size: 13px;
+  text-align: center;
+  padding: 5px 12px;
+  white-space: nowrap;
+}
+.wordoken .start-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.wordoken .hero-action {
+  height: 60px;
+  font-size: 32px;
+}
+.wordoken .start-social {
+  margin-top: 32px;
+}
+.wordoken .social-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+.wordoken .social-group > p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.wordoken .social-group.label-white > p {
+  color: var(--wk-white);
+}
+.wordoken .social-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.wordoken .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  flex: none;
+}
+
+/* Home: related content stays in a single vertical rail. */
+.wordoken.home-screen {
+  background-color: var(--wk-red);
+  display: flex;
+  flex-direction: column;
+}
+.wordoken .home-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  gap: 16px;
+  padding-bottom: 6px;
+}
+.wordoken .username {
+  height: 44px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  font-size: 20px;
+  text-align: center;
+}
+.wordoken .username > span {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wordoken .username > button {
+  align-self: center;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: var(--wk-border);
+  margin-right: -2px;
+  background: var(--wk-white);
+  flex: none;
+}
+.wordoken .instructions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  padding: 10px 6px;
+  text-align: center;
+  font: 600 14px/1.25 var(--wk-body);
+}
+.wordoken .difficulty {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  flex: none;
+}
+.wordoken .section-tab {
+  position: relative;
+  z-index: 1;
+  height: 30px;
+  width: 246px;
+  padding: 2px 4px;
+  background: var(--wk-yellow);
+  font: 900 18px/24px var(--wk-font);
+}
+.wordoken .difficulty-panel {
+  margin-top: -2px;
+  position: relative;
+  z-index: 2;
+  padding: 0 12px;
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+}
+.wordoken .difficulty-option {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 4px 3px;
+  height: 95.333px;
+  cursor: pointer;
+}
+.wordoken .difficulty-option:not(:last-child) {
+  border-bottom: var(--wk-border);
+}
+.wordoken .difficulty-option input {
+  position: absolute;
+  opacity: 0;
+  width: 34px;
+  height: 34px;
+  left: 3px;
+  top: 4px;
+  margin: 0;
+}
+.wordoken .difficulty-option:has(input:focus-visible) {
+  outline: 3px solid var(--wk-ink);
+  outline-offset: -3px;
+}
+.wordoken .difficulty-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.wordoken .difficulty-badge {
+  align-self: flex-start;
+  border: var(--wk-border);
+  padding: 0 8px;
+  font-size: 20px;
+  line-height: 23px;
+}
+.wordoken .difficulty-badge.easy {
+  background: var(--wk-green);
+}
+.wordoken .difficulty-badge.medium {
+  background: var(--wk-blue);
+}
+.wordoken .difficulty-badge.hard {
+  background: var(--wk-red);
+}
+.wordoken .difficulty-rules {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.wordoken .how-button {
+  height: 36px;
+  flex: none;
+}
+.wordoken .start-game-button {
+  height: 60px;
+  flex: none;
+  font-size: 30px;
+}
+.wordoken .bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 86px;
+  flex: none;
+  margin-top: auto;
+}
+.wordoken .bottom-nav button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  background: none;
+  width: 64px;
+}
+.wordoken .nav-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 60px;
+  flex: none;
+}
+.wordoken .nav-box.muted > .icon,
+.wordoken .nav-box.muted > .book-art {
+  opacity: 0.6;
+}
+.wordoken .nav-label {
+  font: 500 14px/18px var(--wk-body);
+}
+.wordoken [aria-current='page'] .nav-label {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.wordoken .book-art {
+  position: relative;
+  display: block;
+  width: 46px;
+  height: 46px;
+}
+.wordoken .book-art img {
+  position: absolute;
+  left: 1.2%;
+  top: 13.9%;
+  width: 97.5%;
+  height: 72.2%;
+  object-fit: contain;
+}
+
+/* Gameplay rows match the 402×740 reference; only free space stretches. */
+.wordoken .gameplay {
+  height: 100%;
+  padding-block: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.wordoken .gameplay > * {
+  flex-shrink: 0;
+}
+.wordoken .gameplay > .scores {
+  margin-top: 1px;
+}
+.wordoken .gameplay > .arena {
+  height: 160px;
+}
+.wordoken .timer-row {
+  display: flex;
+  justify-content: center;
+  height: 36px;
+}
+.wordoken .timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 155px;
+  height: 36px;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  background: var(--wk-green);
+}
+.wordoken .scores {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  position: relative;
+  height: 110px;
+}
+.wordoken .score-card {
+  width: calc((100% - 28px) / 2);
+  height: 110px;
+  flex: none;
+  overflow: visible;
+}
+.wordoken .score-card h2 {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: var(--wk-border);
+  background: var(--wk-yellow);
+  font-size: 12px;
+  font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-inline: 3px;
+}
+.wordoken .score-card p {
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  line-height: 76px;
+  letter-spacing: -1px;
+}
+.wordoken .score-gain {
+  position: absolute;
+  left: 103px;
+  top: 82px;
+  width: 64px;
+  height: 64px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wordoken .score-gain .icon {
+  position: absolute;
+  width: 61px;
+  height: 64px;
+}
+.wordoken .score-gain > span {
+  z-index: 1;
+  font-size: 19px;
+}
+.wordoken .arena {
+  width: 100%;
+  min-height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.wordoken .fighters {
+  width: 280px;
+  max-width: 100%;
+  height: 148px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.wordoken .fighter {
+  position: relative;
+  height: 142px;
+  flex: none;
+}
+.wordoken .sprite-crop {
+  position: absolute;
+  overflow: hidden;
+  pointer-events: none;
+}
+.wordoken .sprite-crop img {
+  position: absolute;
+  max-width: none;
+  display: block;
+}
+.wordoken .word-tray {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 36px;
+  min-width: 0;
+}
+.wordoken .found-words {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  height: 32px;
+  padding-inline: 12px;
+  overflow: auto hidden;
+  scrollbar-width: none;
+  overscroll-behavior-inline: contain;
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.wordoken .found-words::-webkit-scrollbar {
+  display: none;
+}
+.wordoken .found-words > span {
+  flex: none;
+}
+.wordoken .word-tray > button {
+  border: 0;
+  background: var(--wk-white);
+  width: 40px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+.wordoken .word-feedback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--wk-white);
+  font-size: 16px;
+  animation: wk-feedback-in 0.18s ease-out;
+  pointer-events: none;
+}
+.wordoken .word-feedback.success {
+  background: var(--wk-green);
+  font-size: 22px;
+}
+.wordoken .word-feedback.error {
+  color: #ba3020;
+  font-size: 13px;
+}
+.wordoken .word-feedback > span {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 32px;
+  border-left: var(--wk-border);
+  background: var(--wk-white);
+}
+.wordoken .word-feedback.success {
+  padding-left: 24px;
+}
+.wordoken .word-entry {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  min-width: 0;
+}
+.wordoken .word-entry > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 42px;
+  border: 0;
+  border-right: var(--wk-border);
+  background: var(--wk-yellow);
+  flex: none;
+}
+.wordoken .word-entry output {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+  font-size: 32px;
+  line-height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-inline: 4px;
+}
+.wordoken .letter-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  height: 152px;
+}
+.wordoken .gameplay > .letter-grid {
+  margin-top: 5px;
+}
+.wordoken .letter-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  height: 68px;
+}
+.wordoken .letter-tile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  flex: none;
+  font-size: 38px;
+  line-height: 68px;
+}
+.wordoken .letter-tile span {
+  transform: translateY(-3.51px);
+  text-align: center;
+}
+.wordoken .letter-tile.required {
+  background: var(--wk-red);
+}
+.wordoken .letter-tile:disabled {
+  opacity: 0.45;
+}
+.wordoken .letter-tile:not(:disabled):active {
+  transform: translate(2px, 2px);
+  box-shadow: 5px 5px 0 #000;
+}
+.wordoken .game-actions {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  height: 40px;
+  margin-top: auto;
+}
+.wordoken .game-actions .action {
+  height: 40px;
+  flex: 1;
+  width: 0;
+  font-size: 15px;
+}
+.wordoken .game-actions .action-label {
+  padding: 0;
+}
+.wordoken.countdown-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wordoken .countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+  height: 200px;
+  width: 320px;
+  text-align: center;
+  font-family: 'Black Han Sans', sans-serif;
+  font-weight: 400;
+}
+.wordoken .count {
+  height: 140px;
+  width: 288px;
+  font-size: 112px;
+  line-height: 140px;
+  color: var(--wk-white);
+  text-shadow: var(--wk-shadow);
+}
+.wordoken .count-caption {
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: var(--wk-subtle);
+}
+.wordoken .dialog {
+  max-width: min(360px, calc(100vw - 40px));
+  padding: 24px;
+  overflow: auto;
+  font-family: var(--wk-body);
+}
+.wordoken .dialog::backdrop {
+  background: rgba(0, 0, 0, 0.65);
+}
+.wordoken .dialog h2 {
+  font: 900 20px/1.3 var(--wk-font);
+  margin-bottom: 16px;
+}
+.wordoken .dialog-body {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.wordoken .dialog-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  font-family: var(--wk-font);
+}
+@keyframes wk-feedback-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wordoken * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media (max-height: 719px) {
+  .wordoken .gameplay {
+    gap: 9px;
+    padding-block: 12px;
+  }
+  .wordoken .gameplay > .scores,
+  .wordoken .gameplay > .letter-grid {
+    margin-top: 0;
+  }
+  .wordoken .home-body {
+    gap: 10px;
+  }
+  .wordoken .start-social {
+    margin-top: 20px;
+  }
+  .wordoken .hero-callout {
+    top: max(48px, calc(100% - 384px));
+  }
+}
+@media (max-height: 689px) {
+  .wordoken .home-body {
+    gap: 8px;
+  }
+  .wordoken .start-game-button {
+    height: 48px;
+    font-size: 26px;
+  }
+  .wordoken .bottom-nav {
+    height: 80px;
+  }
+  .wordoken .difficulty-panel {
+    min-height: 272px;
+  }
+  .wordoken .difficulty-option {
+    height: 89.333px;
+  }
+  .wordoken .instructions {
+    min-height: 56px;
+    padding-block: 8px;
+  }
+}
+@media (max-height: 659px) {
+  .wordoken.screen {
+    min-height: 660px;
+  }
+  .wordoken .home-body {
+    gap: 8px;
+  }
+  .wordoken .start-game-button {
+    height: 48px;
+    font-size: 26px;
+  }
+  .wordoken .bottom-nav {
+    height: 80px;
+  }
+  .wordoken.start-screen {
+    padding-bottom: 18px;
+  }
+  .wordoken .hero-action {
+    height: 50px;
+    font-size: 27px;
+  }
+}
+@media (max-width: 369px) {
+  .wordoken .rail {
+    width: calc(100% - 36px);
+  }
+  .wordoken .letter-row {
+    gap: 12px;
+  }
+  .wordoken .letter-tile {
+    width: calc((100% - 36px) / 4);
+    max-width: 68px;
+  }
+  .wordoken .easy .letter-tile {
+    width: 68px;
+  }
+  .wordoken .word-entry output {
+    font-size: 27px;
+  }
+  .wordoken .social-row {
+    gap: 16px;
+  }
+  .wordoken .difficulty-rules {
+    font-size: 12px;
+  }
+  .wordoken .difficulty-option {
+    gap: 12px;
+  }
+  .wordoken .instructions {
+    font-size: 12px;
+  }
+  .wordoken .start-game-button {
+    font-size: 26px;
+  }
+  .wordoken .bottom-nav button,
+  .wordoken .nav-box {
+    width: 58px;
+  }
+  .wordoken .nav-label {
+    font-size: 12px;
+  }
+  .wordoken .score-card h2 {
+    font-size: 10px;
+  }
+  .wordoken .game-actions .action {
+    font-size: 13px;
+  }
+}
