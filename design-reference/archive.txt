@@ -1,0 +1,261 @@
+const imgArtworkSettingsGearMuted = "https://www.figma.com/api/mcp/asset/d7716f4d-9e75-4c6f-aa56-45b2ec0ac39b.svg";
+const imgArtworkCartMuted = "https://www.figma.com/api/mcp/asset/b60522b1-963a-4fcc-aeb0-4ec305e01f72.svg";
+const imgGroup = "https://www.figma.com/api/mcp/asset/5af89a30-39f6-4562-8b48-4bf0d7e13c22.svg";
+const imgGroup1 = "https://www.figma.com/api/mcp/asset/ef2a4166-2c0a-472e-9aef-6b785aad7d42.svg";
+const imgArtworkHouseMuted = "https://www.figma.com/api/mcp/asset/ad3c3389-e727-427b-b375-060dacfa2019.svg";
+const imgVector = "https://www.figma.com/api/mcp/asset/8a54efa9-715e-4d23-aae0-baa5cf97079b.svg";
+const imgArtworkCoinsStack = "https://www.figma.com/api/mcp/asset/23e0c4d0-4055-4822-a570-77672715febb.svg";
+const imgIconCoin = "https://www.figma.com/api/mcp/asset/b7dd5966-4b3f-4429-94ab-86bd1167f8fb.svg";
+
+function ArtworkSettingsGearMuted({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="221:770" data-name="Artwork/settings_gear_muted">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArtworkSettingsGearMuted} />
+    </div>
+  );
+}
+
+function ArtworkCartMuted({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="221:768" data-name="Artwork/cart_muted">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArtworkCartMuted} />
+    </div>
+  );
+}
+
+function ArtworkBook({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="207:1237" data-name="Artwork/book">
+      <div className="absolute inset-[12.63%_0] overflow-clip" data-node-id="207:1238" data-name="source artwork">
+        <div className="absolute inset-[1.7%_1.27%_1.71%_1.27%]" data-node-id="207:1239" data-name="Group">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup} />
+        </div>
+        <div className="absolute inset-[1.72%_1.17%_1.71%_1.32%]" data-node-id="207:1248" data-name="Group">
+          <div className="absolute inset-[-0.43%_-0.32%]">
+            <img alt="" className="block max-w-none size-full" src={imgGroup1} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ArtworkHouseMuted({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="221:741" data-name="Artwork/house_muted">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArtworkHouseMuted} />
+    </div>
+  );
+}
+
+function IconArrowRight({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="34:7" data-name="Icon/ArrowRight">
+      <div className="absolute left-0 size-[24px] top-0" data-node-id="34:5" data-name="vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+      </div>
+    </div>
+  );
+}
+
+type ArchiveCardProps = {
+  className?: string;
+  gameTime?: string;
+  opponent?: string;
+  percentage?: string;
+  result?: "Win" | "Loss" | "Tie";
+};
+
+function ArchiveCard({ className, gameTime = "1 DAY AGO", opponent = "VS. GUEST 558", percentage = "80%", result = "Win" }: ArchiveCardProps) {
+  const isLoss = result === "Loss";
+  const isTie = result === "Tie";
+  return (
+    <div className={className || "content-stretch flex flex-col h-[110px] items-start relative w-[320px]"} id={isTie ? "node-36_88" : isLoss ? "node-36_83" : "node-36_78"}>
+      <div className={`border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[46px] items-center justify-center mb-[-4px] px-[4px] relative shrink-0 ${isTie ? "bg-[var(--wordoken-color-bg-yellow,#f7ce10)] w-[104px]" : isLoss ? "bg-[var(--wordoken-color-bg-red,#e54c34)] w-[133px]" : "bg-[var(--wordoken-color-bg-green,#78bb90)] w-[104px]"}`} id={isTie ? "node-36_89" : isLoss ? "node-36_84" : "node-36_79"} data-name="result">
+        <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[40px] not-italic relative shrink-0 text-[34px] text-[color:var(--wordoken-color-text-primary,#010101)] whitespace-nowrap" id={isTie ? "node-36_90" : isLoss ? "node-36_85" : "node-36_80"}>
+          {isTie ? "TIE" : isLoss ? "LOSS" : "WIN"}
+        </p>
+      </div>
+      <div className="content-stretch flex flex-col h-[68px] items-start relative shrink-0 w-[320px]" id={isTie ? "node-51_79" : isLoss ? "node-51_78" : "node-51_77"} data-name="card-surface">
+        <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[44px] items-center px-[10px] relative shrink-0 w-full" id={isTie ? "node-56_102" : isLoss ? "node-56_97" : "node-56_92"} data-name="opponent-box">
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Fixture:Expanded_Black'] h-[28px] leading-[28px] min-w-px not-italic relative text-[22px] text-[color:var(--wordoken-color-text-primary,#010101)]" data-node-id="36:81">
+            {opponent}
+          </p>
+        </div>
+        <div className="content-stretch flex h-[24px] items-center relative shrink-0 w-[160px]" id={isTie ? "node-56_103" : isLoss ? "node-56_98" : "node-56_93"} data-name="metadata-row">
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[24px] items-center justify-center relative shrink-0 w-[96px]" id={isTie ? "node-56_104" : isLoss ? "node-56_99" : "node-56_94"} data-name="game-time-box">
+            <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[16px] not-italic relative shrink-0 text-[#010101] text-[11px] text-center whitespace-nowrap" data-node-id="36:82">
+              {gameTime}
+            </p>
+          </div>
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[24px] items-center justify-center relative shrink-0 w-[64px]" id={isTie ? "node-56_105" : isLoss ? "node-56_100" : "node-56_95"} data-name="percentage-box">
+            <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[20px] not-italic relative shrink-0 text-[#010101] text-[17px] text-center whitespace-nowrap" data-node-id="56:96">
+              {percentage}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ArtworkCoinsStack({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="207:1275" data-name="Artwork/coins_stack">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArtworkCoinsStack} />
+    </div>
+  );
+}
+
+function IconCoin({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[18px]"} data-node-id="117:106" data-name="Icon/Coin">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCoin} />
+    </div>
+  );
+}
+
+export default function Component09Archive() {
+  return (
+    <div className="bg-[var(--wordoken-color-bg-blue,#4377bc)] content-stretch flex flex-col items-center relative size-full" data-node-id="39:511" data-name="09 Archive">
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start max-w-[402px] min-h-[740px] overflow-clip relative w-full" data-node-id="565:7199" data-name="Responsive / centered game column">
+        <div className="absolute inset-0 overflow-clip" data-node-id="39:512" data-name="GridOverlay">
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[50px] top-0 w-px" data-node-id="I39:512;34:55" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[101px] top-0 w-px" data-node-id="I39:512;34:56" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[152px] top-0 w-px" data-node-id="I39:512;34:57" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[203px] top-0 w-px" data-node-id="I39:512;34:58" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[254px] top-0 w-px" data-node-id="I39:512;34:59" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[305px] top-0 w-px" data-node-id="I39:512;34:60" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[356px] top-0 w-px" data-node-id="I39:512;34:61" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[50px] w-[402px]" data-node-id="I39:512;34:62" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[101px] w-[402px]" data-node-id="I39:512;34:63" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[152px] w-[402px]" data-node-id="I39:512;34:64" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[203px] w-[402px]" data-node-id="I39:512;34:65" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[254px] w-[402px]" data-node-id="I39:512;34:66" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[305px] w-[402px]" data-node-id="I39:512;34:67" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[356px] w-[402px]" data-node-id="I39:512;34:68" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[407px] w-[402px]" data-node-id="I39:512;34:69" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[458px] w-[402px]" data-node-id="I39:512;34:70" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[509px] w-[402px]" data-node-id="I39:512;34:71" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[560px] w-[402px]" data-node-id="I39:512;34:72" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[611px] w-[402px]" data-node-id="I39:512;34:73" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[662px] w-[402px]" data-node-id="I39:512;34:74" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[713px] w-[402px]" data-node-id="I39:512;34:75" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[764px] w-[402px]" data-node-id="I39:512;34:76" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[815px] w-[402px]" data-node-id="I39:512;34:77" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[866px] w-[402px]" data-node-id="I39:512;34:78" data-name="grid/h" />
+        </div>
+        <a className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[7px_7px_0px_black] flex h-[34px] items-center right-[8px] top-[8px] w-[108px]" data-node-id="39:538" data-name="CurrencyBadge">
+          <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-[var(--wordoken-color-border-default,#010101)] border-r-2 border-solid content-stretch flex h-[30px] items-center justify-center overflow-clip relative shrink-0 w-[38px]" data-node-id="I39:538;210:370" data-name="level">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center whitespace-nowrap" data-node-id="I39:538;210:371">
+              <p className="leading-[20px]">12</p>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[4px] h-[30px] items-center justify-center px-[4px] relative shrink-0 w-[66px]" data-node-id="I39:538;210:372" data-name="coin-section">
+            <IconCoin className="relative shrink-0 size-[18px]" />
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center whitespace-nowrap" data-node-id="I39:538;210:374">
+              <p className="leading-[20px]">725</p>
+            </div>
+          </div>
+        </a>
+        <div className="-translate-x-1/2 absolute drop-shadow-[7px_7px_0px_black] h-[72px] left-1/2 top-[54px] w-[320px]" data-node-id="148:1066" data-name="ArchiveSummary">
+          <div className="absolute h-[72px] left-0 overflow-clip top-0 w-[106px]" data-node-id="I148:1066;147:148" data-name="wins">
+            <div className="absolute bg-[#78bb90] border-2 border-[#010101] border-solid h-[36px] left-0 overflow-clip top-0 w-[106px]" data-node-id="I148:1066;147:149" data-name="label-surface">
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[24px] justify-center leading-[0] left-[51px] not-italic text-[#010101] text-[17px] text-center top-[16px] w-[98px]" data-node-id="I148:1066;147:151">
+                <p className="leading-[normal]">WINS</p>
+              </div>
+            </div>
+            <div className="absolute bg-white border-2 border-[#010101] border-solid h-[36px] left-0 overflow-clip top-[36px] w-[106px]" data-node-id="I148:1066;147:150" data-name="value-surface">
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[28px] justify-center leading-[0] left-[51px] not-italic text-[#010101] text-[20px] text-center top-[16px] w-[98px]" data-node-id="I148:1066;147:152">
+                <p className="leading-[normal]">11</p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute h-[72px] left-[106px] overflow-clip top-0 w-[108px]" data-node-id="I148:1066;147:153" data-name="ties">
+            <div className="absolute bg-[#f7ce10] border-2 border-[#010101] border-solid h-[36px] left-0 overflow-clip top-0 w-[108px]" data-node-id="I148:1066;147:154" data-name="label-surface">
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[24px] justify-center leading-[0] left-[52px] not-italic text-[#010101] text-[17px] text-center top-[16px] w-[100px]" data-node-id="I148:1066;147:156">
+                <p className="leading-[normal]">TIES</p>
+              </div>
+            </div>
+            <div className="absolute bg-white border-2 border-[#010101] border-solid h-[36px] left-0 overflow-clip top-[36px] w-[108px]" data-node-id="I148:1066;147:155" data-name="value-surface">
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[28px] justify-center leading-[0] left-[52px] not-italic text-[#010101] text-[20px] text-center top-[16px] w-[100px]" data-node-id="I148:1066;147:157">
+                <p className="leading-[normal]">1</p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute h-[72px] left-[214px] overflow-clip top-0 w-[106px]" data-node-id="I148:1066;147:158" data-name="losses">
+            <div className="absolute bg-[#e54c34] border-2 border-[#010101] border-solid h-[36px] left-0 overflow-clip top-0 w-[106px]" data-node-id="I148:1066;147:159" data-name="label-surface">
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[24px] justify-center leading-[0] left-[51px] not-italic text-[#010101] text-[17px] text-center top-[16px] w-[98px]" data-node-id="I148:1066;147:161">
+                <p className="leading-[normal]">LOSSES</p>
+              </div>
+            </div>
+            <div className="absolute bg-white border-2 border-[#010101] border-solid h-[36px] left-0 overflow-clip top-[36px] w-[106px]" data-node-id="I148:1066;147:160" data-name="value-surface">
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[28px] justify-center leading-[0] left-[51px] not-italic text-[#010101] text-[20px] text-center top-[16px] w-[98px]" data-node-id="I148:1066;147:162">
+                <p className="leading-[normal]">5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="-translate-x-1/2 absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex flex-col h-[34px] items-center justify-center left-1/2 px-[8px] top-[142px] w-[320px]" data-node-id="150:1113" data-name="Archive instruction hint">
+          <div className="[word-break:break-word] flex flex-col font-['Montserrat:Medium'] font-medium h-[28px] justify-center leading-[0] relative shrink-0 text-[12px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[296px]" data-node-id="150:1114">
+            <p className="leading-[normal]">Tap a game to re-open.</p>
+          </div>
+        </div>
+        <div className="-translate-x-1/2 absolute h-[360px] left-[calc(50%+3.5px)] overflow-x-clip overflow-y-auto top-[192px] w-[327px]" data-node-id="148:1082" data-name="ArchiveListViewport">
+          <div className="absolute content-stretch cursor-pointer flex flex-col gap-[25px] h-[785px] items-center left-0 top-0 w-[320px]" data-node-id="233:1503" data-name="Archive / scrollable entries">
+            <ArchiveCard className="content-stretch flex flex-col h-[110px] items-start relative shrink-0 w-[320px]" opponent="VS. Guest 558" />
+            <ArchiveCard className="content-stretch flex flex-col h-[110px] items-start relative shrink-0 w-[320px]" gameTime="4 DAYS AGO" opponent="VS. RobbieRobertson" percentage="23%" result="Loss" />
+            <ArchiveCard className="content-stretch flex flex-col h-[110px] items-start relative shrink-0 w-[320px]" gameTime="11 DAYS AGO" opponent="VS. Guest 765" percentage="34%" result="Tie" />
+            <ArchiveCard className="content-stretch flex flex-col h-[110px] items-start relative shrink-0 w-[320px]" gameTime="18 DAYS AGO" opponent="VS. NinjaWolf" percentage="72%" />
+            <ArchiveCard className="content-stretch flex flex-col h-[110px] items-start relative shrink-0 w-[320px]" gameTime="21 DAYS AGO" opponent="VS. Wordsmith" percentage="19%" result="Loss" />
+            <ArchiveCard className="content-stretch flex flex-col h-[110px] items-start relative shrink-0 w-[320px]" gameTime="29 DAYS AGO" opponent="VS. Guest 121" percentage="46%" result="Tie" />
+          </div>
+        </div>
+        <a className="-translate-x-1/2 absolute bg-[var(--wordoken-color-surface-default,white)] content-stretch cursor-pointer drop-shadow-[7px_7px_0px_black] flex h-[36px] items-center left-1/2 top-[580px] w-[320px]" data-node-id="148:1149" data-name="SplitActionButton / Sign up">
+          <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-[var(--wordoken-color-border-default,#010101)] border-b-2 border-l-2 border-solid border-t-2 content-stretch flex h-[36px] items-center justify-center relative shrink-0 w-[276px]" data-node-id="I148:1149;216:718" data-name="label-surface">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[32px] justify-center leading-[0] not-italic relative shrink-0 text-[15px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[260px]" data-node-id="I148:1149;216:719">
+              <p className="leading-[normal]">SIGN UP TO SAVE GAMES</p>
+            </div>
+          </div>
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch flex h-[36px] items-center justify-center relative shrink-0 w-[44px]" data-node-id="I148:1149;216:720" data-name="icon-surface">
+            <IconArrowRight className="relative shrink-0 size-[20px]" />
+          </div>
+        </a>
+        <div className="-translate-x-1/2 absolute bottom-[10px] content-stretch flex h-[86px] items-start justify-between left-1/2 w-[320px]" data-node-id="39:574" data-name="BottomNav">
+          <a className="content-stretch cursor-pointer flex flex-col gap-[8px] h-[86px] items-center relative shrink-0 w-[64px]" data-node-id="I39:574;35:172" data-name="item/Home">
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[60px] items-center justify-center relative shrink-0 w-[64px]" data-node-id="I39:574;210:316" data-name="icon-box">
+              <ArtworkHouseMuted className="opacity-60 relative shrink-0 size-[46px]" />
+            </div>
+            <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[normal] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I39:574;35:176">
+              Home
+            </p>
+          </a>
+          <div className="content-stretch flex flex-col gap-[8px] h-[86px] items-center relative shrink-0 w-[64px]" data-node-id="I39:574;35:177" data-name="item/Archive">
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[60px] items-center justify-center relative shrink-0 w-[64px]" data-node-id="I39:574;210:317" data-name="icon-box">
+              <ArtworkBook className="relative shrink-0 size-[46px]" />
+            </div>
+            <p className="[text-underline-position:from-font] [word-break:break-word] decoration-from-font decoration-solid font-['Montserrat:Medium'] font-medium leading-[normal] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] underline whitespace-nowrap" data-node-id="I39:574;35:181">
+              Archive
+            </p>
+          </div>
+          <a className="content-stretch cursor-pointer flex flex-col gap-[8px] h-[86px] items-center relative shrink-0 w-[64px]" data-node-id="I39:574;35:182" data-name="item/Store">
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[60px] items-center justify-center relative shrink-0 w-[64px]" data-node-id="I39:574;210:318" data-name="icon-box">
+              <ArtworkCartMuted className="opacity-60 relative shrink-0 size-[46px]" />
+            </div>
+            <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[normal] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I39:574;35:186">
+              Store
+            </p>
+          </a>
+          <a className="content-stretch cursor-pointer flex flex-col gap-[8px] h-[86px] items-center relative shrink-0 w-[64px]" data-node-id="I39:574;35:187" data-name="item/Settings">
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[60px] items-center justify-center relative shrink-0 w-[64px]" data-node-id="I39:574;210:319" data-name="icon-box">
+              <ArtworkSettingsGearMuted className="opacity-60 relative shrink-0 size-[46px]" />
+            </div>
+            <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[normal] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I39:574;35:191">
+              Settings
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}

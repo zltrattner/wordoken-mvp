@@ -15,13 +15,45 @@ page.on('pageerror', (error) => errors.push(error.message));
 await mkdir('test-results/screenshots', { recursive: true });
 const report = [];
 try {
+  const allViews = [
+    'start',
+    'signin',
+    'signup',
+    'home',
+    'invite',
+    'store',
+    'archive',
+    'settings',
+    'avatar',
+    'password',
+    'sound',
+    'subscribe',
+    'active-plan',
+    'linked-google',
+    'linked-facebook',
+    'linked-tiktok',
+    'easy',
+    'medium',
+    'hard',
+    'replay',
+    'win',
+    'loss',
+    'tie',
+    'tutorial-words',
+    'tutorial-difficulty',
+    'tutorial-controls',
+    'tutorial-customize',
+    'countdown',
+  ];
   for (const [width, height] of [
     [402, 740],
     [375, 667],
     [320, 740],
   ]) {
     await page.setViewportSize({ width, height });
-    for (const view of ['start', 'home', 'easy', 'medium', 'hard', 'countdown']) {
+    const checkedViews =
+      width === 402 ? allViews : ['start', 'home', 'easy', 'medium', 'hard', 'countdown'];
+    for (const view of checkedViews) {
       await page.goto(`${baseURL}/?view=${view}&solo`);
       await page.evaluate(() => document.fonts.ready);
       await page.locator('.screen').waitFor();
@@ -59,7 +91,7 @@ try {
         result.height <= height + 1,
         `${view}: vertical overflow at ${width}×${height}: ${result.height}`,
       );
-      if (result.tiles.length) {
+      if (['easy', 'medium', 'hard'].includes(view)) {
         const count = view === 'easy' ? 6 : view === 'medium' ? 7 : 8;
         assert.equal(result.tiles.length, count);
         assert.equal(result.arena[0].height, 160);

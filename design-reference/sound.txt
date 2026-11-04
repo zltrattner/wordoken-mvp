@@ -1,0 +1,185 @@
+const imgArtworkSpeakerColor = "https://www.figma.com/api/mcp/asset/92e75a44-5dac-48c1-a986-fc2f495cae9c.svg";
+const imgIconVolumeOn = "https://www.figma.com/api/mcp/asset/824e1412-7612-4b7b-8880-5e9bd049f808.svg";
+const imgVector = "https://www.figma.com/api/mcp/asset/c6508a55-9abf-4311-9527-a8ec6bcd85dd.svg";
+const imgVector1 = "https://www.figma.com/api/mcp/asset/be431b82-1cbe-4601-9b72-9cee0ad9b5fe.svg";
+
+type VolumeSliderProps = {
+  className?: string;
+  level?: "0" | "75" | "100";
+};
+
+function VolumeSlider({ className, level = "0" }: VolumeSliderProps) {
+  const is100 = level === "100";
+  const is75 = level === "75";
+  return (
+    <div className={className || "h-[44px] relative w-[280px]"} id={is100 ? "node-278_1346" : is75 ? "node-278_1342" : "node-278_1330"}>
+      <div className="absolute bg-[var(--wordoken-color-surface-subtle,#ebe6ed)] border-[length:var(--wordoken-stroke-default,2px)] border-[var(--wordoken-color-border-default,#010101)] border-solid h-[10px] left-[16px] top-[17px] w-[248px]" id={is100 ? "node-278_1347" : is75 ? "node-278_1343" : "node-278_1331"} data-name="track / inactive" />
+      {["75", "100"].includes(level) && <div className={`absolute bg-[var(--wordoken-color-status-success,#78bb90)] h-[10px] left-[16px] top-[17px] ${is100 ? "w-[248px]" : "w-[186px]"}`} id={is100 ? "node-278_1348" : "node-278_1344"} data-name="track / volume" />}
+      <div className={`absolute bg-[var(--wordoken-color-action-primary,#f7ce10)] border-[length:var(--wordoken-stroke-default,2px)] border-[var(--wordoken-color-border-default,#010101)] border-solid shadow-[4px_4px_0px_0px_black] size-[32px] top-[6px] ${is100 ? "left-[248px]" : is75 ? "left-[186px]" : "left-0"}`} id={is100 ? "node-278_1349" : is75 ? "node-278_1345" : "node-278_1333"} data-name="thumb" />
+    </div>
+  );
+}
+
+function ArtworkSpeakerColor({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="207:14" data-name="Artwork/speaker_color">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArtworkSpeakerColor} />
+    </div>
+  );
+}
+
+function IconVolumeOn({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="324:2145" data-name="Icon/VolumeOn">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconVolumeOn} />
+    </div>
+  );
+}
+
+function IconArrowLeft({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="34:4" data-name="Icon/ArrowLeft">
+      <div className="absolute left-0 size-[24px] top-0" data-node-id="34:2" data-name="vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+      </div>
+    </div>
+  );
+}
+
+export default function Component13SoundSettings() {
+  return (
+    <div className="bg-[var(--wordoken-color-bg-blue,#4377bc)] content-stretch flex flex-col items-center relative size-full" data-node-id="280:2490" data-name="13 Sound Settings">
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start max-w-[402px] min-h-[740px] overflow-clip relative w-full" data-node-id="565:7205" data-name="Responsive / centered game column">
+        <div className="absolute inset-0 overflow-clip" data-node-id="280:2491" data-name="GridOverlay">
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[50px] top-0 w-px" data-node-id="I280:2491;34:55" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[101px] top-0 w-px" data-node-id="I280:2491;34:56" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[152px] top-0 w-px" data-node-id="I280:2491;34:57" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[203px] top-0 w-px" data-node-id="I280:2491;34:58" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[254px] top-0 w-px" data-node-id="I280:2491;34:59" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[305px] top-0 w-px" data-node-id="I280:2491;34:60" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[356px] top-0 w-px" data-node-id="I280:2491;34:61" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[50px] w-[402px]" data-node-id="I280:2491;34:62" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[101px] w-[402px]" data-node-id="I280:2491;34:63" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[152px] w-[402px]" data-node-id="I280:2491;34:64" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[203px] w-[402px]" data-node-id="I280:2491;34:65" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[254px] w-[402px]" data-node-id="I280:2491;34:66" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[305px] w-[402px]" data-node-id="I280:2491;34:67" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[356px] w-[402px]" data-node-id="I280:2491;34:68" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[407px] w-[402px]" data-node-id="I280:2491;34:69" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[458px] w-[402px]" data-node-id="I280:2491;34:70" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[509px] w-[402px]" data-node-id="I280:2491;34:71" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[560px] w-[402px]" data-node-id="I280:2491;34:72" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[611px] w-[402px]" data-node-id="I280:2491;34:73" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[662px] w-[402px]" data-node-id="I280:2491;34:74" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[713px] w-[402px]" data-node-id="I280:2491;34:75" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[764px] w-[402px]" data-node-id="I280:2491;34:76" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[815px] w-[402px]" data-node-id="I280:2491;34:77" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[866px] w-[402px]" data-node-id="I280:2491;34:78" data-name="grid/h" />
+        </div>
+        <div className="absolute h-[94px] left-[30px] right-[30px] top-[22px]" data-node-id="280:2516" data-name="TopBar">
+          <button className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[4px_4px_0px_black] flex items-center justify-center left-[-22px] size-[32px] top-[-14px]" data-node-id="I280:2516;75:848" data-name="back-tile">
+            <IconArrowLeft className="relative shrink-0 size-[24px]" />
+          </button>
+          <button className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[4px_4px_0px_black] flex items-center justify-center right-[-22px] size-[32px] top-[-14px]" data-node-id="I280:2516;75:849" data-name="sound-tile">
+            <div className="content-stretch flex gap-[var(--wordoken-space-0,0px)] items-center justify-center p-[var(--wordoken-space-0,0px)] relative shrink-0 size-[24px]" data-node-id="I280:2516;35:147" data-name="sound">
+              <IconVolumeOn className="relative shrink-0 size-[24px]" />
+            </div>
+          </button>
+          <div className="-translate-x-1/2 absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[62px] items-center justify-center left-1/2 px-[6px] top-[32px] w-[320px]" data-node-id="I280:2516;35:145" data-name="title-surface">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[40px] justify-center leading-[0] not-italic relative shrink-0 text-[24px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[308px]" data-node-id="I280:2516;35:146">
+              <p className="leading-[normal]">SOUND SETTINGS</p>
+            </div>
+          </div>
+        </div>
+        <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[var(--wordoken-space-3,12px)] items-start left-1/2 top-[132px] w-[320px]" data-node-id="280:2530" data-name="Sound settings / control column">
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-[length:var(--wordoken-stroke-default,2px)] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch flex flex-col items-center justify-center overflow-clip p-[var(--wordoken-space-3,12px)] relative shadow-[7px_7px_0px_0px_black] shrink-0 w-[320px]" data-node-id="280:2531" data-name="Sound / introduction">
+            <div className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[0] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[292px]" data-node-id="280:2532">
+              <p className="leading-[20px] mb-0">Adjust music and sound effects separately.</p>
+              <p className="leading-[20px]">Tap the speaker at the top right to mute all sound.</p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col h-[198px] items-start relative shrink-0 w-[320px]" data-node-id="280:2533" data-name="SoundControl / Music">
+            <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-[length:var(--wordoken-stroke-default,2px)] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[4px_4px_0px_black] flex h-[32px] items-center mb-[-2px] px-[var(--wordoken-space-3,12px)] relative shrink-0" data-node-id="I280:2533;278:1516" data-name="label tab">
+              <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[18px] text-[color:var(--wordoken-color-text-primary,#010101)] whitespace-nowrap" data-node-id="I280:2533;278:1517">
+                MUSIC
+              </p>
+            </div>
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-[length:var(--wordoken-stroke-default,2px)] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex flex-col gap-[var(--wordoken-space-3,12px)] h-[168px] items-start p-[var(--wordoken-space-5,20px)] relative shrink-0 w-[320px]" data-node-id="I280:2533;278:1518" data-name="volume panel">
+              <div className="content-stretch flex h-[44px] items-center justify-between relative shrink-0 w-[280px]" data-node-id="I280:2533;278:1519" data-name="volume readout and mute">
+                <div className="content-stretch flex gap-[var(--wordoken-space-3,12px)] h-[44px] items-center relative shrink-0 w-[144px]" data-node-id="I280:2533;278:1520" data-name="sound and value">
+                  <ArtworkSpeakerColor className="relative shrink-0 size-[40px]" />
+                  <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[24px] text-[color:var(--wordoken-color-text-primary,#010101)] whitespace-nowrap" data-node-id="I280:2533;278:1529">
+                    75%
+                  </p>
+                </div>
+                <div className="content-stretch flex h-[40px] items-center relative shrink-0 w-[112px]" data-node-id="I280:2533;278:1530" data-name="mute action target">
+                  <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex gap-[12px] h-[40px] items-center justify-center relative shrink-0 w-[112px]" data-node-id="I280:2533;278:1531" data-name="mute action">
+                    <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[15px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[196px]" data-node-id="I280:2533;278:1531;35:13">
+                      MUTE
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <VolumeSlider className="h-[44px] relative shrink-0 w-[280px]" level="75" />
+              <div className="[word-break:break-word] content-stretch flex font-['Montserrat:Medium'] font-medium h-[16px] items-center justify-between leading-[20px] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] w-[280px] whitespace-nowrap" data-node-id="I280:2533;278:1540" data-name="volume limits">
+                <p className="relative shrink-0" data-node-id="I280:2533;278:1541">
+                  0%
+                </p>
+                <p className="relative shrink-0" data-node-id="I280:2533;278:1542">
+                  100%
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col h-[198px] items-start relative shrink-0 w-[320px]" data-node-id="280:2577" data-name="SoundControl / Sound Effects">
+            <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-[length:var(--wordoken-stroke-default,2px)] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[4px_4px_0px_black] flex h-[32px] items-center mb-[-2px] px-[var(--wordoken-space-3,12px)] relative shrink-0" data-node-id="I280:2577;278:1570" data-name="label tab">
+              <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[18px] text-[color:var(--wordoken-color-text-primary,#010101)] whitespace-nowrap" data-node-id="I280:2577;278:1571">
+                SOUND EFFECTS
+              </p>
+            </div>
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-[length:var(--wordoken-stroke-default,2px)] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex flex-col gap-[var(--wordoken-space-3,12px)] h-[168px] items-start p-[var(--wordoken-space-5,20px)] relative shrink-0 w-[320px]" data-node-id="I280:2577;278:1572" data-name="volume panel">
+              <div className="content-stretch flex h-[44px] items-center justify-between relative shrink-0 w-[280px]" data-node-id="I280:2577;278:1573" data-name="volume readout and mute">
+                <div className="content-stretch flex gap-[var(--wordoken-space-3,12px)] h-[44px] items-center relative shrink-0 w-[144px]" data-node-id="I280:2577;278:1574" data-name="sound and value">
+                  <ArtworkSpeakerColor className="relative shrink-0 size-[40px]" />
+                  <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[24px] text-[color:var(--wordoken-color-text-primary,#010101)] whitespace-nowrap" data-node-id="I280:2577;278:1583">
+                    100%
+                  </p>
+                </div>
+                <div className="content-stretch flex h-[40px] items-center relative shrink-0 w-[112px]" data-node-id="I280:2577;278:1584" data-name="mute action target">
+                  <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex gap-[12px] h-[40px] items-center justify-center relative shrink-0 w-[112px]" data-node-id="I280:2577;278:1585" data-name="mute action">
+                    <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[15px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[196px]" data-node-id="I280:2577;278:1585;35:13">
+                      MUTE
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <VolumeSlider className="h-[44px] relative shrink-0 w-[280px]" level="100" />
+              <div className="[word-break:break-word] content-stretch flex font-['Montserrat:Medium'] font-medium h-[16px] items-center justify-between leading-[20px] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] w-[280px] whitespace-nowrap" data-node-id="I280:2577;278:1594" data-name="volume limits">
+                <p className="relative shrink-0" data-node-id="I280:2577;278:1595">
+                  0%
+                </p>
+                <p className="relative shrink-0" data-node-id="I280:2577;278:1596">
+                  100%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button className="-translate-x-1/2 absolute bg-[var(--wordoken-color-surface-default,white)] bottom-[16px] content-stretch cursor-pointer drop-shadow-[7px_7px_0px_black] flex h-[36px] items-center left-1/2 w-[320px]" data-node-id="280:2621" data-name="Done / return to Settings">
+          <div className="bg-[var(--wordoken-color-action-secondary,#78bb90)] border-[var(--wordoken-color-border-default,#010101)] border-b-2 border-l-2 border-solid border-t-2 content-stretch flex h-[36px] items-center justify-center relative shrink-0 w-[276px]" data-node-id="I280:2621;121:118" data-name="label-surface">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[32px] justify-center leading-[0] not-italic relative shrink-0 text-[17px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[260px]" data-node-id="I280:2621;121:119">
+              <p className="leading-[normal]">DONE</p>
+            </div>
+          </div>
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch flex h-[36px] items-center justify-center relative shrink-0 w-[44px]" data-node-id="I280:2621;121:120" data-name="icon-surface">
+            <div className="relative shrink-0 size-[20px]" data-node-id="I280:2621;121:121" data-name="icon">
+              <div className="absolute left-0 size-[24px] top-0" data-node-id="I280:2621;121:121;34:44" data-name="vector">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+              </div>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  );
+}

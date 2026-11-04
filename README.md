@@ -4,13 +4,15 @@ React + TypeScript visual components translated from the approved Wordoken Figma
 
 ## Current coverage
 
-- Start screen
-- Home / difficulty selection
-- Countdown presentation
+- Start, sign in, sign up and linked-provider sign-up (Google, Facebook and TikTok states)
+- Home, challenge invitation, countdown and all four active how-to-play steps
 - Easy, medium and hard gameplay layouts (one shared `Gameplay` component)
-- Shared buttons, split actions, social provider row, player header, difficulty selector, currency badge, navigation, dialog, scores, timer, word tray, letter entry, letter tiles, and static ninja poses
+- Win, loss and tie post-game states, plus archive replay
+- Store, archive, edit avatar, settings, change password and sound settings
+- Subscription and active-plan states
+- Shared top bar, fields, password rules, buttons, split actions, challenge CTA, reward table, social provider row, player header, difficulty selector, currency badge, navigation, scores, timer, word tray, letter entry, letter tiles, static ninja poses and supporting artwork
 
-The remaining Figma screens are **not ported yet**. Figma node IDs and extraction references for this slice are retained in `design-reference/` and on screen root elements.
+Figma node IDs and extraction references are retained in `design-reference/` and on screen root elements. Checkout, billing-portal, OAuth and password-reset destinations remain host-app handoffs rather than fake local screens.
 
 ## Run the review gallery
 
@@ -19,7 +21,7 @@ npm ci
 npm run dev
 ```
 
-Open the printed local URL. The gallery has separate controls for screen selection, word feedback and countdown content. Buttons report callback events instead of running game logic. Append `?view=hard&solo` for a screen-only view. Other views: `start`, `home`, `easy`, `medium`, `countdown`, `components`.
+Open the printed local URL. The gallery exposes every exported screen/state, plus controls for word feedback and countdown content. Buttons report callback events instead of running game logic. Append `?view=hard&solo` for a screen-only view.
 
 ## Build and consume
 
@@ -62,7 +64,7 @@ Full screen components include their own theme boundary. Standalone components n
 
 `Gameplay` does not own the clock, selected letters, found words, feedback duration or scores. The host supplies those props and handles `onLetterSelect`, `onBackspace`, `onClear`, `onShuffle`, and `onSubmit`. Its optional `arena` slot accepts a future animation renderer. The supplied `Fighters` component is the approved static layered sprite pose, not an animation engine.
 
-`Countdown` displays its `count` and `caption`; it does not run a timer. `Home` receives difficulty options and selected mode. `SocialRow` accepts any provider list and emits the selected ID; it does not implement OAuth. `FoundWordsTray` owns only its horizontal scrolling affordance. `Dialog` owns native modal focus and Escape handling; the host mounts and dismisses it.
+`Countdown` displays its `count` and `caption`; it does not run a timer. `Home` receives difficulty options and selected mode. `PostGame`, `LinkedAccountSignUp`, `Subscription` and `HowToPlay` use controlled variants instead of duplicated components. `SocialRow` accepts any provider list and emits the selected ID; it does not implement OAuth. `FoundWordsTray` owns only its horizontal scrolling affordance. `Dialog` owns native modal focus and Escape handling; the host mounts and dismisses it.
 
 **Intentionally absent:** word validation, scoring, matchmaking, challenge links, API clients, authentication, subscriptions, application navigation, analytics, persistence, service worker and PWA registration. No preview fixtures are included in the library build.
 
@@ -88,7 +90,7 @@ npx playwright install chromium
 npm run test:browser
 ```
 
-`PLAYWRIGHT_EXECUTABLE_PATH` can point to an existing compatible Chromium executable. `PREVIEW_URL` can target a production preview server. Browser checks cover six screen variants at 402×740, 375×667 and 320×740, asset loading, layout boundaries, callbacks, feedback, horizontal scrolling and radio selection. Screenshots and the geometry report are generated under `test-results/`.
+`PLAYWRIGHT_EXECUTABLE_PATH` can point to an existing compatible Chromium executable. `PREVIEW_URL` can target a production preview server. Browser checks cover the compact responsive shell, gameplay variants, asset loading, layout boundaries, callbacks, feedback, horizontal scrolling and radio selection. Screenshots and the geometry report are generated under `test-results/`.
 
 These are desktop Chromium viewport checks, not a claim of physical iPhone or Safari testing. Test the integrated host on the target iPhone browser before release.
 

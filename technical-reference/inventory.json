@@ -1,0 +1,347 @@
+{
+  "format_version": 1,
+  "files": [
+    {
+      "original_path": "finished_games_20231225.json",
+      "path": "database/puzzles/finished_games_20231225.json",
+      "bytes": 65572670,
+      "sha256": "70b4b96137c4f8aa1e45a5eecbd9f4836fc465759bfc16789731428f349fe6cf"
+    },
+    {
+      "original_path": "xp and level algorithm.js",
+      "path": "logic/progression/xp and level algorithm.js",
+      "bytes": 1713,
+      "sha256": "9f16d0f7a24d0ed5cd2ad597e973ad8d58c2f0cac14b1e2364ac5d1aa258dec0"
+    },
+    {
+      "original_path": "Animation Script/SpriteTest.pde",
+      "path": "logic/characters/SpriteTest/SpriteTest.pde",
+      "bytes": 3010,
+      "sha256": "bf46171e69c5af4d134ba4412e64c5a088aa0640a45da2d8784ed430687212e7"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja2-0.png",
+      "path": "logic/characters/SpriteTest/data/Ninja2-0.png",
+      "bytes": 711181,
+      "sha256": "fd485536204bdeae8502e3167fed2e445459ad1ba02ddb6a7a082fe09f8634b6"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja2.png",
+      "path": "logic/characters/SpriteTest/data/Ninja2.png",
+      "bytes": 711181,
+      "sha256": "fd485536204bdeae8502e3167fed2e445459ad1ba02ddb6a7a082fe09f8634b6"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja21.png",
+      "path": "logic/characters/SpriteTest/data/Ninja21.png",
+      "bytes": 711181,
+      "sha256": "fd485536204bdeae8502e3167fed2e445459ad1ba02ddb6a7a082fe09f8634b6"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja22.png",
+      "path": "logic/characters/SpriteTest/data/Ninja22.png",
+      "bytes": 711181,
+      "sha256": "fd485536204bdeae8502e3167fed2e445459ad1ba02ddb6a7a082fe09f8634b6"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja3-0.png",
+      "path": "logic/characters/SpriteTest/data/Ninja3-0.png",
+      "bytes": 236756,
+      "sha256": "4ba4e113a35ade73b89aea7c403ca6bc279261b541aae730989acae0a4ab2900"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja4-0.png",
+      "path": "logic/characters/SpriteTest/data/Ninja4-0.png",
+      "bytes": 773114,
+      "sha256": "55f9a81e52674729b9be35e059fa1f0b6abe46c3b0e744715554dc4e6bbf488d"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja4-1.png",
+      "path": "logic/characters/SpriteTest/data/Ninja4-1.png",
+      "bytes": 809873,
+      "sha256": "7efe107d2d1176a99882c735aac70fa1984ac84f1e82b8b9807434044e4e89af"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja4-2.png",
+      "path": "logic/characters/SpriteTest/data/Ninja4-2.png",
+      "bytes": 828273,
+      "sha256": "a699a5cae61459d43acf0472ecabd88349329796bc52fccd84efe80001695777"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja4-3.png",
+      "path": "logic/characters/SpriteTest/data/Ninja4-3.png",
+      "bytes": 873231,
+      "sha256": "532a527b798910ea5bb56ff548730fa402e57c07d3f981718b83c2de14be78bd"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja4-4.png",
+      "path": "logic/characters/SpriteTest/data/Ninja4-4.png",
+      "bytes": 839494,
+      "sha256": "b41aa2ecb125a3315c88d4062b51217bb3ca6450389c8b96222402d3f4911c97"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja4-5.png",
+      "path": "logic/characters/SpriteTest/data/Ninja4-5.png",
+      "bytes": 827768,
+      "sha256": "64383030e817de2fd8e9bbd47a8d9c150cedbd21b676a4ea129044a7d95e1b2b"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja4-6.png",
+      "path": "logic/characters/SpriteTest/data/Ninja4-6.png",
+      "bytes": 431782,
+      "sha256": "a20acbdf561cfbd2dc17882eb31fb099dde4f9b09e8ccada207489bdbe8c79e3"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja5-0.png",
+      "path": "logic/characters/SpriteTest/data/Ninja5-0.png",
+      "bytes": 393423,
+      "sha256": "56bca923257f0baa57821ef6f205995f82a6b8726f7a635965e40dcfe9d29662"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja5-1.png",
+      "path": "logic/characters/SpriteTest/data/Ninja5-1.png",
+      "bytes": 371880,
+      "sha256": "67c505e479faae6f13bc91c9a3d462d5dcf1b7a9dcf80e56e87e8ac81ae30057"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja5-2.png",
+      "path": "logic/characters/SpriteTest/data/Ninja5-2.png",
+      "bytes": 622238,
+      "sha256": "fbf8b94edc90ecc1cb7937b299975624c25334b5a4a329fe4f1a8994ddcf828c"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja5-3.png",
+      "path": "logic/characters/SpriteTest/data/Ninja5-3.png",
+      "bytes": 818987,
+      "sha256": "2d6c01eb144101b9f80a043b9236a36f1eb5cfefe368e074d9ec00c11e71bfdd"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja5-4.png",
+      "path": "logic/characters/SpriteTest/data/Ninja5-4.png",
+      "bytes": 929624,
+      "sha256": "a2b1d5e02e1e3a62c0bbd965b987e40a2145266257cd05f250b16bd7ff0c19e3"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja5-5.png",
+      "path": "logic/characters/SpriteTest/data/Ninja5-5.png",
+      "bytes": 689605,
+      "sha256": "eba4d8e29b8c88bee66059c80422eeb7845a4a6c9c6dd98836cd17e1aa9852b1"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja5-6.png",
+      "path": "logic/characters/SpriteTest/data/Ninja5-6.png",
+      "bytes": 682502,
+      "sha256": "ae02567d927a8589228d1d43521b6afccf0f4d0d8bbd7718449d7d4dee0fcefa"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja5-7.png",
+      "path": "logic/characters/SpriteTest/data/Ninja5-7.png",
+      "bytes": 900646,
+      "sha256": "de00ee7df465692e1c3727fcd98cc74290994ffeeb838b0f645234c66d5db25f"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja5-8.png",
+      "path": "logic/characters/SpriteTest/data/Ninja5-8.png",
+      "bytes": 819071,
+      "sha256": "54f3226c1a11a36e1648b9ba3b20facd78ae6a5806cee19d232e3268d81e3278"
+    },
+    {
+      "original_path": "Animation Script/data/Ninja5-9.png",
+      "path": "logic/characters/SpriteTest/data/Ninja5-9.png",
+      "bytes": 489669,
+      "sha256": "10787ea9f8511c4c71b88f13582e9694da32b137fec7970a0cc00d3245deaab4"
+    },
+    {
+      "original_path": "Animation Script/data/NinjaBase-0.png",
+      "path": "logic/characters/SpriteTest/data/NinjaBase-0.png",
+      "bytes": 1014596,
+      "sha256": "4e4b491b5840eecb051c3101ca4bfd5da812863c833e77faf33c9005abbf83c0"
+    },
+    {
+      "original_path": "Animation Script/data/NinjaBase-1.png",
+      "path": "logic/characters/SpriteTest/data/NinjaBase-1.png",
+      "bytes": 936721,
+      "sha256": "2caca06584c1b69028f6ddc5b3adfcaa9153d6941dba5f85fc0e75d151bdb149"
+    },
+    {
+      "original_path": "Animation Script/data/NinjaBase-2.png",
+      "path": "logic/characters/SpriteTest/data/NinjaBase-2.png",
+      "bytes": 838029,
+      "sha256": "ae17b0ca16862adc75a04d25ad18b5b3ab8fca39b4b5b6e84bfa0750ee547b00"
+    },
+    {
+      "original_path": "Animation Script/data/result.json",
+      "path": "logic/characters/SpriteTest/data/result.json",
+      "bytes": 17653,
+      "sha256": "7b6e3cb63c034de04ec5ff4acf4b364424aa501981b300ab5b2ad510e4433e35"
+    },
+    {
+      "original_path": "Animation Script/data/result2.json",
+      "path": "logic/characters/SpriteTest/data/result2.json",
+      "bytes": 38842,
+      "sha256": "15849c435fb5ee8167e909ead1aa414f82d1ce5aba9f6d572b44f12068bd4210"
+    },
+    {
+      "original_path": "Animation Script/data/result3.json",
+      "path": "logic/characters/SpriteTest/data/result3.json",
+      "bytes": 45396,
+      "sha256": "2f8b0cce0e8caf5d2030ab6b378899b8a3e9b2f3ee8fc75da51720c9a4ae24b5"
+    },
+    {
+      "original_path": "Animation Script/data/result4.json",
+      "path": "logic/characters/SpriteTest/data/result4.json",
+      "bytes": 592794,
+      "sha256": "26c396a8d7ef5b646f1074a5a5d55f77f106a91e3eb41470854710be26ac1298"
+    },
+    {
+      "original_path": "Animation Script/data/result5.json",
+      "path": "logic/characters/SpriteTest/data/result5.json",
+      "bytes": 753670,
+      "sha256": "8d4f308c864258ccc50c434598cda25748547939782138426228bdaa7354acb9"
+    },
+    {
+      "original_path": "Animation Script/data/SourceCodePro-Regular.ttf",
+      "path": "logic/characters/SpriteTest/data/SourceCodePro-Regular.ttf",
+      "bytes": 120548,
+      "sha256": "2967dd73df838d2a2d390a638c6d7cfe9cd60c5ee2e162d8a1c10a70ea742b5c"
+    },
+    {
+      "original_path": "Sounds and Music/Cheer1.mp3",
+      "path": "audio/effects/Cheer1.mp3",
+      "bytes": 107853,
+      "sha256": "c25573edcf0cb0641036f75f96ea2b1d24d8d1ab6244b5486fb75b6145d7e909"
+    },
+    {
+      "original_path": "Sounds and Music/Chime1.mp3",
+      "path": "audio/effects/Chime1.mp3",
+      "bytes": 17114,
+      "sha256": "45f335a96d5d754a35a7b4d24b4472368a9d8acf954ea44817980ea562ff4042"
+    },
+    {
+      "original_path": "Sounds and Music/Click1.mp3",
+      "path": "audio/effects/Click1.mp3",
+      "bytes": 1154,
+      "sha256": "8248662dd707bd952c90464eb9ca8414af30acd5f2c6499e31031eb7d9b2f30b"
+    },
+    {
+      "original_path": "Sounds and Music/Ha1.mp3",
+      "path": "audio/effects/Ha1.mp3",
+      "bytes": 8185,
+      "sha256": "fff73efd3b83354cf8a02513925b733fbd22e21b9821370ea3a902f391fb8d61"
+    },
+    {
+      "original_path": "Sounds and Music/Ha2.mp3",
+      "path": "audio/effects/Ha2.mp3",
+      "bytes": 7653,
+      "sha256": "eba80bb4fd47d6fa7c2f484d16e6737660da340f5c15b6549f130b43bcfcf598"
+    },
+    {
+      "original_path": "Sounds and Music/Hahahiya1.mp3",
+      "path": "audio/effects/Hahahiya1.mp3",
+      "bytes": 32884,
+      "sha256": "4386213fe90d02cf7c57ea202e9c06d32db456a99f5ebaa805dba05fb7493dac"
+    },
+    {
+      "original_path": "Sounds and Music/Hahahiya2.mp3",
+      "path": "audio/effects/Hahahiya2.mp3",
+      "bytes": 38577,
+      "sha256": "7d23422e6728525a28ad5986c0519dc792f648d09f4475b5120a98730eaf3c1d"
+    },
+    {
+      "original_path": "Sounds and Music/Hiya1.mp3",
+      "path": "audio/effects/Hiya1.mp3",
+      "bytes": 13677,
+      "sha256": "aa0f35770e088853a964e8d8ef42b8cc3b38f356456c1e841fa2e2c685b87af8"
+    },
+    {
+      "original_path": "Sounds and Music/Hiya2.mp3",
+      "path": "audio/effects/Hiya2.mp3",
+      "bytes": 18123,
+      "sha256": "ccfe65dc3c28b28a341e020ada31e48863a33c463620c513e264ca0a211a13b6"
+    },
+    {
+      "original_path": "Sounds and Music/Music1.mp3",
+      "path": "audio/music/Music1.mp3",
+      "bytes": 2999808,
+      "sha256": "af6bcf9b3d72db4e2e5310fdfdfa009580031c05f07d98ba8da2fe6caf3337d6"
+    },
+    {
+      "original_path": "Sounds and Music/Music2.mp3",
+      "path": "audio/music/Music2.mp3",
+      "bytes": 6917565,
+      "sha256": "41bf688cd445a7e011b5e54793c367a86875d010ce121a67f868decbfffa494d"
+    },
+    {
+      "original_path": "Sounds and Music/Music3.mp3",
+      "path": "audio/music/Music3.mp3",
+      "bytes": 3018082,
+      "sha256": "ab41788eece438b80ccbbc3517439b9b6eaa24289b8a5a762e0b0797ebca6e9a"
+    },
+    {
+      "original_path": "Sounds and Music/Shing1.mp3",
+      "path": "audio/effects/Shing1.mp3",
+      "bytes": 14645,
+      "sha256": "2e3d4881ab28dff703b38eb7bdedf90131d0d5483292685169c88f2fea700d74"
+    },
+    {
+      "original_path": "Sounds and Music/Smack1.mp3",
+      "path": "audio/effects/Smack1.mp3",
+      "bytes": 4442,
+      "sha256": "ccaecaca47a0673647164658709a4da63d6847aca7a9ec4d32b5809869c95bf1"
+    },
+    {
+      "original_path": "Sounds and Music/Tally1.mp3",
+      "path": "audio/effects/Tally1.mp3",
+      "bytes": 17810,
+      "sha256": "8c85a3cf7de3649617e83cc377721a4e7d24afa5c5a54dd1cb1c25885aa80e01"
+    },
+    {
+      "original_path": "Sounds and Music/Whoosh1.mp3",
+      "path": "audio/effects/Whoosh1.mp3",
+      "bytes": 8978,
+      "sha256": "65e58880982b44175318038838c53abd2b64302512ef232e4e1308761a3764ee"
+    },
+    {
+      "original_path": "logic/characters/Sprites/WO_Sprites1-0.png",
+      "path": "logic/characters/Sprites/WO_Sprites1-0.png",
+      "bytes": 491668,
+      "sha256": "4392afc88d42fa0254e56c779240555d51566dc1e82e8ce38543f06799ea064a"
+    },
+    {
+      "original_path": "logic/characters/Sprites/WO_Sprites1-1.png",
+      "path": "logic/characters/Sprites/WO_Sprites1-1.png",
+      "bytes": 644434,
+      "sha256": "e99198b5c3a961e6b34df02fb216cee23865867d483d5607463836cf303bd877"
+    },
+    {
+      "original_path": "logic/characters/Sprites/WO_Sprites1-2.png",
+      "path": "logic/characters/Sprites/WO_Sprites1-2.png",
+      "bytes": 661201,
+      "sha256": "ac0adc4cb6d2d217246e5a98833cbc78c4a01ac54e46d2d4f7f2ae6ef909283a"
+    },
+    {
+      "original_path": "logic/characters/Sprites/WO_Sprites1-3.png",
+      "path": "logic/characters/Sprites/WO_Sprites1-3.png",
+      "bytes": 585498,
+      "sha256": "18916811c515f878f5c947151ce6af04a05d4548bdb585704e3b5c4804bc452d"
+    },
+    {
+      "original_path": "logic/characters/Sprites/WO_Sprites1-4.png",
+      "path": "logic/characters/Sprites/WO_Sprites1-4.png",
+      "bytes": 961135,
+      "sha256": "bc49b9a66875b276fed275bd29a19294235c57e4830b83e299b23a77a4fc9681"
+    },
+    {
+      "original_path": "logic/characters/Sprites/WO_Sprites1-5.png",
+      "path": "logic/characters/Sprites/WO_Sprites1-5.png",
+      "bytes": 723503,
+      "sha256": "659e7d8fcfd0ed880da5aace6a2becb2a045722a4ef7ee0fd85b9e012e39dee6"
+    },
+    {
+      "original_path": "logic/characters/Sprites/WO_Sprites1_merged.json",
+      "path": "logic/characters/Sprites/WO_Sprites1_merged.json",
+      "bytes": 1231241,
+      "sha256": "b967cfc76793a0f76391342f31287f77672b0143e4b0ae98baa42ad518782989"
+    }
+  ]
+}

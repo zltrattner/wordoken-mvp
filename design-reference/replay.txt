@@ -1,0 +1,275 @@
+const imgGroup = "https://www.figma.com/api/mcp/asset/59f92dbf-1c6d-4482-bf1d-f94fced2add8.svg";
+const imgFrame = "https://www.figma.com/api/mcp/asset/725359c8-b0d2-40ea-a675-0d2ab74a356c.svg";
+const imgLegsBlack = "https://www.figma.com/api/mcp/asset/b2fe5c4d-e986-475c-8cd3-5a5753d33976.png";
+const imgTorsoBlack = "https://www.figma.com/api/mcp/asset/1f3899e9-9d65-4302-8270-0bf3fb994475.png";
+const imgHeadBackRed = "https://www.figma.com/api/mcp/asset/47f2eed3-dc44-4aa3-b3b4-a455a362ef9e.png";
+const imgSkinLight = "https://www.figma.com/api/mcp/asset/1309c64c-a0af-4711-81e9-77fdc54c9d94.png";
+const imgEyesAngry = "https://www.figma.com/api/mcp/asset/a9522a8e-fd2b-4fd4-9a3c-c7b3adec2422.png";
+const imgVector = "https://www.figma.com/api/mcp/asset/ec64a3b8-e148-432a-9040-fce24d5a312a.svg";
+const imgVector1 = "https://www.figma.com/api/mcp/asset/aa6a7a0c-718d-4e61-aebe-7a4f5310f248.svg";
+const imgVector2 = "https://www.figma.com/api/mcp/asset/af109e92-970c-4729-97e0-5c1d46452641.svg";
+
+function IconTrophyTilted({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="624:2897" data-name="Icon/TrophyTilted">
+      <div className="absolute flex inset-[7.1%_6.44%_2.98%_7.1%] items-center justify-center" data-node-id="624:2893" style={{ containerType: "size" }}>
+        <div className="-rotate-9 flex-none h-[hypot(14.3237cqw,86.9529cqh)] w-[hypot(85.6763cqw,-13.0471cqh)]">
+          <div className="relative size-full" data-name="Group">
+            <div className="absolute inset-[-3.95%_-4.17%_-3.95%_-4.16%]">
+              <img alt="" className="block max-w-none size-full" src={imgGroup} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+type LetterTileProps = {
+  className?: string;
+  letter?: string;
+  state?: "Default" | "Fixed";
+};
+
+function LetterTile({ className, letter = "A", state = "Default" }: LetterTileProps) {
+  const isFixed = state === "Fixed";
+  return (
+    <div className={className || `border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative size-[68px] ${isFixed ? "bg-[var(--wordoken-color-action-destructive,#e54c34)]" : "bg-[var(--wordoken-color-surface-default,white)]"}`} id={isFixed ? "node-36_112" : "node-36_108"}>
+      <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[68px] justify-center leading-[0] left-[calc(50%+0.02px)] not-italic text-[38px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[calc(50%-3.51px)] w-[64px]" data-node-id="36:109">
+        <p className="leading-[normal]">{letter}</p>
+      </div>
+    </div>
+  );
+}
+
+function IconBackspace({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[28px]"} data-node-id="168:147" data-name="Icon/Backspace">
+      <div className="absolute left-0 size-[28px] top-0" data-node-id="168:148" data-name="Frame">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+      </div>
+    </div>
+  );
+}
+
+export default function Component10CGameplayArchiveReplayDemo() {
+  return (
+    <div className="bg-[var(--wordoken-color-bg-blue,#4377bc)] content-stretch flex flex-col items-center relative size-full" data-node-id="300:3952" data-name="10C Gameplay / Archive replay demo">
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start max-w-[402px] min-h-[740px] overflow-clip relative w-full" data-node-id="565:7217" data-name="Responsive / centered game column">
+        <div className="absolute inset-0 overflow-clip" data-node-id="300:3953" data-name="GridOverlay">
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[50px] top-0 w-px" data-node-id="I300:3953;34:55" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[101px] top-0 w-px" data-node-id="I300:3953;34:56" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[152px] top-0 w-px" data-node-id="I300:3953;34:57" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[203px] top-0 w-px" data-node-id="I300:3953;34:58" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[254px] top-0 w-px" data-node-id="I300:3953;34:59" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[305px] top-0 w-px" data-node-id="I300:3953;34:60" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[356px] top-0 w-px" data-node-id="I300:3953;34:61" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[50px] w-[402px]" data-node-id="I300:3953;34:62" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[101px] w-[402px]" data-node-id="I300:3953;34:63" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[152px] w-[402px]" data-node-id="I300:3953;34:64" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[203px] w-[402px]" data-node-id="I300:3953;34:65" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[254px] w-[402px]" data-node-id="I300:3953;34:66" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[305px] w-[402px]" data-node-id="I300:3953;34:67" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[356px] w-[402px]" data-node-id="I300:3953;34:68" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[407px] w-[402px]" data-node-id="I300:3953;34:69" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[458px] w-[402px]" data-node-id="I300:3953;34:70" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[509px] w-[402px]" data-node-id="I300:3953;34:71" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[560px] w-[402px]" data-node-id="I300:3953;34:72" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[611px] w-[402px]" data-node-id="I300:3953;34:73" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[662px] w-[402px]" data-node-id="I300:3953;34:74" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[713px] w-[402px]" data-node-id="I300:3953;34:75" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[764px] w-[402px]" data-node-id="I300:3953;34:76" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[815px] w-[402px]" data-node-id="I300:3953;34:77" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[866px] w-[402px]" data-node-id="I300:3953;34:78" data-name="grid/h" />
+        </div>
+        <div className="-translate-x-1/2 absolute bottom-[16px] left-1/2 top-[16px] w-[320px]" data-node-id="300:3985" data-name="Gameplay / hard mode">
+          <div className="absolute bottom-0 content-stretch flex gap-[16px] h-[40px] items-start left-0 right-0" data-node-id="300:3990" data-name="bottom anchored actions">
+            <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex gap-[12px] h-[40px] items-center justify-center px-[4px] relative shrink-0 w-[96px]" data-node-id="300:3991" data-name="Clear">
+              <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[15px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[196px]" data-node-id="I300:3991;35:13">
+                <p className="leading-[normal]">CLEAR</p>
+              </div>
+            </div>
+            <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex gap-[12px] h-[40px] items-center justify-center px-[4px] relative shrink-0 w-[96px]" data-node-id="300:3992" data-name="Shuffle">
+              <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[15px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[196px]" data-node-id="I300:3992;35:13">
+                <p className="leading-[normal]">SHUFFLE</p>
+              </div>
+            </div>
+            <a className="bg-[var(--wordoken-color-action-secondary,#78bb90)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[7px_7px_0px_black] flex gap-[12px] h-[40px] items-center justify-center px-[4px] relative shrink-0 w-[96px]" data-node-id="300:3993" data-name="Submit">
+              <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[15px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[196px]" data-node-id="I300:3993;35:33">
+                <p className="leading-[normal]">SUBMIT</p>
+              </div>
+            </a>
+          </div>
+          <div className="absolute inset-[204px_0_68px_0]" data-node-id="300:3994" data-name="Gameplay content / distribute vertically">
+            <div className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid drop-shadow-[7px_7px_0px_black] h-[160px] left-0 top-0 w-[320px]" data-node-id="300:4001" data-name="Combat arena">
+              <div className="absolute content-stretch flex gap-[40px] h-[148px] items-center justify-center left-[18px] overflow-clip top-[4px] w-[280px]" data-node-id="I300:4001;168:195" data-name="Fighters">
+                <div className="h-[142px] relative shrink-0 w-[85.634px]" data-node-id="I300:4001;235:731" data-name="Player fighter">
+                  <div className="absolute h-[52.031px] left-[24.93px] top-[89.97px] w-[37.939px]" data-node-id="I300:4001;235:731;234:9" data-name="Legs_Black">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[3260.42%] left-[-5620%] max-w-none top-[-2262.5%] w-[5794.29%]" src={imgLegsBlack} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[54.198px] left-[16.26px] top-[57.45px] w-[69.374px]" data-node-id="I300:4001;235:731;234:10" data-name="Torso_Black">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[4058%] left-[-2190.63%] max-w-none top-[-3956%] w-[3198.44%]" src={imgTorsoBlack} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[68.29px] left-0 top-0 w-[84.55px]" data-node-id="I300:4001;235:731;234:11" data-name="HeadBack_Red">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[3220.63%] left-[-511.54%] max-w-none top-[-760.32%] w-[2625.64%]" src={imgHeadBackRed} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[31.435px] left-[36.85px] top-[23.85px] w-[47.695px]" data-node-id="I300:4001;235:731;234:12" data-name="Skin_Light">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[7062.07%] left-[-2634.09%] max-w-none top-[-6375.86%] w-[4579.55%]" src={imgSkinLight} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[20.595px] left-[54.2px] top-[31.44px] w-[29.267px]" data-node-id="I300:4001;235:731;234:13" data-name="Eyes_Angry">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[10773.68%] left-[-6433.33%] max-w-none top-[-7752.63%] w-[7585.19%]" src={imgEyesAngry} />
+                    </div>
+                  </div>
+                </div>
+                <div className="h-[142px] relative shrink-0 w-[65.32px]" data-node-id="I300:4001;235:797" data-name="Opponent fighter">
+                  <div className="absolute h-[49.227px] left-[19.88px] top-[92.77px] w-[29.347px]" data-node-id="I300:4001;235:797;234:15" data-name="Legs_Black">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[3938.46%] left-[-6396.77%] max-w-none top-[-1.92%] w-[6500%]" src={imgSkinLight} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[51.12px] left-[22.72px] top-[63.43px] w-[34.08px]" data-node-id="I300:4001;235:797;234:16" data-name="Torso_Black">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[3757.41%] left-[-5533.33%] max-w-none top-[-2587.04%] w-[5686.11%]" src={imgTorsoBlack} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[71.947px] left-0 top-0 w-[65.32px]" data-node-id="I300:4001;235:797;234:17" data-name="HeadBack_Red">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[2694.74%] left-[-1944.93%] max-w-none top-[-1988.16%] w-[2920.29%]" src={imgSkinLight} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[28.4px] left-0 top-[31.24px] w-[38.813px]" data-node-id="I300:4001;235:797;234:18" data-name="Skin_Light">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[5216.67%] left-[-4129.27%] max-w-none top-[-4590%] w-[4946.34%]" src={imgLegsBlack} />
+                    </div>
+                  </div>
+                  <div className="absolute h-[17.04px] left-[2.84px] top-[39.76px] w-[21.773px]" data-node-id="I300:4001;235:797;234:19" data-name="Eyes_Normal">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[11377.78%] left-[-5791.3%] max-w-none top-[-9650%] w-[8760.87%]" src={imgSkinLight} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="absolute h-[36px] left-0 top-[172px] w-[320px]" data-node-id="300:4002" data-name="Word tray / shared feedback surface">
+              <div className="absolute content-stretch flex gap-[var(--wordoken-space-0,0px)] h-[36px] items-center left-0 p-[var(--wordoken-stroke-default,2px)] top-0 w-[320px]" data-node-id="388:4957" data-name="Prototype / native found-word scroll / 300:4003">
+                <div className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex gap-[var(--wordoken-space-0,0px)] h-[36px] items-center left-0 p-[var(--wordoken-stroke-default,2px)] top-0 w-[320px]" data-node-id="388:4958" data-name="FoundWordsTray / shared chrome" />
+                <div className="flex-[1_0_0] h-[32px] min-w-px overflow-x-auto overflow-y-clip relative" data-node-id="388:4992" data-name="Found words / native horizontal viewport">
+                  <div className="[word-break:break-word] absolute content-stretch flex font-['Fixture:Expanded_Medium'] gap-[28px] h-[32px] items-center leading-[normal] left-0 not-italic px-[var(--wordoken-space-3,12px)] text-[15px] text-[color:var(--wordoken-color-text-primary,#010101)] top-0 whitespace-nowrap" data-node-id="388:4993" data-name="Found words / native text row">
+                    <p className="relative shrink-0" data-node-id="388:4994">
+                      COMPUTER
+                    </p>
+                    <p className="relative shrink-0" data-node-id="388:4995">
+                      COMET
+                    </p>
+                    <p className="relative shrink-0" data-node-id="388:4996">
+                      ROUTE
+                    </p>
+                    <p className="relative shrink-0" data-node-id="388:4997">
+                      ROPE
+                    </p>
+                    <p className="relative shrink-0" data-node-id="388:4998">
+                      TOME
+                    </p>
+                  </div>
+                </div>
+                <div className="content-stretch flex h-[32px] items-center justify-center overflow-clip relative shrink-0 w-[40px]" data-node-id="388:4999" data-name="Found words / next native slot">
+                  <button className="bg-[var(--wordoken-color-surface-default,white)] content-stretch cursor-pointer flex h-[32px] items-center justify-center relative shrink-0 w-[40px]" data-node-id="388:5000" data-name="Found words / next native button">
+                    <div className="relative shrink-0 size-[24px]" data-node-id="I388:5000;121:141" data-name="icon">
+                      <div className="absolute left-0 size-[24px] top-0" data-node-id="I388:5000;121:141;34:5" data-name="vector">
+                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="absolute drop-shadow-[7px_7px_0px_black] h-[44px] left-0 top-[224px] w-[320px]" data-node-id="300:4004" data-name="word entry with backspace">
+              <div className="absolute bg-[#f7ce10] border-2 border-[#010101] border-solid left-0 size-[44px] top-0" data-node-id="I300:4004;156:155" data-name="backspace" />
+              <div className="absolute bg-white border-2 border-[#010101] border-solid h-[44px] left-[44px] top-0 w-[276px]" data-node-id="I300:4004;156:157" data-name="entry" />
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[40px] justify-center leading-[0] left-[182px] not-italic text-[#010101] text-[32px] text-center top-[22px] w-[260px]" data-node-id="I300:4004;156:158">
+                <p className="leading-[normal]">COMPUTER</p>
+              </div>
+              <IconBackspace className="absolute left-[8px] size-[28px] top-[8px]" />
+            </div>
+            <div className="absolute content-stretch flex flex-col gap-[var(--wordoken-space-4,16px)] h-[152px] items-start left-0 top-[284px] w-[320px]" data-node-id="300:4005" data-name="hard mode letters / 4 x 2">
+              <div className="content-stretch flex gap-[16px] h-[68px] items-start relative shrink-0 w-[320px]" data-node-id="300:4006" data-name="Hard letters / row 1">
+                <LetterTile className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[68px]" letter="C" />
+                <LetterTile className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[68px]" letter="M" />
+                <LetterTile className="bg-[var(--wordoken-color-action-destructive,#e54c34)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[68px]" letter="T" state="Fixed" />
+                <LetterTile className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[68px]" letter="U" />
+              </div>
+              <div className="content-stretch flex gap-[16px] h-[68px] items-start relative shrink-0 w-[320px]" data-node-id="300:4011" data-name="Hard letters / row 2">
+                <LetterTile className="bg-[var(--wordoken-color-action-destructive,#e54c34)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[68px]" letter="O" state="Fixed" />
+                <LetterTile className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[68px]" letter="E" />
+                <LetterTile className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[68px]" letter="R" />
+                <LetterTile className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[68px]" letter="P" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <a className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[4px_4px_0px_black] flex items-center justify-center left-[8px] size-[32px] top-[8px]" data-node-id="592:4775" data-name="Archive replay / back to Archive">
+          <div className="relative shrink-0 size-[24px]" data-node-id="I592:4775;121:141" data-name="icon">
+            <div className="absolute left-0 size-[24px] top-0" data-node-id="I592:4775;121:141;34:2" data-name="vector">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+            </div>
+          </div>
+        </a>
+        <button className="absolute bg-[var(--wordoken-color-white,white)] border-2 border-[var(--wordoken-color-ink,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[4px_4px_0px_black] flex gap-[var(--wordoken-space-1,4px)] h-[32px] items-center justify-center right-[8px] top-[8px] w-[174px]" data-node-id="592:4785" data-name="Archive replay / CHALLENGES">
+          <IconTrophyTilted className="relative shrink-0 size-[18px]" />
+          <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[20px] justify-center leading-[0] not-italic relative shrink-0 text-[11px] text-[color:var(--wordoken-color-ink,#010101)] text-center w-[136px]" data-node-id="I592:4785;624:2904">
+            <p className="leading-[normal]">MY CHALLENGES</p>
+          </div>
+        </button>
+        <div className="-translate-x-1/2 absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex flex-col gap-[var(--wordoken-space-0,0px)] h-[136px] items-start left-1/2 top-[64px] w-[320px]" data-node-id="638:4889" data-name="Archive replay / match summary">
+          <div className="bg-[var(--wordoken-color-yellow,#f7ce10)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch flex h-[26px] items-start overflow-clip relative shrink-0 w-full" data-node-id="I638:4889;637:3486" data-name="Yellow score labels">
+            <div className="border-[var(--wordoken-color-border-default,#010101)] border-r-2 border-solid content-stretch flex flex-[1_0_0] h-[26px] items-center justify-center min-w-px overflow-clip relative" data-node-id="I638:4889;637:3488" data-name="Your score label">
+              <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_SemiBold'] h-[22px] justify-center leading-[0] not-italic relative shrink-0 text-[12px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center tracking-[0.2px] w-[152px]" data-node-id="I638:4889;637:3490">
+                <p className="leading-[16px]">YOUR SCORE</p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-[1_0_0] h-[26px] items-center justify-center min-w-px overflow-clip relative" data-node-id="I638:4889;637:3492" data-name="Opponent label">
+              <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_SemiBold'] h-[22px] justify-center leading-[0] not-italic relative shrink-0 text-[12px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center tracking-[0.2px] w-[152px]" data-node-id="I638:4889;637:3494">
+                <p className="leading-[16px]">vs. Guest558</p>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex h-[74px] items-start overflow-clip relative shrink-0 w-full" data-node-id="I638:4889;637:3487" data-name="Saved scores / asymmetric">
+            <div className="border-[var(--wordoken-color-border-default,#010101)] border-r-2 border-solid content-stretch flex flex-[1_0_0] flex-col h-[74px] items-center justify-end min-w-px overflow-clip pb-[var(--wordoken-space-3,12px)] relative" data-node-id="I638:4889;637:3489" data-name="Your score / primary">
+              <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] justify-center leading-[0] not-italic relative shrink-0 text-[64px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center tracking-[-1px] w-[152px]" data-node-id="I638:4889;637:3491">
+                <p className="leading-[normal]">15</p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-[1_0_0] flex-col h-[74px] items-center justify-end min-w-px overflow-clip pb-[var(--wordoken-space-3,12px)] relative" data-node-id="I638:4889;637:3493" data-name="Opponent score / secondary">
+              <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] justify-center leading-[0] not-italic relative shrink-0 text-[64px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center tracking-[-1px] w-[152px]" data-node-id="I638:4889;637:3495">
+                <p className="leading-[normal]">12</p>
+              </div>
+            </div>
+          </div>
+          <button className="bg-[var(--wordoken-color-surface-default,white)] content-stretch cursor-pointer flex h-[36px] items-center relative shrink-0 w-full" data-node-id="I638:4889;637:3496" data-name="Challenge link / copy action">
+            <div className="bg-[var(--wordoken-color-action-secondary,#78bb90)] border-[var(--wordoken-color-border-default,#010101)] border-b-2 border-l-2 border-solid border-t-2 content-stretch flex h-[36px] items-center justify-center relative shrink-0 w-[276px]" data-node-id="I638:4889;637:3496;121:118" data-name="label-surface">
+              <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[32px] justify-center leading-[0] not-italic relative shrink-0 text-[17px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[260px]" data-node-id="I638:4889;637:3496;121:119">
+                <p className="leading-[normal]">CHALLENGE LINK</p>
+              </div>
+            </div>
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch flex h-[36px] items-center justify-center relative shrink-0 w-[44px]" data-node-id="I638:4889;637:3496;121:120" data-name="icon-surface">
+              <div className="relative shrink-0 size-[20px]" data-node-id="I638:4889;637:3496;121:121" data-name="icon">
+                <div className="absolute left-0 size-[24px] top-0" data-node-id="I638:4889;637:3496;121:121;34:47" data-name="vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector2} />
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}

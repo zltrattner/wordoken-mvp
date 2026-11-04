@@ -5,5 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   publicDir: false,
+  // Scan the gallery, excluding package-consumer fixtures that require a build.
+  optimizeDeps: { entries: ['index.html'] },
   build: { outDir: 'dist-preview' },
 });

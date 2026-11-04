@@ -1,24 +1,76 @@
 import { useState } from 'react';
 import {
   ActionButton,
+  Archive,
+  ArchiveReplay,
+  ChangePassword,
+  ChallengeInvite,
   Countdown,
   CurrencyBadge,
+  EditAvatar,
   Fighters,
   FoundWordsTray,
   GameTimer,
   Gameplay,
   Home,
+  HowToPlay,
   LetterTile,
+  LinkedAccountSignUp,
+  PostGame,
   ScoreCard,
+  Settings,
+  SignIn,
+  SignUp,
   SocialRow,
+  SoundSettings,
   Start,
+  Store,
+  Subscription,
   WordEntry,
   WordokenTheme,
+  assets,
 } from '../index';
 import type { Difficulty, WordFeedback } from '../types';
-import { difficultyOptions, gameSamples } from './fixtures';
+import {
+  archiveEntries,
+  difficultyOptions,
+  gameSamples,
+  standardRewards,
+  storeItems,
+  winRewards,
+} from './fixtures';
 
-const views = ['start', 'home', 'easy', 'medium', 'hard', 'countdown', 'components'] as const;
+const views = [
+  'start',
+  'signin',
+  'signup',
+  'home',
+  'invite',
+  'store',
+  'archive',
+  'settings',
+  'avatar',
+  'password',
+  'sound',
+  'subscribe',
+  'active-plan',
+  'linked-google',
+  'linked-facebook',
+  'linked-tiktok',
+  'easy',
+  'medium',
+  'hard',
+  'replay',
+  'win',
+  'loss',
+  'tie',
+  'tutorial-words',
+  'tutorial-difficulty',
+  'tutorial-controls',
+  'tutorial-customize',
+  'countdown',
+  'components',
+] as const;
 type View = (typeof views)[number];
 const requested = new URLSearchParams(location.search).get('view');
 const initialView: View = views.includes(requested as View) ? (requested as View) : 'hard';
@@ -39,6 +91,7 @@ export function PreviewApp() {
         ? { message: 'Use every red letter.', tone: 'error' }
         : undefined;
   const log = (name: string) => setEvent(name);
+  const sharedTop = { onBack: () => log('onBack'), onSound: () => log('onSound') };
   const changeView = (next: View) => {
     setView(next);
     const url = new URL(location.href);
@@ -101,6 +154,23 @@ export function PreviewApp() {
             }}
           />
         )}
+        {view === 'signin' && (
+          <SignIn
+            {...sharedTop}
+            onSubmit={() => log('SignIn.onSubmit')}
+            onSocial={log}
+            onSignUp={() => log('SignIn.onSignUp')}
+            onForgotPassword={() => log('SignIn.onForgotPassword')}
+          />
+        )}
+        {view === 'signup' && (
+          <SignUp
+            {...sharedTop}
+            usernameError="USERNAME IS TAKEN"
+            onSubmit={() => log('SignUp.onSubmit')}
+            onSocial={log}
+          />
+        )}
         {view === 'home' && (
           <Home
             mode={mode}
@@ -124,6 +194,137 @@ export function PreviewApp() {
             onService={(name) => log(`Home.onService(${name})`)}
           />
         )}
+        {view === 'invite' && (
+          <ChallengeInvite
+            challenger="Guest445"
+            difficulty="medium"
+            option={difficultyOptions[1]}
+            onSound={() => log('Invite.onSound')}
+            onHowToPlay={() => log('Invite.onHowToPlay')}
+            onSignIn={() => log('Invite.onSignIn')}
+            onStart={() => log('Invite.onStart')}
+          />
+        )}
+        {view === 'store' && (
+          <Store
+            level={12}
+            coins={725}
+            items={storeItems}
+            onSelectItem={(id) => log(`Store.onSelectItem(${id})`)}
+            onSubscribe={() => log('Store.onSubscribe')}
+            onCurrency={() => log('Store.onCurrency')}
+            onNavigate={log}
+          />
+        )}
+        {view === 'archive' && (
+          <Archive
+            level={12}
+            coins={725}
+            wins={11}
+            ties={1}
+            losses={5}
+            entries={archiveEntries}
+            onCurrency={() => log('Archive.onCurrency')}
+            onOpen={(id) => log(`Archive.onOpen(${id})`)}
+            onSignUp={() => log('Archive.onSignUp')}
+            onNavigate={log}
+          />
+        )}
+        {view === 'settings' && (
+          <Settings
+            signedIn={false}
+            onEditAvatar={() => log('Settings.onEditAvatar')}
+            onSubscription={() => log('Settings.onSubscription')}
+            onChangePassword={() => log('Settings.onChangePassword')}
+            onSound={() => log('Settings.onSound')}
+            onAuth={() => log('Settings.onAuth')}
+            onNavigate={log}
+          />
+        )}
+        {view === 'avatar' && (
+          <EditAvatar
+            {...sharedTop}
+            username="Guest445"
+            level={12}
+            coins={725}
+            signedIn={false}
+            options={[
+              { id: 'skin', label: 'Light Complexion', selected: true },
+              { id: 'bandana', label: 'Red Bandana', art: assets.bandanaRed, selected: true },
+              { id: 'eyes', label: 'Angry Eyes', selected: true },
+            ]}
+            onCurrency={() => log('EditAvatar.onCurrency')}
+            onEditUsername={() => log('EditAvatar.onEditUsername')}
+            onCreateAccount={() => log('EditAvatar.onCreateAccount')}
+            onPrevious={() => log('EditAvatar.onPrevious')}
+            onNext={() => log('EditAvatar.onNext')}
+            onSelectOption={(id) => log(`EditAvatar.onSelectOption(${id})`)}
+            onCancel={() => log('EditAvatar.onCancel')}
+            onSave={() => log('EditAvatar.onSave')}
+          />
+        )}
+        {view === 'password' && (
+          <ChangePassword
+            onBack={() => log('ChangePassword.onBack')}
+            onSubmit={() => log('ChangePassword.onSubmit')}
+          />
+        )}
+        {view === 'sound' && (
+          <SoundSettings
+            {...sharedTop}
+            music={75}
+            effects={100}
+            onMusicChange={(value) => log(`SoundSettings.onMusicChange(${value})`)}
+            onEffectsChange={(value) => log(`SoundSettings.onEffectsChange(${value})`)}
+            onToggleMusic={() => log('SoundSettings.onToggleMusic')}
+            onToggleEffects={() => log('SoundSettings.onToggleEffects')}
+            onDone={() => log('SoundSettings.onDone')}
+          />
+        )}
+        {view === 'subscribe' && (
+          <Subscription
+            onBack={() => log('Subscription.onBack')}
+            onAction={() => log('Subscription.onAction')}
+          />
+        )}
+        {view === 'active-plan' && (
+          <Subscription
+            active
+            onBack={() => log('Subscription.onBack')}
+            onAction={() => log('Subscription.onAction')}
+          />
+        )}
+        {view === 'linked-google' && (
+          <LinkedAccountSignUp
+            {...sharedTop}
+            provider="google"
+            accountName="Zach Example"
+            accountDetail="zach@example.com"
+            usernameError="USERNAME IS TAKEN"
+            onChangeAccount={() => log('Linked.onChangeAccount')}
+            onSubmit={() => log('Linked.onSubmit')}
+          />
+        )}
+        {view === 'linked-facebook' && (
+          <LinkedAccountSignUp
+            {...sharedTop}
+            provider="facebook"
+            accountName="Zach Example"
+            usernameError="USERNAME IS TAKEN"
+            onChangeAccount={() => log('Linked.onChangeAccount')}
+            onSubmit={() => log('Linked.onSubmit')}
+          />
+        )}
+        {view === 'linked-tiktok' && (
+          <LinkedAccountSignUp
+            {...sharedTop}
+            provider="tiktok"
+            accountName="@guest445"
+            usernameError="USERNAME IS TAKEN"
+            onChangeAccount={() => log('Linked.onChangeAccount')}
+            onSubmit={() => log('Linked.onSubmit')}
+          />
+        )}
         {(view === 'easy' || view === 'medium' || view === 'hard') && (
           <Gameplay
             mode={gameMode}
@@ -138,6 +339,49 @@ export function PreviewApp() {
             onClear={() => log('Gameplay.onClear')}
             onShuffle={() => log('Gameplay.onShuffle')}
             onSubmit={() => log('Gameplay.onSubmit')}
+          />
+        )}
+        {view === 'replay' && (
+          <ArchiveReplay
+            playerName="Guest445"
+            playerScore={64}
+            opponentName="RobbieRobertson"
+            opponentScore={64}
+            challengeLink="wordoken.game/c/2KEOXNx"
+            words={gameSamples.medium.words}
+            entry={gameSamples.medium.entry}
+            tiles={gameSamples.medium.tiles}
+            onBack={() => log('Replay.onBack')}
+            onChallenges={() => log('Replay.onChallenges')}
+            onCopyLink={() => log('Replay.onCopyLink')}
+            onLetterSelect={(id) => log(`Replay.onLetterSelect(${id})`)}
+            onBackspace={() => log('Replay.onBackspace')}
+            onClear={() => log('Replay.onClear')}
+            onShuffle={() => log('Replay.onShuffle')}
+            onSubmit={() => log('Replay.onSubmit')}
+          />
+        )}
+        {(view === 'win' || view === 'loss' || view === 'tie') && (
+          <PostGame
+            outcome={view}
+            playerScore={view === 'win' ? 58 : 15}
+            opponentScore={view === 'win' ? 15 : 58}
+            xp={151}
+            rewards={view === 'win' ? winRewards : standardRewards}
+            challengeLink="http://bit.ly/2KEOXNx"
+            onChallenge={() => log('PostGame.onChallenge')}
+            onContinue={() => log('PostGame.onContinue')}
+          />
+        )}
+        {view.startsWith('tutorial-') && (
+          <HowToPlay
+            step={
+              view.replace('tutorial-', '') as 'words' | 'difficulty' | 'controls' | 'customize'
+            }
+            {...sharedTop}
+            onExit={() => log('HowToPlay.onExit')}
+            onPrevious={view === 'tutorial-words' ? undefined : () => log('HowToPlay.onPrevious')}
+            onNext={() => log('HowToPlay.onNext')}
           />
         )}
         {view === 'countdown' && (

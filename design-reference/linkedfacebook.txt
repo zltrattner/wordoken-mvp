@@ -1,0 +1,139 @@
+const imgIconVolumeOn = "https://www.figma.com/api/mcp/asset/cd4901a8-7319-43a5-bf41-176af14a310b.svg";
+const imgVector = "https://www.figma.com/api/mcp/asset/3d27298e-69af-4faa-be52-b8ebbee8a3ee.svg";
+const imgIconUser = "https://www.figma.com/api/mcp/asset/59ae47dc-2543-4d85-a314-3c5e92091dc5.svg";
+const imgVector1 = "https://www.figma.com/api/mcp/asset/0863dff7-0010-48fa-ae7d-de680cdd4ac4.svg";
+
+function IconVolumeOn({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="324:2145" data-name="Icon/VolumeOn">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconVolumeOn} />
+    </div>
+  );
+}
+
+function IconArrowLeft({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="34:4" data-name="Icon/ArrowLeft">
+      <div className="absolute left-0 size-[24px] top-0" data-node-id="34:2" data-name="vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+      </div>
+    </div>
+  );
+}
+
+function IconUser({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="34:34" data-name="Icon/User">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconUser} />
+    </div>
+  );
+}
+
+function SocialIconFacebook({ className }: { className?: string }) {
+  return (
+    <div className={className || "content-stretch flex items-center justify-center relative size-[36px]"} data-node-id="58:83" data-name="SocialIcon/Facebook">
+      <div className="flex-[1_0_0] h-full min-w-px relative" data-node-id="58:84" data-name="vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+      </div>
+    </div>
+  );
+}
+
+export default function Component12ALinkedAccountSignUpFacebook() {
+  return (
+    <div className="bg-[var(--wordoken-color-bg-green,#78bb90)] content-stretch flex flex-col items-center relative size-full" data-node-id="300:3857" data-name="12A Linked Account Sign Up / Facebook">
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start max-w-[402px] min-h-[740px] overflow-clip relative w-full" data-node-id="565:7216" data-name="Responsive / centered game column">
+        <div className="absolute inset-0 overflow-clip" data-node-id="300:3858" data-name="GridOverlay">
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[50px] top-0 w-px" data-node-id="I300:3858;34:55" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[101px] top-0 w-px" data-node-id="I300:3858;34:56" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[152px] top-0 w-px" data-node-id="I300:3858;34:57" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[203px] top-0 w-px" data-node-id="I300:3858;34:58" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[254px] top-0 w-px" data-node-id="I300:3858;34:59" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[305px] top-0 w-px" data-node-id="I300:3858;34:60" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[356px] top-0 w-px" data-node-id="I300:3858;34:61" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[50px] w-[402px]" data-node-id="I300:3858;34:62" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[101px] w-[402px]" data-node-id="I300:3858;34:63" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[152px] w-[402px]" data-node-id="I300:3858;34:64" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[203px] w-[402px]" data-node-id="I300:3858;34:65" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[254px] w-[402px]" data-node-id="I300:3858;34:66" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[305px] w-[402px]" data-node-id="I300:3858;34:67" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[356px] w-[402px]" data-node-id="I300:3858;34:68" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[407px] w-[402px]" data-node-id="I300:3858;34:69" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[458px] w-[402px]" data-node-id="I300:3858;34:70" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[509px] w-[402px]" data-node-id="I300:3858;34:71" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[560px] w-[402px]" data-node-id="I300:3858;34:72" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[611px] w-[402px]" data-node-id="I300:3858;34:73" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[662px] w-[402px]" data-node-id="I300:3858;34:74" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[713px] w-[402px]" data-node-id="I300:3858;34:75" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[764px] w-[402px]" data-node-id="I300:3858;34:76" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[815px] w-[402px]" data-node-id="I300:3858;34:77" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[866px] w-[402px]" data-node-id="I300:3858;34:78" data-name="grid/h" />
+        </div>
+        <button className="-translate-x-1/2 absolute bg-[var(--wordoken-color-action-primary,#f7ce10)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[7px_7px_0px_black] flex gap-[12px] h-[60px] items-center justify-center left-1/2 px-[12px] top-[582px] w-[320px]" data-node-id="300:3868" data-name="Button">
+          <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[38px] justify-center leading-[0] not-italic relative shrink-0 text-[32px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[296px]" data-node-id="I300:3868;35:3">
+            <p className="leading-[normal]">SIGN UP</p>
+          </div>
+        </button>
+        <div className="-translate-x-1/2 absolute content-stretch flex flex-col h-[264px] items-start left-1/2 top-[140px] w-[320px]" data-node-id="300:3869" data-name="LinkedAccountCard / Facebook">
+          <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[28px] items-center justify-center relative shrink-0 w-[132px]" data-node-id="I300:3869;179:180" data-name="Link account / yellow tab">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[22px] justify-center leading-[0] not-italic relative shrink-0 text-[12px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[118px]" data-node-id="I300:3869;179:181">
+              <p className="leading-[normal]">LINK ACCOUNT</p>
+            </div>
+          </div>
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex flex-col h-[236px] items-start justify-between p-[18px] relative shrink-0 w-[320px]" data-node-id="I300:3869;179:182" data-name="Provider account / white panel">
+            <div className="content-stretch flex flex-col gap-[12px] h-[128px] items-start relative shrink-0 w-[284px]" data-node-id="I300:3869;179:183" data-name="Provider identity">
+              <div className="content-stretch flex gap-[10px] h-[36px] items-center relative shrink-0 w-[284px]" data-node-id="I300:3869;179:184" data-name="Provider brand">
+                <SocialIconFacebook className="content-stretch flex items-center justify-center relative shrink-0 size-[30px]" />
+                <div className="[word-break:break-word] flex flex-col font-['Roboto:Bold'] font-bold h-[36px] justify-center leading-[0] relative shrink-0 text-[#1877f2] text-[28px] w-[200px]" data-node-id="I300:3869;179:189" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  <p className="leading-[normal]">Facebook</p>
+                </div>
+              </div>
+              <div className="[word-break:break-word] flex flex-col font-['Roboto:Bold'] font-bold h-[34px] justify-center leading-[0] relative shrink-0 text-[28px] text-[color:var(--wordoken-color-text-primary,#010101)] w-[284px]" data-node-id="I300:3869;179:190" style={{ fontVariationSettings: '"wdth" 100' }}>
+                <p className="leading-[normal]">Hi, Robert Robertson</p>
+              </div>
+              <div className="content-stretch flex gap-[8px] h-[24px] items-center relative shrink-0 w-[284px]" data-node-id="I300:3869;179:191" data-name="Email / account identity">
+                <IconUser className="relative shrink-0 size-[22px]" />
+                <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal h-[24px] justify-center leading-[0] relative shrink-0 text-[16px] text-[color:var(--wordoken-color-text-primary,#010101)] w-[254px]" data-node-id="I300:3869;179:195" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  <p className="leading-[normal]">rrobertson@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div className="[word-break:break-word] flex flex-col font-['Roboto:Medium'] font-medium h-[26px] justify-center leading-[0] relative shrink-0 text-[18px] text-[color:var(--wordoken-color-bg-blue,#4377bc)] w-[284px]" data-node-id="I300:3869;179:196" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[normal]">Not you? Change account</p>
+            </div>
+          </div>
+        </div>
+        <div className="-translate-x-1/2 absolute content-stretch flex flex-col h-[88px] items-start left-1/2 top-[432px] w-[320px]" data-node-id="300:3870" data-name="InputField">
+          <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-start px-[10px] py-[4px] relative shrink-0" data-node-id="I300:3870;210:350" data-name="label-tag">
+            <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] whitespace-nowrap" data-node-id="I300:3870;210:351">
+              USERNAME
+            </p>
+          </div>
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex gap-[10px] h-[60px] items-center justify-center px-[12px] relative shrink-0 w-full" data-node-id="I300:3870;210:352" data-name="field">
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Medium'] font-medium leading-[normal] min-w-px relative text-[14px] text-[color:var(--color-text-placeholder,#ced0d2)]" data-node-id="I300:3870;210:354">
+              ​
+            </p>
+          </div>
+        </div>
+        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_SemiBold'] h-[22px] justify-center leading-[0] left-1/2 not-italic text-[12px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[537px] tracking-[0.2px] w-[320px]" data-node-id="300:3871">
+          <p className="leading-[16px]">USERNAME IS TAKEN</p>
+        </div>
+        <div className="absolute h-[94px] left-[30px] top-[22px] w-[342px]" data-node-id="300:3860" data-name="TopBar">
+          <button className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[4px_4px_0px_black] flex items-center justify-center left-[-22px] size-[32px] top-[-14px]" data-node-id="I300:3860;75:848" data-name="back-tile">
+            <IconArrowLeft className="relative shrink-0 size-[24px]" />
+          </button>
+          <button className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[4px_4px_0px_black] flex items-center justify-center right-[-22px] size-[32px] top-[-14px]" data-node-id="I300:3860;75:849" data-name="sound-tile">
+            <div className="content-stretch flex gap-[var(--wordoken-space-0,0px)] items-center justify-center p-[var(--wordoken-space-0,0px)] relative shrink-0 size-[24px]" data-node-id="I300:3860;35:147" data-name="sound">
+              <IconVolumeOn className="relative shrink-0 size-[24px]" />
+            </div>
+          </button>
+          <div className="-translate-x-1/2 absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[62px] items-center justify-center left-1/2 px-[6px] top-[32px] w-[320px]" data-node-id="I300:3860;35:145" data-name="title-surface">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[40px] justify-center leading-[0] not-italic relative shrink-0 text-[24px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[308px]" data-node-id="I300:3860;35:146">
+              <p className="leading-[normal]">SIGN UP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

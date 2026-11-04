@@ -1,0 +1,192 @@
+const imgFrame = "https://www.figma.com/api/mcp/asset/cd828a34-9454-4cfc-9c61-3b2740b50b6b.svg";
+const imgFrame1 = "https://www.figma.com/api/mcp/asset/b548ab1e-f993-421a-ae35-700e035dddb2.svg";
+const imgTutorialTimerOptional = "https://www.figma.com/api/mcp/asset/38254f1a-08b9-4f4a-bd11-6de157aac00a.svg";
+const imgIconVolumeOn = "https://www.figma.com/api/mcp/asset/944fcb90-282a-4b4d-90d0-86884a621d7a.svg";
+
+type TutorialPreviewProps = {
+  className?: string;
+  topic?: "Words";
+};
+
+function TutorialPreview({ className, topic = "Words" }: TutorialPreviewProps) {
+  return (
+    <div className={className || "bg-[var(--wordoken-color-surface-default,white)] border-[length:var(--wordoken-stroke-default,2px)] border-[var(--wordoken-color-border-default,#010101)] border-solid drop-shadow-[7px_7px_0px_black] h-[290px] relative w-[320px]"} data-node-id="288:2002">
+      <div className="absolute drop-shadow-[6.125px_6.125px_0px_black] h-[38.5px] left-[18px] top-[18px] w-[280px]" data-node-id="288:2032" data-name="Illustration / word entry with backspace">
+        <div className="absolute bg-[#f7ce10] border-[#010101] border-[1.75px] border-solid left-0 size-[38.5px] top-0" data-node-id="I288:2032;156:155" data-name="backspace" />
+        <div className="absolute bg-white border-[#010101] border-[1.75px] border-solid h-[38.5px] left-[38.5px] top-0 w-[241.5px]" data-node-id="I288:2032;156:157" data-name="entry" />
+        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[35px] justify-center leading-[0] left-[159.25px] not-italic text-[#010101] text-[28px] text-center top-[19.25px] w-[227.5px]" data-node-id="I288:2032;156:158">
+          <p className="leading-[normal]">CAPTURE</p>
+        </div>
+        <div className="absolute left-[7px] size-[24.5px] top-[7px]" data-node-id="I288:2032;168:151" data-name="backspace vector">
+          <div className="absolute left-0 size-[24.5px] top-0" data-node-id="I288:2032;168:151;168:148" data-name="Frame">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+          </div>
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Fixture:Expanded_Black'] leading-[normal] left-[70px] not-italic text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] top-[86px] whitespace-nowrap" data-node-id="288:2053">
+        RED = REQUIRED
+      </p>
+      <div className="absolute h-[22px] left-[188px] top-[106px] w-[13.2px]" data-node-id="288:2054" data-name=".Building Blocks/TutorialArrow">
+        <div className="absolute h-[22px] left-0 top-0 w-[13.2px]" data-node-id="I288:2054;288:1999" data-name="Frame">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame1} />
+        </div>
+      </div>
+      <div className="absolute bottom-[8.25px] content-stretch flex flex-col gap-[22.75px] h-[141.75px] items-start left-[18px] right-[18px]" data-node-id="589:2953" data-name="Tutorial / medium CAPTURE letters">
+        <div className="content-stretch flex gap-[14px] h-[59.5px] items-center relative shrink-0 w-[280px]" data-node-id="589:2954" data-name="Medium letters / row 1">
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-[1.75px] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[6.125px_6.125px_0px_black] flex items-center justify-center relative shrink-0 size-[59.5px]" data-node-id="589:2955" data-name="LetterTile / C">
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[59.5px] justify-center leading-[0] left-[calc(50%+0.02px)] not-italic text-[33.25px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[calc(50%-3.07px)] w-[56px]" data-node-id="I589:2955;36:109">
+              <p className="leading-[normal]">C</p>
+            </div>
+          </div>
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-[1.75px] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[6.125px_6.125px_0px_black] flex items-center justify-center relative shrink-0 size-[59.5px]" data-node-id="589:2956" data-name="LetterTile / A">
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[59.5px] justify-center leading-[0] left-[calc(50%+0.02px)] not-italic text-[33.25px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[calc(50%-3.07px)] w-[56px]" data-node-id="I589:2956;36:109">
+              <p className="leading-[normal]">A</p>
+            </div>
+          </div>
+          <div className="bg-[var(--wordoken-color-action-destructive,#e54c34)] border-[1.75px] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[6.125px_6.125px_0px_black] flex items-center justify-center relative shrink-0 size-[59.5px]" data-node-id="589:2957" data-name="LetterTile / T">
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[59.5px] justify-center leading-[0] left-[calc(50%+0.02px)] not-italic text-[33.25px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[calc(50%-3.07px)] w-[56px]" data-node-id="I589:2957;36:113">
+              <p className="leading-[normal]">T</p>
+            </div>
+          </div>
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-[1.75px] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[6.125px_6.125px_0px_black] flex items-center justify-center relative shrink-0 size-[59.5px]" data-node-id="589:2958" data-name="LetterTile / U">
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[59.5px] justify-center leading-[0] left-[calc(50%+0.02px)] not-italic text-[33.25px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[calc(50%-3.07px)] w-[56px]" data-node-id="I589:2958;36:109">
+              <p className="leading-[normal]">U</p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex gap-[14px] h-[59.5px] items-center justify-center relative shrink-0 w-[280px]" data-node-id="589:2959" data-name="Medium letters / row 2">
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-[1.75px] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[6.125px_6.125px_0px_black] flex items-center justify-center relative shrink-0 size-[59.5px]" data-node-id="589:2960" data-name="LetterTile / R">
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[59.5px] justify-center leading-[0] left-[calc(50%+0.02px)] not-italic text-[33.25px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[calc(50%-3.07px)] w-[56px]" data-node-id="I589:2960;36:109">
+              <p className="leading-[normal]">R</p>
+            </div>
+          </div>
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-[1.75px] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[6.125px_6.125px_0px_black] flex items-center justify-center relative shrink-0 size-[59.5px]" data-node-id="589:2961" data-name="LetterTile / E">
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[59.5px] justify-center leading-[0] left-[calc(50%+0.02px)] not-italic text-[33.25px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[calc(50%-3.07px)] w-[56px]" data-node-id="I589:2961;36:109">
+              <p className="leading-[normal]">E</p>
+            </div>
+          </div>
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-[1.75px] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[6.125px_6.125px_0px_black] flex items-center justify-center relative shrink-0 size-[59.5px]" data-node-id="589:2962" data-name="LetterTile / P">
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[59.5px] justify-center leading-[0] left-[calc(50%+0.02px)] not-italic text-[33.25px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[calc(50%-3.07px)] w-[56px]" data-node-id="I589:2962;36:109">
+              <p className="leading-[normal]">P</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+type TutorialExplanationProps = {
+  className?: string;
+  body?: string;
+  heading?: string;
+  showTimer?: boolean;
+};
+
+function TutorialExplanation({ className, body = "Choose a difficulty before starting a game.", heading = "CHOOSE A MODE", showTimer = false }: TutorialExplanationProps) {
+  return (
+    <div className={className || "content-stretch flex flex-col items-start p-[var(--wordoken-space-0,0px)] relative w-[320px]"} data-node-id="288:1991" data-name="TutorialExplanation">
+      <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-[length:var(--wordoken-stroke-default,2px)] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex gap-[var(--wordoken-space-0,0px)] h-[34px] items-center justify-center mb-[-2px] px-[12px] py-[var(--wordoken-space-2,8px)] relative shrink-0" data-node-id="288:1992" data-name="heading-tab">
+        <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[18px] text-[color:var(--wordoken-color-text-primary,#010101)] whitespace-nowrap" data-node-id="288:1993">
+          {heading}
+        </p>
+      </div>
+      <div className="bg-[var(--wordoken-color-surface-default,white)] border-[length:var(--wordoken-stroke-default,2px)] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex flex-col gap-[var(--wordoken-space-0,0px)] items-center justify-center p-[var(--wordoken-space-4,16px)] relative shrink-0 w-[320px]" data-node-id="288:1994" data-name="explanation-panel">
+        <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[20px] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] w-[288px]" data-node-id="288:1995">
+          {body}
+        </p>
+        {showTimer && (
+          <div className="relative shrink-0 size-[64px]" data-node-id="589:2849" data-name="Tutorial timer / optional">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgTutorialTimerOptional} />
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function IconVolumeOn({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="324:2145" data-name="Icon/VolumeOn">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconVolumeOn} />
+    </div>
+  );
+}
+
+export default function Component15HowToPlay01Words() {
+  return (
+    <div className="bg-[var(--wordoken-color-bg-blue,#4377bc)] content-stretch flex flex-col items-center relative size-full" data-node-id="291:4434" data-name="15 How to Play / 01 Words">
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start max-w-[402px] min-h-[740px] overflow-clip relative w-full" data-node-id="565:7208" data-name="Responsive / centered game column">
+        <div className="absolute inset-0 overflow-clip" data-node-id="291:4435" data-name="GridOverlay">
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[50px] top-0 w-px" data-node-id="I291:4435;34:55" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[101px] top-0 w-px" data-node-id="I291:4435;34:56" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[152px] top-0 w-px" data-node-id="I291:4435;34:57" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[203px] top-0 w-px" data-node-id="I291:4435;34:58" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[254px] top-0 w-px" data-node-id="I291:4435;34:59" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[305px] top-0 w-px" data-node-id="I291:4435;34:60" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[356px] top-0 w-px" data-node-id="I291:4435;34:61" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[50px] w-[402px]" data-node-id="I291:4435;34:62" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[101px] w-[402px]" data-node-id="I291:4435;34:63" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[152px] w-[402px]" data-node-id="I291:4435;34:64" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[203px] w-[402px]" data-node-id="I291:4435;34:65" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[254px] w-[402px]" data-node-id="I291:4435;34:66" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[305px] w-[402px]" data-node-id="I291:4435;34:67" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[356px] w-[402px]" data-node-id="I291:4435;34:68" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[407px] w-[402px]" data-node-id="I291:4435;34:69" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[458px] w-[402px]" data-node-id="I291:4435;34:70" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[509px] w-[402px]" data-node-id="I291:4435;34:71" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[560px] w-[402px]" data-node-id="I291:4435;34:72" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[611px] w-[402px]" data-node-id="I291:4435;34:73" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[662px] w-[402px]" data-node-id="I291:4435;34:74" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[713px] w-[402px]" data-node-id="I291:4435;34:75" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[764px] w-[402px]" data-node-id="I291:4435;34:76" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[815px] w-[402px]" data-node-id="I291:4435;34:77" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[866px] w-[402px]" data-node-id="I291:4435;34:78" data-name="grid/h" />
+        </div>
+        <div className="absolute h-[94px] left-[30px] right-[30px] top-[22px]" data-node-id="291:4460" data-name="TopBar">
+          <button className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[4px_4px_0px_black] flex items-center justify-center right-[-22px] size-[32px] top-[-14px]" data-node-id="I291:4460;75:849" data-name="sound-tile">
+            <div className="content-stretch flex gap-[var(--wordoken-space-0,0px)] items-center justify-center p-[var(--wordoken-space-0,0px)] relative shrink-0 size-[24px]" data-node-id="I291:4460;35:147" data-name="sound">
+              <IconVolumeOn className="relative shrink-0 size-[24px]" />
+            </div>
+          </button>
+          <div className="-translate-x-1/2 absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[62px] items-center justify-center left-1/2 px-[6px] top-[32px] w-[320px]" data-node-id="I291:4460;35:145" data-name="title-surface">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[40px] justify-center leading-[0] not-italic relative shrink-0 text-[24px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[308px]" data-node-id="I291:4460;35:146">
+              <p className="leading-[normal]">HOW TO PLAY</p>
+            </div>
+          </div>
+        </div>
+        <button className="absolute bg-[var(--wordoken-color-surface-default,white)] border-[length:var(--wordoken-stroke-default,2px)] border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[4px_4px_0px_black] flex gap-[var(--wordoken-space-0,0px)] h-[32px] items-center justify-center left-[8px] p-[var(--wordoken-space-0,0px)] top-[8px] w-[64px]" data-node-id="291:4474" data-name="TutorialExit">
+          <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I291:4474;288:1997">
+            EXIT
+          </p>
+        </button>
+        <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[var(--wordoken-space-4,16px)] items-center left-1/2 top-[132px] w-[320px]" data-node-id="291:4476" data-name="Tutorial / shared content rail">
+          <TutorialExplanation
+            body="Make words from the given letters. Include every red letter in each word: one in Easy or Medium, two in Hard.
+
+Tap the tiles or type, then Submit. Score more points than your opponent to win."
+            className="content-stretch flex flex-col items-start p-[var(--wordoken-space-0,0px)] relative shrink-0 w-[320px]"
+            heading="MAKE WORDS"
+          />
+          <TutorialPreview className="bg-[var(--wordoken-color-surface-default,white)] border-[length:var(--wordoken-stroke-default,2px)] border-[var(--wordoken-color-border-default,#010101)] border-solid drop-shadow-[7px_7px_0px_black] h-[290px] relative shrink-0 w-[320px]" />
+        </div>
+        <div className="-translate-x-1/2 absolute bottom-[8px] content-stretch flex h-[44px] items-center justify-between left-1/2 w-[320px]" data-node-id="291:4511" data-name="Tutorial / bottom anchored navigation">
+          <div className="h-[44px] relative shrink-0 w-[144px]" data-node-id="291:4512" data-name="Previous / prototype target">
+            <div className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex gap-[12px] h-[44px] items-center justify-center left-0 opacity-45 top-0 w-[144px]" data-node-id="291:4513" data-name="Button">
+              <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[15px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[196px]" data-node-id="I291:4513;35:78">
+                PREVIOUS
+              </p>
+            </div>
+          </div>
+          <a className="block cursor-pointer h-[44px] relative shrink-0 w-[144px]" data-node-id="291:4520" data-name="Next / prototype target">
+            <div className="absolute bg-[var(--wordoken-color-action-primary,#f7ce10)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex gap-[12px] h-[44px] items-center justify-center left-0 top-0 w-[144px]" data-node-id="291:4521" data-name="Button">
+              <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[15px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[196px]" data-node-id="I291:4521;35:13">
+                NEXT
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}

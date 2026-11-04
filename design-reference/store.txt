@@ -1,0 +1,403 @@
+const imgArtworkSettingsGearMuted = "https://www.figma.com/api/mcp/asset/b24e85cd-5be7-4de3-8821-9d7b3c12c6d5.svg";
+const imgArtworkCart = "https://www.figma.com/api/mcp/asset/07b50c4f-c220-4312-8206-0ab6b2faaebc.svg";
+const imgGroup = "https://www.figma.com/api/mcp/asset/531a4061-43ec-4a61-a277-7ee511d2f4ea.svg";
+const imgGroup1 = "https://www.figma.com/api/mcp/asset/e3dd3926-c3a4-4d34-988e-e5cb2624994b.svg";
+const imgArtworkHouseMuted = "https://www.figma.com/api/mcp/asset/c974a468-e28c-4f3b-a745-20c2f00fc8ca.svg";
+const imgVector = "https://www.figma.com/api/mcp/asset/7cad7989-11b0-40f0-a880-3b033bcef91a.svg";
+const imgVector1 = "https://www.figma.com/api/mcp/asset/e8bba2d2-eaf7-419a-b458-e66f9c96a147.svg";
+const imgArtworkCoinsStack = "https://www.figma.com/api/mcp/asset/50f47e23-17dc-412c-92f5-a251267171f7.svg";
+const imgIconCoin = "https://www.figma.com/api/mcp/asset/61333272-82ac-419b-a2e3-62d584817f0e.svg";
+const imgArtworkTimer = "https://www.figma.com/api/mcp/asset/119d8113-47c4-4332-9047-474ca1378274.svg";
+const imgArt = "https://www.figma.com/api/mcp/asset/d00776de-9b5f-4a01-805e-f7aeb727b571.svg";
+const imgArt1 = "https://www.figma.com/api/mcp/asset/af4d4d64-fbe8-414f-9481-e600a819c5bd.svg";
+const imgArt2 = "https://www.figma.com/api/mcp/asset/f8d4de92-3038-4787-bbf3-45d62cdcba4d.svg";
+const imgSourceArtwork = "https://www.figma.com/api/mcp/asset/ae9e9987-48a4-404f-af96-01de99b37af1.svg";
+const imgSourceArtwork1 = "https://www.figma.com/api/mcp/asset/fbd119d3-53b7-45c5-9b34-c671b28a0df1.svg";
+const imgSourceArtwork2 = "https://www.figma.com/api/mcp/asset/cc618909-77b0-42d6-8721-a3f36161f6c9.svg";
+
+function ArtworkSettingsGearMuted({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="221:770" data-name="Artwork/settings_gear_muted">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArtworkSettingsGearMuted} />
+    </div>
+  );
+}
+
+function ArtworkCart({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="207:1271" data-name="Artwork/cart">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArtworkCart} />
+    </div>
+  );
+}
+
+function ArtworkBookMuted({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="221:743" data-name="Artwork/book_muted">
+      <div className="absolute inset-[12.63%_0] overflow-clip" data-node-id="221:744" data-name="source artwork">
+        <div className="absolute inset-[1.7%_1.27%_1.71%_1.27%]" data-node-id="221:745" data-name="Group">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup} />
+        </div>
+        <div className="absolute inset-[1.72%_1.17%_1.71%_1.32%]" data-node-id="221:754" data-name="Group">
+          <div className="absolute inset-[-0.43%_-0.32%]">
+            <img alt="" className="block max-w-none size-full" src={imgGroup1} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ArtworkHouseMuted({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="221:741" data-name="Artwork/house_muted">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArtworkHouseMuted} />
+    </div>
+  );
+}
+
+function IconArrowRight({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="34:7" data-name="Icon/ArrowRight">
+      <div className="absolute left-0 size-[24px] top-0" data-node-id="34:5" data-name="vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+      </div>
+    </div>
+  );
+}
+
+function IconLock({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="34:28" data-name="Icon/Lock">
+      <div className="absolute left-0 size-[24px] top-0" data-node-id="34:26" data-name="vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+      </div>
+    </div>
+  );
+}
+
+function AssetPlaceholder({ className }: { className?: string }) {
+  return (
+    <div className={className || "bg-[var(--wordoken-color-surface-subtle,#ebe6ed)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-dashed relative size-[96px]"} data-node-id="34:52" data-name="AssetPlaceholder">
+      <p className="[word-break:break-word] absolute font-['Fixture:Expanded_SemiBold'] leading-[normal] left-[calc(50%-16px)] not-italic text-[14px] text-[color:var(--wordoken-color-text-muted,#848484)] top-[calc(50%-10px)] whitespace-nowrap" data-node-id="34:53">
+        ART
+      </p>
+    </div>
+  );
+}
+
+function ArtworkCoinsStack({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="207:1275" data-name="Artwork/coins_stack">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArtworkCoinsStack} />
+    </div>
+  );
+}
+
+function IconCoin({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[18px]"} data-node-id="117:106" data-name="Icon/Coin">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCoin} />
+    </div>
+  );
+}
+
+function ArtworkTimer({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[64px]"} data-node-id="207:1219" data-name="Artwork/timer">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArtworkTimer} />
+    </div>
+  );
+}
+
+export default function Component04Store() {
+  return (
+    <div className="bg-[var(--wordoken-color-bg-green,#78bb90)] content-stretch flex flex-col items-center relative size-full" data-node-id="37:220" data-name="04 Store">
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start max-w-[402px] min-h-[740px] overflow-clip relative w-full" data-node-id="565:7194" data-name="Responsive / centered game column">
+        <div className="absolute inset-0 overflow-clip" data-node-id="37:221" data-name="background/grid">
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[50px] top-0 w-px" data-node-id="I37:221;34:55" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[101px] top-0 w-px" data-node-id="I37:221;34:56" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[152px] top-0 w-px" data-node-id="I37:221;34:57" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[203px] top-0 w-px" data-node-id="I37:221;34:58" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[254px] top-0 w-px" data-node-id="I37:221;34:59" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[305px] top-0 w-px" data-node-id="I37:221;34:60" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[356px] top-0 w-px" data-node-id="I37:221;34:61" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[50px] w-[402px]" data-node-id="I37:221;34:62" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[101px] w-[402px]" data-node-id="I37:221;34:63" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[152px] w-[402px]" data-node-id="I37:221;34:64" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[203px] w-[402px]" data-node-id="I37:221;34:65" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[254px] w-[402px]" data-node-id="I37:221;34:66" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[305px] w-[402px]" data-node-id="I37:221;34:67" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[356px] w-[402px]" data-node-id="I37:221;34:68" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[407px] w-[402px]" data-node-id="I37:221;34:69" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[458px] w-[402px]" data-node-id="I37:221;34:70" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[509px] w-[402px]" data-node-id="I37:221;34:71" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[560px] w-[402px]" data-node-id="I37:221;34:72" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[611px] w-[402px]" data-node-id="I37:221;34:73" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[662px] w-[402px]" data-node-id="I37:221;34:74" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[713px] w-[402px]" data-node-id="I37:221;34:75" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[764px] w-[402px]" data-node-id="I37:221;34:76" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[815px] w-[402px]" data-node-id="I37:221;34:77" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[866px] w-[402px]" data-node-id="I37:221;34:78" data-name="grid/h" />
+        </div>
+        <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-center left-[calc(50%+30px)] top-[22px] w-[402px]" data-node-id="37:246" data-name="main">
+          <div className="h-[80px] relative shrink-0 w-full" data-node-id="37:247" data-name="top" />
+        </div>
+        <div className="absolute h-[94px] left-[30px] right-[30px] top-[22px]" data-node-id="236:1528" data-name="Store / shared TopBar">
+          <div className="-translate-x-1/2 absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[62px] items-center justify-center left-1/2 px-[6px] top-[32px] w-[320px]" data-node-id="I236:1528;35:145" data-name="title-surface">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[40px] justify-center leading-[0] not-italic relative shrink-0 text-[24px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[308px]" data-node-id="I236:1528;35:146">
+              <p className="leading-[normal]">STORE</p>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[34px] items-center right-[8px] top-[8px] w-[108px]" data-node-id="37:250" data-name="CurrencyBadge">
+          <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-[var(--wordoken-color-border-default,#010101)] border-r-2 border-solid content-stretch flex h-[30px] items-center justify-center overflow-clip relative shrink-0 w-[38px]" data-node-id="I37:250;210:370" data-name="level">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center whitespace-nowrap" data-node-id="I37:250;210:371">
+              <p className="leading-[20px]">12</p>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[4px] h-[30px] items-center justify-center px-[4px] relative shrink-0 w-[66px]" data-node-id="I37:250;210:372" data-name="coin-section">
+            <IconCoin className="relative shrink-0 size-[18px]" />
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center whitespace-nowrap" data-node-id="I37:250;210:374">
+              <p className="leading-[20px]">725</p>
+            </div>
+          </div>
+        </div>
+        <div className="-translate-x-1/2 absolute h-[398px] left-[calc(50%+4px)] overflow-x-clip overflow-y-auto top-[140px] w-[328px]" data-node-id="404:6713" data-name="Store / catalog scroll viewport">
+          <div className="absolute content-stretch flex flex-col gap-[var(--wordoken-space-0,0px)] items-start left-0 pb-[var(--wordoken-space-2,8px)] top-0 w-[328px]" data-node-id="404:6714" data-name="Store / scroll content">
+            <div className="content-start cursor-pointer flex flex-wrap gap-[40px_22px] items-start relative shrink-0 w-[320px]" data-node-id="37:254" data-name="Store / responsive catalog grid">
+              <button className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex flex-col gap-[4px] h-[118px] items-center p-[2px] relative shrink-0 w-[92px]" data-node-id="37:255" data-name="StoreTile">
+                <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] content-stretch flex gap-[4px] h-[26px] items-center justify-center overflow-clip relative shrink-0 w-[88px]" data-node-id="I37:255;211:393" data-name="price">
+                  <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I37:255;211:395">
+                    FREE
+                  </p>
+                </div>
+                <div className="content-stretch flex items-center justify-center opacity-20 relative shrink-0 size-[50px]" data-node-id="I37:255;228:727" data-name="artwork-opacity-slot">
+                  <ArtworkTimer className="relative shrink-0 size-[50px]" />
+                </div>
+                <div className="[word-break:break-word] flex flex-col font-['Montserrat:SemiBold'] font-semibold h-[30px] justify-center leading-[0] relative shrink-0 text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[80px]" data-node-id="I37:255;211:397">
+                  <p className="leading-[15px]">1 Game</p>
+                </div>
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Montserrat:SemiBold'] font-semibold h-[34px] justify-center leading-[0] left-[44px] text-[12px] text-black text-center top-[62px] w-[80px]" data-node-id="I37:255;211:402">
+                  <p className="leading-[normal] mb-0">Next Game</p>
+                  <p className="leading-[normal]">In 21:23</p>
+                </div>
+              </button>
+              <button className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex flex-col gap-[4px] h-[118px] items-center p-[2px] relative shrink-0 w-[92px]" data-node-id="37:262" data-name="StoreTile">
+                <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] content-stretch flex gap-[4px] h-[26px] items-center justify-center overflow-clip relative shrink-0 w-[88px]" data-node-id="I37:262;36:57" data-name="price">
+                  <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I37:262;36:58">
+                    $1.99
+                  </p>
+                </div>
+                <div className="relative shrink-0 size-[50px]" data-node-id="I37:262;36:59" data-name="art">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArt} />
+                </div>
+                <div className="[word-break:break-word] flex flex-col font-['Montserrat:SemiBold'] font-semibold h-[30px] justify-center leading-[0] relative shrink-0 text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[80px]" data-node-id="I37:262;36:61">
+                  <p className="leading-[15px]">500 Coins</p>
+                </div>
+              </button>
+              <button className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex flex-col gap-[4px] h-[118px] items-center p-[2px] relative shrink-0 w-[92px]" data-node-id="37:268" data-name="StoreTile">
+                <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] content-stretch flex gap-[4px] h-[26px] items-center justify-center overflow-clip relative shrink-0 w-[88px]" data-node-id="I37:268;36:57" data-name="price">
+                  <IconCoin className="relative shrink-0 size-[18px]" />
+                  <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I37:268;36:58">
+                    75
+                  </p>
+                </div>
+                <div className="relative shrink-0 size-[50px]" data-node-id="I37:268;36:59" data-name="art">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArt1} />
+                </div>
+                <div className="[word-break:break-word] flex flex-col font-['Montserrat:SemiBold'] font-semibold h-[30px] justify-center leading-[0] relative shrink-0 text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[80px]" data-node-id="I37:268;36:61">
+                  <p className="leading-[15px]">Sm. Chest</p>
+                </div>
+              </button>
+              <button className="bg-[var(--wordoken-color-surface-default,white)] block border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid drop-shadow-[7px_7px_0px_black] h-[118px] relative shrink-0 w-[92px]" data-node-id="37:275" data-name="StoreTile">
+                <div className="absolute bg-[var(--wordoken-color-action-primary,#f7ce10)] h-[26px] left-0 overflow-clip top-0 w-[88px]" data-node-id="I37:275;36:63" data-name="price">
+                  <IconLock className="absolute left-[4px] size-[16px] top-[5px]" />
+                  <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[22px] justify-center leading-[0] left-[53px] not-italic text-[11px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[13px] w-[60px]" data-node-id="I37:275;36:67">
+                    <p className="leading-[normal]">LOCKED</p>
+                  </div>
+                </div>
+                <div className="absolute content-stretch flex items-center justify-center left-[16px] opacity-25 size-[56px] top-[30px]" data-node-id="I37:275;228:726" data-name="artwork-opacity-slot">
+                  <div className="opacity-25 relative shrink-0 size-[56px]" data-node-id="I37:275;36:68" data-name="art">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArt2} />
+                  </div>
+                </div>
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Montserrat:SemiBold'] font-semibold h-[30px] justify-center leading-[0] left-[44px] text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[99px] w-[80px]" data-node-id="I37:275;36:70">
+                  <p className="leading-[15px]">Lg. Chest</p>
+                </div>
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Montserrat:SemiBold'] font-semibold h-[34px] justify-center leading-[0] left-[44px] text-[12px] text-black text-center top-[61px] w-[80px]" data-node-id="I37:275;79:113">
+                  <p className="leading-[14px] mb-0">Level 15</p>
+                  <p className="leading-[14px]">To Unlock</p>
+                </div>
+              </button>
+              <button className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex flex-col gap-[4px] h-[118px] items-center p-[2px] relative shrink-0 w-[92px]" data-node-id="37:287" data-name="StoreTile">
+                <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] content-stretch flex gap-[4px] h-[26px] items-center justify-center overflow-clip relative shrink-0 w-[88px]" data-node-id="I37:287;36:57" data-name="price">
+                  <IconCoin className="relative shrink-0 size-[18px]" />
+                  <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I37:287;36:58">
+                    75
+                  </p>
+                </div>
+                <div className="relative shrink-0 size-[50px]" data-node-id="I37:287;36:59" data-name="art">
+                  <div className="absolute inset-[12.87%_0]" data-node-id="I37:287;36:59;207:1320" data-name="source artwork">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSourceArtwork} />
+                  </div>
+                </div>
+                <div className="[word-break:break-word] flex flex-col font-['Montserrat:SemiBold'] font-semibold h-[30px] justify-center leading-[0] relative shrink-0 text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[80px]" data-node-id="I37:287;36:61">
+                  <p className="leading-[15px] mb-0">Green</p>
+                  <p className="leading-[15px]">Bandana</p>
+                </div>
+              </button>
+              <button className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex flex-col gap-[4px] h-[118px] items-center p-[2px] relative shrink-0 w-[92px]" data-node-id="37:293" data-name="StoreTile">
+                <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] content-stretch flex gap-[4px] h-[26px] items-center justify-center overflow-clip relative shrink-0 w-[88px]" data-node-id="I37:293;36:57" data-name="price">
+                  <IconCoin className="relative shrink-0 size-[18px]" />
+                  <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I37:293;36:58">
+                    75
+                  </p>
+                </div>
+                <div className="relative shrink-0 size-[50px]" data-node-id="I37:293;36:59" data-name="art">
+                  <div className="absolute inset-[12.87%_0]" data-node-id="I37:293;36:59;207:1222" data-name="source artwork">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSourceArtwork1} />
+                  </div>
+                </div>
+                <div className="[word-break:break-word] flex flex-col font-['Montserrat:SemiBold'] font-semibold h-[30px] justify-center leading-[0] relative shrink-0 text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[80px]" data-node-id="I37:293;36:61">
+                  <p className="leading-[15px] mb-0">Blue</p>
+                  <p className="leading-[15px]">Bandana</p>
+                </div>
+              </button>
+              <button className="bg-[var(--wordoken-color-surface-default,white)] block border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid drop-shadow-[7px_7px_0px_black] h-[118px] relative shrink-0 w-[92px]" data-node-id="37:299" data-name="StoreTile">
+                <div className="absolute bg-[var(--wordoken-color-action-primary,#f7ce10)] h-[26px] left-0 overflow-clip top-0 w-[88px]" data-node-id="I37:299;36:63" data-name="price">
+                  <IconLock className="absolute left-[4px] size-[16px] top-[5px]" />
+                  <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[22px] justify-center leading-[0] left-[53px] not-italic text-[11px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[13px] w-[60px]" data-node-id="I37:299;36:67">
+                    <p className="leading-[normal]">LOCKED</p>
+                  </div>
+                </div>
+                <div className="absolute content-stretch flex items-center justify-center left-[16px] opacity-25 size-[56px] top-[30px]" data-node-id="I37:299;228:726" data-name="artwork-opacity-slot">
+                  <div className="opacity-25 relative shrink-0 size-[56px]" data-node-id="I37:299;36:68" data-name="art">
+                    <div className="absolute inset-[12.87%_0]" data-node-id="I37:299;36:68;207:1328" data-name="source artwork">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSourceArtwork2} />
+                    </div>
+                  </div>
+                </div>
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Montserrat:SemiBold'] font-semibold h-[30px] justify-center leading-[0] left-[44px] text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[99px] w-[80px]" data-node-id="I37:299;36:70">
+                  <p className="leading-[15px] mb-0">Purple</p>
+                  <p className="leading-[15px]">Bandana</p>
+                </div>
+              </button>
+              <button className="bg-[var(--wordoken-color-surface-default,white)] block border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid drop-shadow-[7px_7px_0px_black] h-[118px] relative shrink-0 w-[92px]" data-node-id="37:308" data-name="StoreTile">
+                <div className="absolute bg-[var(--wordoken-color-action-primary,#f7ce10)] h-[26px] left-0 overflow-clip top-0 w-[88px]" data-node-id="I37:308;36:63" data-name="price">
+                  <IconLock className="absolute left-[4px] size-[16px] top-[5px]" />
+                  <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[22px] justify-center leading-[0] left-[53px] not-italic text-[11px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[13px] w-[60px]" data-node-id="I37:308;36:67">
+                    <p className="leading-[normal]">LOCKED</p>
+                  </div>
+                </div>
+                <div className="absolute content-stretch flex items-center justify-center left-[16px] opacity-25 size-[56px] top-[30px]" data-node-id="I37:308;228:726" data-name="artwork-opacity-slot">
+                  <AssetPlaceholder className="bg-[var(--wordoken-color-surface-subtle,#ebe6ed)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-dashed relative shrink-0 size-[56px]" />
+                </div>
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Montserrat:SemiBold'] font-semibold h-[30px] justify-center leading-[0] left-[44px] text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[99px] w-[80px]" data-node-id="I37:308;36:70">
+                  <p className="leading-[15px]">Katana</p>
+                </div>
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Montserrat:SemiBold'] font-semibold h-[34px] justify-center leading-[0] left-[44px] text-[12px] text-black text-center top-[61px] w-[80px]" data-node-id="I37:308;79:113">
+                  <p className="leading-[14px] mb-0">Level 20</p>
+                  <p className="leading-[14px]">To Unlock</p>
+                </div>
+              </button>
+              <button className="bg-[var(--wordoken-color-surface-default,white)] block border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid drop-shadow-[7px_7px_0px_black] h-[118px] relative shrink-0 w-[92px]" data-node-id="37:317" data-name="StoreTile">
+                <div className="absolute bg-[var(--wordoken-color-action-primary,#f7ce10)] h-[26px] left-0 overflow-clip top-0 w-[88px]" data-node-id="I37:317;36:63" data-name="price">
+                  <IconLock className="absolute left-[4px] size-[16px] top-[5px]" />
+                  <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[22px] justify-center leading-[0] left-[53px] not-italic text-[11px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[13px] w-[60px]" data-node-id="I37:317;36:67">
+                    <p className="leading-[normal]">LOCKED</p>
+                  </div>
+                </div>
+                <div className="absolute content-stretch flex items-center justify-center left-[16px] opacity-25 size-[56px] top-[30px]" data-node-id="I37:317;228:726" data-name="artwork-opacity-slot">
+                  <AssetPlaceholder className="bg-[var(--wordoken-color-surface-subtle,#ebe6ed)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-dashed relative shrink-0 size-[56px]" />
+                </div>
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Montserrat:SemiBold'] font-semibold h-[30px] justify-center leading-[0] left-[44px] text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[99px] w-[80px]" data-node-id="I37:317;36:70">
+                  <p className="leading-[15px]">Armor</p>
+                </div>
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Montserrat:SemiBold'] font-semibold h-[34px] justify-center leading-[0] left-[44px] text-[12px] text-black text-center top-[61px] w-[80px]" data-node-id="I37:317;79:113">
+                  <p className="leading-[14px] mb-0">Level 25</p>
+                  <p className="leading-[14px]">To Unlock</p>
+                </div>
+              </button>
+              <button className="bg-[var(--wordoken-color-surface-default,white)] block border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid drop-shadow-[7px_7px_0px_black] h-[50px] relative shrink-0 w-[92px]" data-node-id="236:1542" data-name="Store / future locked 1">
+                <div className="absolute bg-[var(--wordoken-color-action-primary,#f7ce10)] h-[26px] left-0 overflow-clip top-0 w-[88px]" data-node-id="I236:1542;211:410" data-name="price">
+                  <IconLock className="absolute left-[4px] size-[16px] top-[5px]" />
+                  <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[22px] justify-center leading-[0] left-[53px] not-italic text-[11px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[13px] w-[60px]" data-node-id="I236:1542;211:412">
+                    <p className="leading-[normal]">LOCKED</p>
+                  </div>
+                </div>
+              </button>
+              <button className="bg-[var(--wordoken-color-surface-default,white)] block border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid drop-shadow-[7px_7px_0px_black] h-[50px] relative shrink-0 w-[92px]" data-node-id="236:1553" data-name="Store / future locked 2">
+                <div className="absolute bg-[var(--wordoken-color-action-primary,#f7ce10)] h-[26px] left-0 overflow-clip top-0 w-[88px]" data-node-id="I236:1553;211:410" data-name="price">
+                  <IconLock className="absolute left-[4px] size-[16px] top-[5px]" />
+                  <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[22px] justify-center leading-[0] left-[53px] not-italic text-[11px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[13px] w-[60px]" data-node-id="I236:1553;211:412">
+                    <p className="leading-[normal]">LOCKED</p>
+                  </div>
+                </div>
+              </button>
+              <button className="bg-[var(--wordoken-color-surface-default,white)] block border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid drop-shadow-[7px_7px_0px_black] h-[50px] relative shrink-0 w-[92px]" data-node-id="236:1562" data-name="Store / future locked 3">
+                <div className="absolute bg-[var(--wordoken-color-action-primary,#f7ce10)] h-[26px] left-0 overflow-clip top-0 w-[88px]" data-node-id="I236:1562;211:410" data-name="price">
+                  <IconLock className="absolute left-[4px] size-[16px] top-[5px]" />
+                  <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Fixture:Expanded_Black'] h-[22px] justify-center leading-[0] left-[53px] not-italic text-[11px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center top-[13px] w-[60px]" data-node-id="I236:1562;211:412">
+                    <p className="leading-[normal]">LOCKED</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <button className="-translate-x-1/2 absolute content-stretch cursor-pointer flex flex-col items-start left-1/2 top-[556px] w-[320px]" data-node-id="122:957" data-name="StorePromoCTA">
+          <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[36px] items-center justify-center relative shrink-0 w-[260px]" data-node-id="I122:957;121:158" data-name="header-surface">
+            <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[19px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I122:957;121:159">
+              WANT MORE GAMES?
+            </p>
+          </div>
+          <div className="bg-[var(--wordoken-color-surface-default,white)] content-stretch drop-shadow-[7px_7px_0px_black] flex h-[36px] items-center relative shrink-0 w-[320px]" data-node-id="I122:957;121:160" data-name="action">
+            <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-[var(--wordoken-color-border-default,#010101)] border-b-2 border-l-2 border-solid border-t-2 content-stretch flex h-[36px] items-center justify-center relative shrink-0 w-[276px]" data-node-id="I122:957;121:160;221:722" data-name="label-surface">
+              <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[32px] justify-center leading-[0] not-italic relative shrink-0 text-[12px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[260px]" data-node-id="I122:957;121:160;221:723">
+                <p className="leading-[normal]">SUBSCRIBE FOR SPECIAL PRIZES</p>
+              </div>
+            </div>
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch flex h-[36px] items-center justify-center relative shrink-0 w-[44px]" data-node-id="I122:957;121:160;221:724" data-name="icon-surface">
+              <IconArrowRight className="relative shrink-0 size-[20px]" />
+            </div>
+          </div>
+        </button>
+        <div className="-translate-x-1/2 absolute bottom-[10px] content-stretch flex h-[86px] items-start justify-between left-1/2 w-[320px]" data-node-id="37:329" data-name="BottomNav">
+          <a className="content-stretch cursor-pointer flex flex-col gap-[8px] h-[86px] items-center relative shrink-0 w-[64px]" data-node-id="I37:329;35:193" data-name="item/Home">
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[60px] items-center justify-center relative shrink-0 w-[64px]" data-node-id="I37:329;210:320" data-name="icon-box">
+              <ArtworkHouseMuted className="opacity-60 relative shrink-0 size-[46px]" />
+            </div>
+            <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[normal] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I37:329;35:197">
+              Home
+            </p>
+          </a>
+          <a className="content-stretch cursor-pointer flex flex-col gap-[8px] h-[86px] items-center relative shrink-0 w-[64px]" data-node-id="I37:329;35:198" data-name="item/Archive">
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[60px] items-center justify-center relative shrink-0 w-[64px]" data-node-id="I37:329;210:321" data-name="icon-box">
+              <ArtworkBookMuted className="opacity-60 relative shrink-0 size-[46px]" />
+            </div>
+            <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[normal] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I37:329;35:202">
+              Archive
+            </p>
+          </a>
+          <div className="content-stretch flex flex-col gap-[8px] h-[86px] items-center relative shrink-0 w-[64px]" data-node-id="I37:329;35:203" data-name="item/Store">
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[60px] items-center justify-center relative shrink-0 w-[64px]" data-node-id="I37:329;210:322" data-name="icon-box">
+              <ArtworkCart className="relative shrink-0 size-[46px]" />
+            </div>
+            <p className="[text-underline-position:from-font] [word-break:break-word] decoration-from-font decoration-solid font-['Montserrat:Medium'] font-medium leading-[normal] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] underline whitespace-nowrap" data-node-id="I37:329;35:207">
+              Store
+            </p>
+          </div>
+          <a className="content-stretch cursor-pointer flex flex-col gap-[8px] h-[86px] items-center relative shrink-0 w-[64px]" data-node-id="I37:329;35:208" data-name="item/Settings">
+            <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[60px] items-center justify-center relative shrink-0 w-[64px]" data-node-id="I37:329;210:323" data-name="icon-box">
+              <ArtworkSettingsGearMuted className="opacity-60 relative shrink-0 size-[46px]" />
+            </div>
+            <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[normal] relative shrink-0 text-[14px] text-[color:var(--wordoken-color-text-primary,#010101)] text-left whitespace-nowrap" data-node-id="I37:329;35:212">
+              Settings
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}

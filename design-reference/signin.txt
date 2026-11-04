@@ -1,0 +1,203 @@
+const imgIconEnvelope = "https://www.figma.com/api/mcp/asset/4c01312c-a121-4de7-a515-a4f26b8e8ac7.svg";
+const imgIconEyeOff = "https://www.figma.com/api/mcp/asset/0a570348-8440-4d65-bebb-4a764f3fa4eb.svg";
+const imgIconKey = "https://www.figma.com/api/mcp/asset/1bf1eccf-91cc-45a0-8b9b-20013299fedc.svg";
+const imgVector = "https://www.figma.com/api/mcp/asset/d01133b3-9e11-40e8-8b1e-8a219880602a.svg";
+const imgIconVolumeOn = "https://www.figma.com/api/mcp/asset/975b1a65-5101-4342-8fa5-5521b2ea33d4.svg";
+const imgVector1 = "https://www.figma.com/api/mcp/asset/8f859767-6ee2-4a6e-9241-33c596b02c85.svg";
+const imgProviderIcon = "https://www.figma.com/api/mcp/asset/330e2833-6d1c-4a6b-8aa3-9219421213ae.svg";
+const imgProviderIcon1 = "https://www.figma.com/api/mcp/asset/5890799f-c3f9-4017-8d22-8abe660fe644.svg";
+const imgVector2 = "https://www.figma.com/api/mcp/asset/1ce77e17-ecd2-4cc2-9330-3b92cf41f524.svg";
+
+function IconEnvelope({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="209:451" data-name="Icon/Envelope">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconEnvelope} />
+    </div>
+  );
+}
+
+function IconEyeOff({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="34:25" data-name="Icon/EyeOff">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconEyeOff} />
+    </div>
+  );
+}
+
+function IconKey({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="34:31" data-name="Icon/Key">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconKey} />
+    </div>
+  );
+}
+
+type InputFieldProps = {
+  className?: string;
+  label?: string;
+  state?: "Default";
+  type?: "Password" | "Email";
+  value?: string;
+};
+
+function InputField({ className, label = "USERNAME", state = "Default", type = "Password", value = "username" }: InputFieldProps) {
+  const isEmailAndDefault = type === "Email" && state === "Default";
+  const isPasswordAndDefault = type === "Password" && state === "Default";
+  return (
+    <div className={className || "content-stretch flex flex-col h-[88px] items-start relative w-[320px]"} id={isEmailAndDefault ? "node-210_328" : "node-35_107"}>
+      <div className="bg-[var(--wordoken-color-action-primary,#f7ce10)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-start px-[10px] py-[4px] relative shrink-0" id={isEmailAndDefault ? "node-210_329" : "node-35_108"} data-name="label-tag">
+        <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[13px] text-[color:var(--wordoken-color-text-primary,#010101)] whitespace-nowrap" data-node-id="35:109">
+          {label}
+        </p>
+      </div>
+      <div className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex gap-[10px] h-[60px] items-center justify-center px-[12px] relative shrink-0 w-full" id={isEmailAndDefault ? "node-210_331" : "node-35_110"} data-name="field">
+        {isPasswordAndDefault && (
+          <>
+            <IconKey className="relative shrink-0 size-[28px]" />
+            <div className="bg-[var(--color-text-placeholder,#ced0d2)] h-[30px] relative shrink-0 w-px" data-node-id="210:346" data-name="leading-divider" />
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Medium'] font-medium leading-[normal] min-w-px relative text-[14px] text-[color:var(--color-text-placeholder,#ced0d2)]" data-node-id="35:114">
+              {value}
+            </p>
+            <IconEyeOff className="relative shrink-0 size-[24px]" />
+          </>
+        )}
+        {isEmailAndDefault && (
+          <>
+            <IconEnvelope className="relative shrink-0 size-[28px]" />
+            <div className="bg-[var(--color-text-placeholder,#ced0d2)] h-[30px] relative shrink-0 w-px" data-node-id="226:784" data-name="leading-divider" />
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Medium'] font-medium leading-[normal] min-w-px relative text-[14px] text-[color:var(--color-text-placeholder,#ced0d2)]" data-node-id="210:333">
+              {value}
+            </p>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function SocialIconGoogle({ className }: { className?: string }) {
+  return (
+    <div className={className || "content-stretch flex items-center justify-center relative size-[36px]"} data-node-id="58:77" data-name="SocialIcon/Google">
+      <div className="flex-[1_0_0] h-full min-w-px relative" data-node-id="58:78" data-name="vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+      </div>
+    </div>
+  );
+}
+
+function IconVolumeOn({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="324:2145" data-name="Icon/VolumeOn">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconVolumeOn} />
+    </div>
+  );
+}
+
+function IconArrowLeft({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="34:4" data-name="Icon/ArrowLeft">
+      <div className="absolute left-0 size-[24px] top-0" data-node-id="34:2" data-name="vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+      </div>
+    </div>
+  );
+}
+
+export default function Component02SignIn() {
+  return (
+    <div className="bg-[var(--wordoken-color-bg-blue,#4377bc)] content-stretch flex flex-col items-center relative size-full" data-node-id="37:53" data-name="02 Sign In">
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start max-w-[402px] min-h-[740px] overflow-clip relative w-full" data-node-id="565:7192" data-name="Responsive / centered game column">
+        <div className="absolute inset-0 overflow-clip" data-node-id="37:54" data-name="background/grid">
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[50px] top-0 w-px" data-node-id="I37:54;34:55" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[101px] top-0 w-px" data-node-id="I37:54;34:56" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[152px] top-0 w-px" data-node-id="I37:54;34:57" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[203px] top-0 w-px" data-node-id="I37:54;34:58" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[254px] top-0 w-px" data-node-id="I37:54;34:59" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[305px] top-0 w-px" data-node-id="I37:54;34:60" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-[873px] left-[356px] top-0 w-px" data-node-id="I37:54;34:61" data-name="grid/v" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[50px] w-[402px]" data-node-id="I37:54;34:62" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[101px] w-[402px]" data-node-id="I37:54;34:63" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[152px] w-[402px]" data-node-id="I37:54;34:64" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[203px] w-[402px]" data-node-id="I37:54;34:65" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[254px] w-[402px]" data-node-id="I37:54;34:66" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[305px] w-[402px]" data-node-id="I37:54;34:67" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[356px] w-[402px]" data-node-id="I37:54;34:68" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[407px] w-[402px]" data-node-id="I37:54;34:69" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[458px] w-[402px]" data-node-id="I37:54;34:70" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[509px] w-[402px]" data-node-id="I37:54;34:71" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[560px] w-[402px]" data-node-id="I37:54;34:72" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[611px] w-[402px]" data-node-id="I37:54;34:73" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[662px] w-[402px]" data-node-id="I37:54;34:74" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[713px] w-[402px]" data-node-id="I37:54;34:75" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[764px] w-[402px]" data-node-id="I37:54;34:76" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[815px] w-[402px]" data-node-id="I37:54;34:77" data-name="grid/h" />
+          <div className="absolute bg-[rgba(0,0,0,0.28)] h-px left-0 top-[866px] w-[402px]" data-node-id="I37:54;34:78" data-name="grid/h" />
+        </div>
+        <div className="absolute h-[94px] left-[30px] right-[30px] top-[22px]" data-node-id="37:80" data-name="TopBar">
+          <button className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[4px_4px_0px_black] flex items-center justify-center left-[-22px] size-[32px] top-[-14px]" data-node-id="I37:80;75:848" data-name="back-tile">
+            <IconArrowLeft className="relative shrink-0 size-[24px]" />
+          </button>
+          <button className="absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[4px_4px_0px_black] flex items-center justify-center right-[-22px] size-[32px] top-[-14px]" data-node-id="I37:80;75:849" data-name="sound-tile">
+            <div className="content-stretch flex gap-[var(--wordoken-space-0,0px)] items-center justify-center p-[var(--wordoken-space-0,0px)] relative shrink-0 size-[24px]" data-node-id="I37:80;35:147" data-name="sound">
+              <IconVolumeOn className="relative shrink-0 size-[24px]" />
+            </div>
+          </button>
+          <div className="-translate-x-1/2 absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex h-[62px] items-center justify-center left-1/2 px-[6px] top-[32px] w-[320px]" data-node-id="I37:80;35:145" data-name="title-surface">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_Black'] h-[40px] justify-center leading-[0] not-italic relative shrink-0 text-[24px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[308px]" data-node-id="I37:80;35:146">
+              <p className="leading-[normal]">SIGN IN</p>
+            </div>
+          </div>
+        </div>
+        <button className="-translate-x-1/2 absolute bg-[var(--wordoken-color-action-primary,#f7ce10)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[7px_7px_0px_black] flex gap-[12px] h-[60px] items-center justify-center left-1/2 top-[530px] w-[320px]" data-node-id="37:122" data-name="Button">
+          <p className="[word-break:break-word] font-['Fixture:Expanded_Black'] leading-[normal] not-italic relative shrink-0 text-[32px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[296px]" data-node-id="I37:122;35:3">
+            SIGN IN
+          </p>
+        </button>
+        <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[var(--wordoken-space-3,12px)] items-center left-1/2 top-[622px] w-[320px]" data-node-id="232:1503" data-name="Auth / centered providers">
+          <div className="content-stretch flex gap-[var(--wordoken-space-0,0px)] h-[20px] items-center justify-center p-[var(--wordoken-space-0,0px)] relative shrink-0 w-[320px]" data-node-id="92:872" data-name="SocialAuthLabel / Or sign in with">
+            <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_SemiBold'] h-[20px] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-[color:var(--wordoken-color-text-inverse,white)] text-center uppercase w-[320px]" data-node-id="I92:872;474:2803">
+              <p className="leading-[20px]">Or sign in with</p>
+            </div>
+          </div>
+          <div className="content-stretch cursor-pointer flex gap-[var(--wordoken-space-6,24px)] h-[60px] items-center justify-center p-[var(--wordoken-space-0,0px)] relative shrink-0 w-[320px]" data-node-id="421:4781" data-name="SocialProviderRow / TikTok Instagram Google Facebook">
+            <a className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[60px]" data-node-id="I421:4781;420:2316" data-name="TikTok">
+              <div className="relative shrink-0 size-[48px]" data-node-id="I421:4781;420:2316;58:95" data-name="provider-icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgProviderIcon} />
+              </div>
+            </a>
+            <button className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[60px]" data-node-id="I421:4781;420:2328" data-name="Instagram">
+              <div className="relative shrink-0 size-[48px]" data-node-id="I421:4781;420:2328;58:95" data-name="provider-icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgProviderIcon1} />
+              </div>
+            </button>
+            <a className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[60px]" data-node-id="I421:4781;420:2340" data-name="Google">
+              <SocialIconGoogle className="content-stretch flex items-center justify-center relative shrink-0 size-[48px]" />
+            </a>
+            <a className="bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch drop-shadow-[7px_7px_0px_black] flex items-center justify-center relative shrink-0 size-[60px]" data-node-id="I421:4781;420:2352" data-name="Facebook">
+              <div className="content-stretch flex items-center justify-center relative shrink-0 size-[48px]" data-node-id="I421:4781;420:2352;58:95" data-name="provider-icon">
+                <div className="flex-[1_0_0] h-full min-w-px relative" data-node-id="I421:4781;420:2352;58:95;58:84" data-name="vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector2} />
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a className="-translate-x-1/2 absolute bg-[var(--wordoken-color-surface-default,white)] border-2 border-[var(--wordoken-color-border-default,#010101)] border-solid content-stretch cursor-pointer drop-shadow-[7px_7px_0px_black] flex flex-col h-[34px] items-center justify-center left-1/2 px-[10px] top-[137px] w-[320px]" data-node-id="37:93" data-name="signup-prompt">
+          <div className="[word-break:break-word] flex flex-col font-['Fixture:Expanded_SemiBold'] h-[30px] justify-center leading-[0] not-italic relative shrink-0 text-[0px] text-[color:var(--wordoken-color-text-primary,#010101)] text-center w-[296px]" data-node-id="37:94">
+            <p className="text-[16px] whitespace-pre-wrap">
+              <span className="leading-[normal]">{`NOT A MEMBER?  `}</span>
+              <span className="leading-[normal] text-[#ba3020]">SIGN UP NOW</span>
+            </p>
+          </div>
+        </a>
+        <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[21px] h-[197px] items-center left-1/2 top-[222px] w-[320px]" data-node-id="232:1505" data-name="Sign in / form">
+          <InputField className="content-stretch flex flex-col h-[88px] items-start relative shrink-0 w-[320px]" label="EMAIL / USERNAME" type="Email" value="example@gmail.com" />
+          <InputField className="content-stretch flex flex-col h-[88px] items-start relative shrink-0 w-[320px]" label="PASSWORD" value="" />
+        </div>
+        <button className="-translate-x-full [word-break:break-word] absolute block cursor-pointer font-['Fixture:Expanded_SemiBold'] h-[20px] leading-[0] left-[calc(50%+160px)] not-italic text-[12px] text-[color:var(--wordoken-color-text-inverse,white)] text-right top-[427px] tracking-[0.2px] w-[189px]" data-node-id="37:120">
+          <p className="leading-[normal]">FORGOT PASSWORD?</p>
+        </button>
+      </div>
+    </div>
+  );
+}

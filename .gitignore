@@ -6,4 +6,5 @@ dist-preview/
 .env*
 !.env.example
 test-results/
-
+.tmp-spec-review/
+*.inspect.ndjson

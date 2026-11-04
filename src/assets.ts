@@ -22,6 +22,32 @@ import spriteTorso from './assets/hard-imgTorsoBlack.png';
 import spriteHead from './assets/hard-imgHeadBackRed.png';
 import spriteSkin from './assets/hard-imgSkinLight.png';
 import spriteEyes from './assets/hard-imgEyesAngry.png';
+import settingsGearColor from './assets/settings_gear.svg';
+import signOutColor from './assets/sign_out_color.svg';
+import speakerColor from './assets/speaker_color.svg';
+import timerIcon from './assets/timer.svg';
+import bandanaBlue from './assets/bandana_blue.svg';
+import bandanaRed from './assets/bandana_red.svg';
+import bookColor from './assets/book.svg';
+import burstGreen from './assets/burst_green_small.svg';
+import burstRed from './assets/burst_red_large.svg';
+import cartColor from './assets/cart.svg';
+import chest from './assets/chest.svg';
+import coinsStack from './assets/coins_stack.svg';
+import coinsSilver from './assets/coins_stack_silver.svg';
+import controllers from './assets/controllers.svg';
+import fire from './assets/fire.svg';
+import gearColor from './assets/gear.svg';
+import houseColor from './assets/house.svg';
+import howToColor from './assets/how_to_color.svg';
+import keyColor from './assets/key_color.svg';
+import knockout from './assets/ko.svg';
+import lockLarge from './assets/lock_lg.svg';
+import medal from './assets/medal.svg';
+import paperColor from './assets/paper_color.svg';
+import pencilColor from './assets/pencil_color.svg';
+import pencilGear from './assets/pencil_gear.svg';
+import ribbonColor from './assets/ribbon_color.svg';
 
 export const artwork = {
   logo,
@@ -48,4 +74,30 @@ export const artwork = {
   spriteHead,
   spriteSkin,
   spriteEyes,
+  settingsGearColor,
+  signOutColor,
+  speakerColor,
+  timerIcon,
+  bandanaBlue,
+  bandanaRed,
+  bookColor,
+  burstGreen,
+  burstRed,
+  cartColor,
+  chest,
+  coinsStack,
+  coinsSilver,
+  controllers,
+  fire,
+  gearColor,
+  houseColor,
+  howToColor,
+  keyColor,
+  knockout,
+  lockLarge,
+  medal,
+  paperColor,
+  pencilColor,
+  pencilGear,
+  ribbonColor,
 };
